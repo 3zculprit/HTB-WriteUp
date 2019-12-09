@@ -1,0 +1,13 @@
+# Nmap 7.80 scan initiated Sat Nov 23 15:20:37 2019 as: nmap -p- -v -oA nmap/hiest-allports 10.10.10.149
+Nmap scan report for 10.10.10.149
+Host is up (0.17s latency).
+Not shown: 65530 filtered ports
+PORT      STATE SERVICE
+80/tcp    open  http
+135/tcp   open  msrpc
+445/tcp   open  microsoft-ds
+5985/tcp  open  wsman
+49669/tcp open  unknown
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sat Nov 23 15:24:23 2019 -- 1 IP address (1 host up) scanned in 225.58 seconds
