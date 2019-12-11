@@ -1,0 +1,7 @@
+Active ports - 27017 53 -- Need to check
+check out the /var/www diretory
+ Mongo Version  -- 4.0.12
+/snap/core/6350/usr/bin/sudo            --->    /sudo$ -- learn about this
+/usr/lib/jvm/java-11-openjdk-amd64/bin/jjs
+ 
+
