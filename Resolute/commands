@@ -1,0 +1,10 @@
+netfileenum
+dsgetdcinfo
+netsessenum
+netdiskenum
+netconnenum
+dsr_enumtrustdom
+queryuser
+enumdomains
+createdomuser
+getusername
