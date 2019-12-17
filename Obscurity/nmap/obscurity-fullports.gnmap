@@ -1,0 +1,5 @@
+# Nmap 7.80 scan initiated Sat Dec 14 06:52:14 2019 as: nmap -p- -vv -oA nmap/obscurity-fullports 10.10.10.168
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.168 ()	Status: Up
+Host: 10.10.10.168 ()	Ports: 22/open/tcp//ssh///, 80/closed/tcp//http///, 8080/open/tcp//http-proxy///, 9000/closed/tcp//cslistener///	Ignored State: filtered (65531)
+# Nmap done at Sat Dec 14 06:57:31 2019 -- 1 IP address (1 host up) scanned in 317.09 seconds

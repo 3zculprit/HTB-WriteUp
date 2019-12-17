@@ -1,0 +1,14 @@
+# Nmap 7.80 scan initiated Sat Dec 14 06:52:14 2019 as: nmap -p- -vv -oA nmap/obscurity-fullports 10.10.10.168
+Nmap scan report for 10.10.10.168
+Host is up, received echo-reply ttl 63 (0.19s latency).
+Scanned at 2019-12-14 06:52:14 EST for 317s
+Not shown: 65531 filtered ports
+Reason: 65531 no-responses
+PORT     STATE  SERVICE    REASON
+22/tcp   open   ssh        syn-ack ttl 63
+80/tcp   closed http       reset ttl 63
+8080/tcp open   http-proxy syn-ack ttl 63
+9000/tcp closed cslistener reset ttl 63
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sat Dec 14 06:57:31 2019 -- 1 IP address (1 host up) scanned in 317.09 seconds
