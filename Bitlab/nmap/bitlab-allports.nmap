@@ -1,0 +1,12 @@
+# Nmap 7.80 scan initiated Sun Dec 22 05:17:18 2019 as: nmap -p- -vv -oA nmap/bitlab-allports 10.10.10.114
+Nmap scan report for 10.10.10.114
+Host is up, received echo-reply ttl 63 (0.17s latency).
+Scanned at 2019-12-22 05:17:18 EST for 248s
+Not shown: 65533 filtered ports
+Reason: 65533 no-responses
+PORT   STATE SERVICE REASON
+22/tcp open  ssh     syn-ack ttl 63
+80/tcp open  http    syn-ack ttl 62
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sun Dec 22 05:21:26 2019 -- 1 IP address (1 host up) scanned in 248.87 seconds
