@@ -1,0 +1,12 @@
+# Nmap 7.80 scan initiated Mon Jan 27 05:10:54 2020 as: nmap -p- -vv -oA Desktop/HTB/boxes/Nest/nmap/all-ports 10.10.10.178
+Nmap scan report for 10.10.10.178
+Host is up, received echo-reply ttl 127 (0.17s latency).
+Scanned at 2020-01-27 05:10:54 EST for 384s
+Not shown: 65533 filtered ports
+Reason: 65533 no-responses
+PORT     STATE SERVICE      REASON
+445/tcp  open  microsoft-ds syn-ack ttl 127
+4386/tcp open  unknown      syn-ack ttl 127
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Mon Jan 27 05:17:18 2020 -- 1 IP address (1 host up) scanned in 383.59 seconds
