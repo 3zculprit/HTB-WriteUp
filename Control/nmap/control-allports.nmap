@@ -1,0 +1,15 @@
+# Nmap 7.80 scan initiated Fri Feb 28 12:17:20 2020 as: nmap -vv -p- -oA nmap/control-allports 10.10.10.167
+Nmap scan report for 10.10.10.167
+Host is up, received echo-reply ttl 127 (0.18s latency).
+Scanned at 2020-02-28 12:17:20 PST for 493s
+Not shown: 65530 filtered ports
+Reason: 65530 no-responses
+PORT      STATE SERVICE REASON
+80/tcp    open  http    syn-ack ttl 127
+135/tcp   open  msrpc   syn-ack ttl 127
+3306/tcp  open  mysql   syn-ack ttl 127
+49666/tcp open  unknown syn-ack ttl 127
+49667/tcp open  unknown syn-ack ttl 127
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Fri Feb 28 12:25:33 2020 -- 1 IP address (1 host up) scanned in 493.53 seconds
