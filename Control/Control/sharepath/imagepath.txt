@@ -1,0 +1,1769 @@
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\1394ohci
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\1394ohci.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\3ware
+    ImagePath    REG_EXPAND_SZ    System32\drivers\3ware.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\ACPI
+    ImagePath    REG_EXPAND_SZ    System32\drivers\ACPI.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\AcpiDev
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\AcpiDev.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\acpiex
+    ImagePath    REG_EXPAND_SZ    System32\Drivers\acpiex.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\acpipagr
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\acpipagr.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\AcpiPmi
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\acpipmi.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\acpitime
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\acpitime.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\ADP80XX
+    ImagePath    REG_EXPAND_SZ    System32\drivers\ADP80XX.SYS
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\AFD
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\system32\drivers\afd.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\afunix
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\system32\drivers\afunix.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\ahcache
+    ImagePath    REG_EXPAND_SZ    system32\DRIVERS\ahcache.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\AJRouter
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k LocalServiceNetworkRestricted -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\ALG
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\alg.exe
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\AmdK8
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\amdk8.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\AmdPPM
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\amdppm.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\amdsata
+    ImagePath    REG_EXPAND_SZ    System32\drivers\amdsata.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\amdsbs
+    ImagePath    REG_EXPAND_SZ    System32\drivers\amdsbs.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\amdxata
+    ImagePath    REG_EXPAND_SZ    System32\drivers\amdxata.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\AppHostSvc
+    ImagePath    REG_EXPAND_SZ    %windir%\system32\svchost.exe -k apphost
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\AppID
+    ImagePath    REG_EXPAND_SZ    system32\drivers\appid.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\AppIDSvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k LocalServiceNetworkRestricted -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Appinfo
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k netsvcs -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\applockerfltr
+    ImagePath    REG_EXPAND_SZ    system32\drivers\applockerfltr.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\AppMgmt
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k netsvcs -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\AppReadiness
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k AppReadiness -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\AppVClient
+    ImagePath    REG_EXPAND_SZ    %systemroot%\system32\AppVClient.exe
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\AppvStrm
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\system32\drivers\AppvStrm.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\AppvVemgr
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\system32\drivers\AppvVemgr.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\AppvVfs
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\system32\drivers\AppvVfs.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\AppXSvc
+    ImagePath    REG_EXPAND_SZ    %systemroot%\system32\svchost.exe -k wsappx -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\arcsas
+    ImagePath    REG_EXPAND_SZ    System32\drivers\arcsas.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\AsyncMac
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\asyncmac.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\atapi
+    ImagePath    REG_EXPAND_SZ    System32\drivers\atapi.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\AudioEndpointBuilder
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k LocalSystemNetworkRestricted -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Audiosrv
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k LocalServiceNetworkRestricted -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\AxInstSV
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k AxInstSVGroup
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\b06bdrv
+    ImagePath    REG_EXPAND_SZ    System32\drivers\bxvbda.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\bam
+    ImagePath    REG_EXPAND_SZ    system32\drivers\bam.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\BasicDisplay
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\DriverStore\FileRepository\basicdisplay.inf_amd64_5103ac179273be89\BasicDisplay.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\BasicRender
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\DriverStore\FileRepository\basicrender.inf_amd64_0b8d03c3bc0e7fd9\BasicRender.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\bcmfn2
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\bcmfn2.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\bfadfcoei
+    ImagePath    REG_EXPAND_SZ    System32\drivers\bfadfcoei.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\bfadi
+    ImagePath    REG_EXPAND_SZ    System32\drivers\bfadi.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\BFE
+    ImagePath    REG_EXPAND_SZ    %systemroot%\system32\svchost.exe -k LocalServiceNoNetworkFirewall -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\bindflt
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\system32\drivers\bindflt.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\BITS
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k netsvcs -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\bowser
+    ImagePath    REG_EXPAND_SZ    system32\DRIVERS\bowser.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\BrokerInfrastructure
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k DcomLaunch -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\BTAGService
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k LocalServiceNetworkRestricted
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\BthAvctpSvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k LocalService -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\BthEnum
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\BthEnum.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\BthLEEnum
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\Microsoft.Bluetooth.Legacy.LEEnumerator.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\BthMini
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\BTHMINI.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\BTHPORT
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\BTHport.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\bthserv
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k LocalService -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\BTHUSB
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\BTHUSB.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\bttflt
+    ImagePath    REG_EXPAND_SZ    System32\drivers\bttflt.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\buttonconverter
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\buttonconverter.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\bxfcoe
+    ImagePath    REG_EXPAND_SZ    System32\drivers\bxfcoe.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\bxois
+    ImagePath    REG_EXPAND_SZ    System32\drivers\bxois.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\camsvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k appmodel -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\CapImg
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\capimg.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\CaptureService
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k LocalService -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\CaptureService_4248c
+    ImagePath    REG_EXPAND_SZ    C:\Windows\system32\svchost.exe -k LocalService -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\CaptureService_4d5c5
+    ImagePath    REG_EXPAND_SZ    C:\Windows\system32\svchost.exe -k LocalService -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\CaptureService_80d08
+    ImagePath    REG_EXPAND_SZ    C:\Windows\system32\svchost.exe -k LocalService -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\CaptureService_ee306
+    ImagePath    REG_EXPAND_SZ    C:\Windows\system32\svchost.exe -k LocalService -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\cbdhsvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k ClipboardSvcGroup -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\cbdhsvc_4248c
+    ImagePath    REG_EXPAND_SZ    C:\Windows\system32\svchost.exe -k ClipboardSvcGroup -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\cbdhsvc_4d5c5
+    ImagePath    REG_EXPAND_SZ    C:\Windows\system32\svchost.exe -k ClipboardSvcGroup -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\cbdhsvc_80d08
+    ImagePath    REG_EXPAND_SZ    C:\Windows\system32\svchost.exe -k ClipboardSvcGroup -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\cbdhsvc_ee306
+    ImagePath    REG_EXPAND_SZ    C:\Windows\system32\svchost.exe -k ClipboardSvcGroup -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\cdfs
+    ImagePath    REG_EXPAND_SZ    system32\DRIVERS\cdfs.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\CDPSvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k LocalService -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\CDPUserSvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k UnistackSvcGroup
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\CDPUserSvc_4248c
+    ImagePath    REG_EXPAND_SZ    C:\Windows\system32\svchost.exe -k UnistackSvcGroup
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\CDPUserSvc_4d5c5
+    ImagePath    REG_EXPAND_SZ    C:\Windows\system32\svchost.exe -k UnistackSvcGroup
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\CDPUserSvc_80d08
+    ImagePath    REG_EXPAND_SZ    C:\Windows\system32\svchost.exe -k UnistackSvcGroup
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\CDPUserSvc_ee306
+    ImagePath    REG_EXPAND_SZ    C:\Windows\system32\svchost.exe -k UnistackSvcGroup
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\cdrom
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\cdrom.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\CertPropSvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k netsvcs
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\cht4iscsi
+    ImagePath    REG_EXPAND_SZ    System32\drivers\cht4sx64.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\cht4vbd
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\cht4vx64.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\CldFlt
+    ImagePath    REG_EXPAND_SZ    system32\drivers\cldflt.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\CLFS
+    ImagePath    REG_EXPAND_SZ    System32\drivers\CLFS.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\ClipSVC
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k wsappx -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\CmBatt
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\CmBatt.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\CNG
+    ImagePath    REG_EXPAND_SZ    System32\Drivers\cng.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\cnghwassist
+    ImagePath    REG_EXPAND_SZ    System32\DRIVERS\cnghwassist.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\CompositeBus
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\DriverStore\FileRepository\compositebus.inf_amd64_e4d35af746093dc3\CompositeBus.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\COMSysApp
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\dllhost.exe /Processid:{02D4B3F1-FD88-11D1-960D-00805FC79235}
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\condrv
+    ImagePath    REG_EXPAND_SZ    System32\drivers\condrv.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\ConsentUxUserSvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k DevicesFlow
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\ConsentUxUserSvc_4248c
+    ImagePath    REG_EXPAND_SZ    C:\Windows\system32\svchost.exe -k DevicesFlow
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\ConsentUxUserSvc_4d5c5
+    ImagePath    REG_EXPAND_SZ    C:\Windows\system32\svchost.exe -k DevicesFlow
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\ConsentUxUserSvc_80d08
+    ImagePath    REG_EXPAND_SZ    C:\Windows\system32\svchost.exe -k DevicesFlow
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\ConsentUxUserSvc_ee306
+    ImagePath    REG_EXPAND_SZ    C:\Windows\system32\svchost.exe -k DevicesFlow
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\CoreMessagingRegistrar
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k LocalServiceNoNetwork -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\CryptSvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k NetworkService -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\CSC
+    ImagePath    REG_EXPAND_SZ    system32\drivers\csc.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\CscService
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k LocalSystemNetworkRestricted -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\dam
+    ImagePath    REG_EXPAND_SZ    system32\drivers\dam.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DcomLaunch
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k DcomLaunch -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\defragsvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k defragsvc
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DeviceAssociationService
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k LocalSystemNetworkRestricted -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DeviceInstall
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k DcomLaunch -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DevicePickerUserSvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k DevicesFlow
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DevicePickerUserSvc_4248c
+    ImagePath    REG_EXPAND_SZ    C:\Windows\system32\svchost.exe -k DevicesFlow
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DevicePickerUserSvc_4d5c5
+    ImagePath    REG_EXPAND_SZ    C:\Windows\system32\svchost.exe -k DevicesFlow
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DevicePickerUserSvc_80d08
+    ImagePath    REG_EXPAND_SZ    C:\Windows\system32\svchost.exe -k DevicesFlow
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DevicePickerUserSvc_ee306
+    ImagePath    REG_EXPAND_SZ    C:\Windows\system32\svchost.exe -k DevicesFlow
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DevicesFlowUserSvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k DevicesFlow
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DevicesFlowUserSvc_4248c
+    ImagePath    REG_EXPAND_SZ    C:\Windows\system32\svchost.exe -k DevicesFlow
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DevicesFlowUserSvc_4d5c5
+    ImagePath    REG_EXPAND_SZ    C:\Windows\system32\svchost.exe -k DevicesFlow
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DevicesFlowUserSvc_80d08
+    ImagePath    REG_EXPAND_SZ    C:\Windows\system32\svchost.exe -k DevicesFlow
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DevicesFlowUserSvc_ee306
+    ImagePath    REG_EXPAND_SZ    C:\Windows\system32\svchost.exe -k DevicesFlow
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DevQueryBroker
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k LocalSystemNetworkRestricted -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Dfsc
+    ImagePath    REG_EXPAND_SZ    System32\Drivers\dfsc.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Dhcp
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k LocalServiceNetworkRestricted -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\diagnosticshub.standardcollector.service
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\DiagSvcs\DiagnosticsHub.StandardCollector.Service.exe
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DiagTrack
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k utcsvc -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Disk
+    ImagePath    REG_EXPAND_SZ    System32\drivers\disk.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DmEnrollmentSvc
+    ImagePath    REG_EXPAND_SZ    %systemroot%\system32\svchost.exe -k netsvcs -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\dmvsc
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\dmvsc.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\dmwappushservice
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k netsvcs -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Dnscache
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k NetworkService -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DoSvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k NetworkService -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\dot3svc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k LocalSystemNetworkRestricted -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DPS
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k LocalServiceNoNetwork -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\drmkaud
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\drmkaud.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DsmSvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k netsvcs -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DsSvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k LocalSystemNetworkRestricted -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DXGKrnl
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\dxgkrnl.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\e1iexpress
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\e1i63x64.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Eaphost
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k netsvcs -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\ebdrv
+    ImagePath    REG_EXPAND_SZ    System32\drivers\evbda.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\EFS
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\lsass.exe
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\EhStorClass
+    ImagePath    REG_EXPAND_SZ    System32\drivers\EhStorClass.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\EhStorTcgDrv
+    ImagePath    REG_EXPAND_SZ    System32\drivers\EhStorTcgDrv.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\elxfcoe
+    ImagePath    REG_EXPAND_SZ    System32\drivers\elxfcoe.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\elxstor
+    ImagePath    REG_EXPAND_SZ    System32\drivers\elxstor.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\embeddedmode
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k LocalSystemNetworkRestricted -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\EntAppSvc
+    ImagePath    REG_EXPAND_SZ    %systemroot%\system32\svchost.exe -k appmodel -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\ErrDev
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\errdev.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\EventLog
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k LocalServiceNetworkRestricted -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\EventSystem
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k LocalService -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\fcvsc
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\fcvsc.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\fdc
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\fdc.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\fdPHost
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k LocalService -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\FDResPub
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k LocalServiceAndNoImpersonation -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\FileCrypt
+    ImagePath    REG_EXPAND_SZ    system32\drivers\filecrypt.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\FileInfo
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\fileinfo.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Filetrace
+    ImagePath    REG_EXPAND_SZ    system32\drivers\filetrace.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\flpydisk
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\flpydisk.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\FltMgr
+    ImagePath    REG_EXPAND_SZ    system32\drivers\fltmgr.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\FontCache
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k LocalService -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\FrameServer
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k Camera
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\FsDepends
+    ImagePath    REG_EXPAND_SZ    System32\drivers\FsDepends.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\gencounter
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\vmgencounter.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\genericusbfn
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\genericusbfn.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\GPIOClx0101
+    ImagePath    REG_EXPAND_SZ    System32\Drivers\msgpioclx.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\gpsvc
+    ImagePath    REG_EXPAND_SZ    %systemroot%\system32\svchost.exe -k netsvcs -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\GraphicsPerfSvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k GraphicsPerfSvcGroup
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\HdAudAddService
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\system32\DRIVERS\HdAudio.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\HDAudBus
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\HDAudBus.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\HidBatt
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\HidBatt.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\hidinterrupt
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\hidinterrupt.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\hidserv
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k LocalSystemNetworkRestricted -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\HidUsb
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\hidusb.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\HpSAMD
+    ImagePath    REG_EXPAND_SZ    System32\drivers\HpSAMD.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\HTTP
+    ImagePath    REG_EXPAND_SZ    system32\drivers\HTTP.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\hvcrash
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\hvcrash.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\HvHost
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k LocalSystemNetworkRestricted -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\hvservice
+    ImagePath    REG_EXPAND_SZ    system32\drivers\hvservice.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\HwNClx0101
+    ImagePath    REG_EXPAND_SZ    System32\Drivers\mshwnclx.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\hwpolicy
+    ImagePath    REG_EXPAND_SZ    System32\drivers\hwpolicy.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\hyperkbd
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\hyperkbd.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\HyperVideo
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\HyperVideo.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\i8042prt
+    ImagePath    REG_EXPAND_SZ    System32\DRIVERS\i8042prt.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\iaLPSSi_GPIO
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\iaLPSSi_GPIO.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\iaLPSSi_I2C
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\iaLPSSi_I2C.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\iaStorAVC
+    ImagePath    REG_EXPAND_SZ    System32\drivers\iaStorAVC.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\iaStorV
+    ImagePath    REG_EXPAND_SZ    System32\drivers\iaStorV.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\ibbus
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\ibbus.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\icssvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k LocalServiceNetworkRestricted -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\IKEEXT
+    ImagePath    REG_EXPAND_SZ    %systemroot%\system32\svchost.exe -k netsvcs -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\IndirectKmd
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\IndirectKmd.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\InstallService
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k netsvcs -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\intelide
+    ImagePath    REG_EXPAND_SZ    system32\drivers\intelide.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\intelpep
+    ImagePath    REG_EXPAND_SZ    System32\drivers\intelpep.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\intelppm
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\intelppm.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\IpFilterDriver
+    ImagePath    REG_EXPAND_SZ    system32\DRIVERS\ipfltdrv.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\iphlpsvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k NetSvcs -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\IPMIDRV
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\IPMIDrv.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\IPNAT
+    ImagePath    REG_EXPAND_SZ    System32\drivers\ipnat.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\IPsecGW
+    ImagePath    REG_EXPAND_SZ    system32\drivers\ipsecgw.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\IPT
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\ipt.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\isapnp
+    ImagePath    REG_EXPAND_SZ    System32\drivers\isapnp.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\iScsiPrt
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\msiscsi.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\ItSas35i
+    ImagePath    REG_EXPAND_SZ    System32\drivers\ItSas35i.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\kbdclass
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\kbdclass.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\kbdhid
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\kbdhid.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\kdnic
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\kdnic.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\KeyIso
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\lsass.exe
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\KPSSVC
+    ImagePath    REG_EXPAND_SZ    %systemroot%\system32\svchost.exe -k KpsSvcGroup
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\KSecDD
+    ImagePath    REG_EXPAND_SZ    System32\Drivers\ksecdd.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\KSecPkg
+    ImagePath    REG_EXPAND_SZ    System32\Drivers\ksecpkg.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\ksthunk
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\system32\drivers\ksthunk.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\KtmRm
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k NetworkServiceAndNoImpersonation -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LanmanServer
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k smbsvcs
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LanmanWorkstation
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k NetworkService -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\lfsvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k netsvcs -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LicenseManager
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k LocalService -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\lltdio
+    ImagePath    REG_EXPAND_SZ    system32\drivers\lltdio.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\lltdsvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k LocalService -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\lmhosts
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k LocalServiceNetworkRestricted -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LSI_SAS
+    ImagePath    REG_EXPAND_SZ    System32\drivers\lsi_sas.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LSI_SAS2i
+    ImagePath    REG_EXPAND_SZ    System32\drivers\lsi_sas2i.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LSI_SAS3i
+    ImagePath    REG_EXPAND_SZ    System32\drivers\lsi_sas3i.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LSI_SSS
+    ImagePath    REG_EXPAND_SZ    System32\drivers\lsi_sss.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LSM
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k DcomLaunch -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\luafv
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\system32\drivers\luafv.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MapsBroker
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k NetworkService -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MariaDB
+    ImagePath    REG_EXPAND_SZ    "C:\Program Files\MariaDB 10.4\bin\mysqld.exe" "--defaults-file=C:\MariaDB\my.ini" "MariaDB"
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\mausbhost
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\mausbhost.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\mausbip
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\mausbip.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\megasas
+    ImagePath    REG_EXPAND_SZ    System32\drivers\megasas.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\megasas2i
+    ImagePath    REG_EXPAND_SZ    System32\drivers\MegaSas2i.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\megasas35i
+    ImagePath    REG_EXPAND_SZ    System32\drivers\megasas35i.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\megasr
+    ImagePath    REG_EXPAND_SZ    System32\drivers\megasr.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Microsoft_Bluetooth_AvrcpTransport
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\Microsoft.Bluetooth.AvrcpTransport.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\mlx4_bus
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\mlx4_bus.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MMCSS
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\system32\drivers\mmcss.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Modem
+    ImagePath    REG_EXPAND_SZ    system32\drivers\modem.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\monitor
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\monitor.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\mouclass
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\mouclass.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\mouhid
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\mouhid.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\mountmgr
+    ImagePath    REG_EXPAND_SZ    System32\drivers\mountmgr.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\mpsdrv
+    ImagePath    REG_EXPAND_SZ    System32\drivers\mpsdrv.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\mpssvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k LocalServiceNoNetworkFirewall -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\mrxsmb
+    ImagePath    REG_EXPAND_SZ    system32\DRIVERS\mrxsmb.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\mrxsmb20
+    ImagePath    REG_EXPAND_SZ    system32\DRIVERS\mrxsmb20.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MsBridge
+    ImagePath    REG_EXPAND_SZ    System32\drivers\bridge.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSDTC
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\msdtc.exe
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\msgpiowin32
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\msgpiowin32.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\mshidkmdf
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\mshidkmdf.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\mshidumdf
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\mshidumdf.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\msisadrv
+    ImagePath    REG_EXPAND_SZ    System32\drivers\msisadrv.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSiSCSI
+    ImagePath    REG_EXPAND_SZ    %systemroot%\system32\svchost.exe -k netsvcs -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\msiserver
+    ImagePath    REG_EXPAND_SZ    %systemroot%\system32\msiexec.exe /V
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSKSSRV
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\MSKSSRV.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MsLbfoProvider
+    ImagePath    REG_EXPAND_SZ    System32\drivers\MsLbfoProvider.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MsLldp
+    ImagePath    REG_EXPAND_SZ    system32\drivers\mslldp.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSPCLOCK
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\MSPCLOCK.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSPQM
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\MSPQM.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MsSecFlt
+    ImagePath    REG_EXPAND_SZ    system32\drivers\mssecflt.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\mssmbios
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\mssmbios.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MSTEE
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\MSTEE.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MTConfig
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\MTConfig.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Mup
+    ImagePath    REG_EXPAND_SZ    System32\Drivers\mup.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\mvumis
+    ImagePath    REG_EXPAND_SZ    System32\drivers\mvumis.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NcaSvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k NetSvcs -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NcbService
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k LocalSystemNetworkRestricted -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\ndfltr
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\ndfltr.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NDIS
+    ImagePath    REG_EXPAND_SZ    system32\drivers\ndis.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NdisCap
+    ImagePath    REG_EXPAND_SZ    System32\drivers\ndiscap.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NdisImPlatform
+    ImagePath    REG_EXPAND_SZ    System32\drivers\NdisImPlatform.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NdisTapi
+    ImagePath    REG_EXPAND_SZ    System32\DRIVERS\ndistapi.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Ndisuio
+    ImagePath    REG_EXPAND_SZ    system32\drivers\ndisuio.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NdisVirtualBus
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\NdisVirtualBus.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NdisWan
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\ndiswan.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\ndiswanlegacy
+    ImagePath    REG_EXPAND_SZ    System32\DRIVERS\ndiswan.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\ndproxy
+    ImagePath    REG_EXPAND_SZ    System32\DRIVERS\NDProxy.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NetAdapterCx
+    ImagePath    REG_EXPAND_SZ    system32\drivers\NetAdapterCx.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NetBIOS
+    ImagePath    REG_EXPAND_SZ    system32\drivers\netbios.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NetBT
+    ImagePath    REG_EXPAND_SZ    System32\DRIVERS\netbt.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Netlogon
+    ImagePath    REG_EXPAND_SZ    %systemroot%\system32\lsass.exe
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Netman
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k LocalSystemNetworkRestricted -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\netprofm
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k LocalService -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NetSetupSvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k netsvcs -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NetTcpPortSharing
+    ImagePath    REG_EXPAND_SZ    %systemroot%\Microsoft.NET\Framework64\v4.0.30319\SMSvcHost.exe
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\netvsc
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\netvsc.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NgcCtnrSvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k LocalServiceNetworkRestricted -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NgcSvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k LocalSystemNetworkRestricted -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NlaSvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k NetworkService -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\npsvctrig
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\npsvctrig.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\nsi
+    ImagePath    REG_EXPAND_SZ    %systemroot%\system32\svchost.exe -k LocalService -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\nsiproxy
+    ImagePath    REG_EXPAND_SZ    system32\drivers\nsiproxy.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\nvdimm
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\nvdimm.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\nvraid
+    ImagePath    REG_EXPAND_SZ    System32\drivers\nvraid.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\nvstor
+    ImagePath    REG_EXPAND_SZ    System32\drivers\nvstor.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Parport
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\parport.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\partmgr
+    ImagePath    REG_EXPAND_SZ    System32\drivers\partmgr.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\PcaSvc
+    ImagePath    REG_EXPAND_SZ    %systemroot%\system32\svchost.exe -k LocalSystemNetworkRestricted -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\pci
+    ImagePath    REG_EXPAND_SZ    System32\drivers\pci.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\pciide
+    ImagePath    REG_EXPAND_SZ    System32\drivers\pciide.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\pcmcia
+    ImagePath    REG_EXPAND_SZ    System32\drivers\pcmcia.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\pcw
+    ImagePath    REG_EXPAND_SZ    System32\drivers\pcw.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\pdc
+    ImagePath    REG_EXPAND_SZ    system32\drivers\pdc.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\PEAUTH
+    ImagePath    REG_EXPAND_SZ    system32\drivers\peauth.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\percsas2i
+    ImagePath    REG_EXPAND_SZ    System32\drivers\percsas2i.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\percsas3i
+    ImagePath    REG_EXPAND_SZ    System32\drivers\percsas3i.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\PerfHost
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\SysWow64\perfhost.exe
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\PhoneSvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k LocalService -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\PimIndexMaintenanceSvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k UnistackSvcGroup
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\PimIndexMaintenanceSvc_4248c
+    ImagePath    REG_EXPAND_SZ    C:\Windows\system32\svchost.exe -k UnistackSvcGroup
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\PimIndexMaintenanceSvc_4d5c5
+    ImagePath    REG_EXPAND_SZ    C:\Windows\system32\svchost.exe -k UnistackSvcGroup
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\PimIndexMaintenanceSvc_80d08
+    ImagePath    REG_EXPAND_SZ    C:\Windows\system32\svchost.exe -k UnistackSvcGroup
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\PimIndexMaintenanceSvc_ee306
+    ImagePath    REG_EXPAND_SZ    C:\Windows\system32\svchost.exe -k UnistackSvcGroup
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\PktMon
+    ImagePath    REG_EXPAND_SZ    system32\drivers\PktMon.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\pla
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k LocalServiceNoNetwork -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\PlugPlay
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k DcomLaunch -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\pmem
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\pmem.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\PNPMEM
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\pnpmem.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\PolicyAgent
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k NetworkServiceNetworkRestricted -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Power
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k DcomLaunch -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\PptpMiniport
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\raspptp.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\PrintNotify
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k print
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\PrintWorkflowUserSvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k PrintWorkflow
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\PrintWorkflowUserSvc_4248c
+    ImagePath    REG_EXPAND_SZ    C:\Windows\system32\svchost.exe -k PrintWorkflow
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\PrintWorkflowUserSvc_4d5c5
+    ImagePath    REG_EXPAND_SZ    C:\Windows\system32\svchost.exe -k PrintWorkflow
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\PrintWorkflowUserSvc_80d08
+    ImagePath    REG_EXPAND_SZ    C:\Windows\system32\svchost.exe -k PrintWorkflow
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\PrintWorkflowUserSvc_ee306
+    ImagePath    REG_EXPAND_SZ    C:\Windows\system32\svchost.exe -k PrintWorkflow
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Processor
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\processr.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\ProfSvc
+    ImagePath    REG_EXPAND_SZ    %systemroot%\system32\svchost.exe -k netsvcs -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Psched
+    ImagePath    REG_EXPAND_SZ    System32\drivers\pacer.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\PushToInstall
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k netsvcs -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\qebdrv
+    ImagePath    REG_EXPAND_SZ    System32\drivers\qevbda.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\qefcoe
+    ImagePath    REG_EXPAND_SZ    System32\drivers\qefcoe.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\qeois
+    ImagePath    REG_EXPAND_SZ    System32\drivers\qeois.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\ql2300i
+    ImagePath    REG_EXPAND_SZ    System32\drivers\ql2300i.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\ql40xx2i
+    ImagePath    REG_EXPAND_SZ    System32\drivers\ql40xx2i.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\qlfcoei
+    ImagePath    REG_EXPAND_SZ    System32\drivers\qlfcoei.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\QWAVE
+    ImagePath    REG_EXPAND_SZ    %windir%\system32\svchost.exe -k LocalServiceAndNoImpersonation -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\QWAVEdrv
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\system32\drivers\qwavedrv.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Ramdisk
+    ImagePath    REG_EXPAND_SZ    system32\DRIVERS\ramdisk.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\RasAcd
+    ImagePath    REG_EXPAND_SZ    System32\DRIVERS\rasacd.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\RasAgileVpn
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\AgileVpn.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\RasAuto
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k netsvcs -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\RasGre
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\rasgre.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Rasl2tp
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\rasl2tp.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\RasMan
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k netsvcs
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\RasPppoe
+    ImagePath    REG_EXPAND_SZ    System32\DRIVERS\raspppoe.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\RasSstp
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\rassstp.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\rdbss
+    ImagePath    REG_EXPAND_SZ    system32\DRIVERS\rdbss.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\rdpbus
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\rdpbus.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\RDPDR
+    ImagePath    REG_EXPAND_SZ    System32\drivers\rdpdr.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\RdpVideoMiniport
+    ImagePath    REG_EXPAND_SZ    System32\drivers\rdpvideominiport.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\RemoteAccess
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k netsvcs
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\RemoteRegistry
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k localService -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\RFCOMM
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\rfcomm.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\rhproxy
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\rhproxy.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\RmSvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k LocalServiceNetworkRestricted
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\RpcEptMapper
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k RPCSS -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\RpcLocator
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\locator.exe
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\RpcSs
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k rpcss -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\RSoPProv
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\RSoPProv.exe
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\rspndr
+    ImagePath    REG_EXPAND_SZ    system32\drivers\rspndr.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\s3cap
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\vms3cap.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\sacdrv
+    ImagePath    REG_EXPAND_SZ    system32\DRIVERS\sacdrv.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\sacsvr
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k netsvcs -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SamSs
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\lsass.exe
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\sbp2port
+    ImagePath    REG_EXPAND_SZ    System32\drivers\sbp2port.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SCardSvr
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k LocalServiceAndNoImpersonation
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\ScDeviceEnum
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k LocalSystemNetworkRestricted
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\scfilter
+    ImagePath    REG_EXPAND_SZ    System32\DRIVERS\scfilter.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Schedule
+    ImagePath    REG_EXPAND_SZ    %systemroot%\system32\svchost.exe -k netsvcs -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\scmbus
+    ImagePath    REG_EXPAND_SZ    System32\drivers\scmbus.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SCPolicySvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k netsvcs
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\sdbus
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\sdbus.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SDFRd
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\SDFRd.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\sdstor
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\sdstor.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\seclogon
+    ImagePath    REG_EXPAND_SZ    %windir%\system32\svchost.exe -k netsvcs -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SecurityHealthService
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\SecurityHealthService.exe
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SEMgrSvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k LocalService -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SENS
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k netsvcs -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Sense
+    ImagePath    REG_EXPAND_SZ    "%ProgramFiles%\Windows Defender Advanced Threat Protection\MsSense.exe"
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SensorDataService
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\SensorDataService.exe
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SensorService
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k LocalSystemNetworkRestricted -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SensrSvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k LocalServiceAndNoImpersonation -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SerCx
+    ImagePath    REG_EXPAND_SZ    system32\drivers\SerCx.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SerCx2
+    ImagePath    REG_EXPAND_SZ    system32\drivers\SerCx2.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Serenum
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\serenum.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Serial
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\serial.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\sermouse
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\sermouse.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SessionEnv
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k netsvcs -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\sfloppy
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\sfloppy.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SgrmAgent
+    ImagePath    REG_EXPAND_SZ    system32\drivers\SgrmAgent.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SgrmBroker
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\SgrmBroker.exe
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SharedAccess
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k netsvcs -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\ShellHWDetection
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k netsvcs -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\shpamsvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k netsvcs -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SiSRaid2
+    ImagePath    REG_EXPAND_SZ    System32\drivers\SiSRaid2.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SiSRaid4
+    ImagePath    REG_EXPAND_SZ    System32\drivers\sisraid4.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SmartSAMD
+    ImagePath    REG_EXPAND_SZ    System32\drivers\SmartSAMD.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\smbdirect
+    ImagePath    REG_EXPAND_SZ    System32\DRIVERS\smbdirect.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\smphost
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k smphost
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SNMPTRAP
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\snmptrap.exe
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\spaceport
+    ImagePath    REG_EXPAND_SZ    System32\drivers\spaceport.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SpbCx
+    ImagePath    REG_EXPAND_SZ    system32\drivers\SpbCx.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Spooler
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\spoolsv.exe
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\sppsvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\sppsvc.exe
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\srv2
+    ImagePath    REG_EXPAND_SZ    System32\DRIVERS\srv2.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\srvnet
+    ImagePath    REG_EXPAND_SZ    System32\DRIVERS\srvnet.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SSDPSRV
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k LocalServiceAndNoImpersonation -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\ssh-agent
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\OpenSSH\ssh-agent.exe
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SstpSvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k LocalService -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\StateRepository
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k appmodel -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\stexstor
+    ImagePath    REG_EXPAND_SZ    System32\drivers\stexstor.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\stisvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k imgsvc
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\storahci
+    ImagePath    REG_EXPAND_SZ    System32\drivers\storahci.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\storflt
+    ImagePath    REG_EXPAND_SZ    System32\drivers\vmstorfl.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\stornvme
+    ImagePath    REG_EXPAND_SZ    System32\drivers\stornvme.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\storqosflt
+    ImagePath    REG_EXPAND_SZ    system32\drivers\storqosflt.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\StorSvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k LocalSystemNetworkRestricted -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\storufs
+    ImagePath    REG_EXPAND_SZ    System32\drivers\storufs.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\storvsc
+    ImagePath    REG_EXPAND_SZ    System32\drivers\storvsc.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\svsvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k LocalSystemNetworkRestricted -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\swenum
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\DriverStore\FileRepository\swenum.inf_amd64_31f554b660026323\swenum.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\swprv
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k swprv
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Synth3dVsc
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\Synth3dVsc.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SysMain
+    ImagePath    REG_EXPAND_SZ    %systemroot%\system32\svchost.exe -k LocalSystemNetworkRestricted -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SystemEventsBroker
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k DcomLaunch -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\TabletInputService
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k LocalSystemNetworkRestricted -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\tapisrv
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k NetworkService -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip
+    ImagePath    REG_EXPAND_SZ    System32\drivers\tcpip.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip6
+    ImagePath    REG_EXPAND_SZ    System32\drivers\tcpip.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\tcpipreg
+    ImagePath    REG_EXPAND_SZ    System32\drivers\tcpipreg.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\tdx
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\system32\DRIVERS\tdx.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\terminpt
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\terminpt.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\TermService
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k termsvcs
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Themes
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k netsvcs -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\TieringEngineService
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\TieringEngineService.exe
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\TimeBrokerSvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k LocalServiceNetworkRestricted -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\TokenBroker
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k netsvcs -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\TPM
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\tpm.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\TrkWks
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k LocalSystemNetworkRestricted -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\TrustedInstaller
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\servicing\TrustedInstaller.exe
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\TsUsbFlt
+    ImagePath    REG_EXPAND_SZ    system32\drivers\tsusbflt.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\TsUsbGD
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\TsUsbGD.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\tsusbhub
+    ImagePath    REG_EXPAND_SZ    system32\drivers\tsusbhub.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\tunnel
+    ImagePath    REG_EXPAND_SZ    System32\drivers\tunnel.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\tzautoupdate
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k LocalService -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\UALSVC
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k LocalSystemNetworkRestricted -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\UASPStor
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\uaspstor.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\UcmCx0101
+    ImagePath    REG_EXPAND_SZ    System32\Drivers\UcmCx.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\UcmTcpciCx0101
+    ImagePath    REG_EXPAND_SZ    System32\Drivers\UcmTcpciCx.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\UcmUcsi
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\UcmUcsi.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\UcmUcsiAcpiClient
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\UcmUcsiAcpiClient.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\UcmUcsiCx0101
+    ImagePath    REG_EXPAND_SZ    System32\Drivers\UcmUcsiCx.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Ucx01000
+    ImagePath    REG_EXPAND_SZ    system32\drivers\ucx01000.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\UdeCx
+    ImagePath    REG_EXPAND_SZ    system32\drivers\udecx.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\udfs
+    ImagePath    REG_EXPAND_SZ    system32\DRIVERS\udfs.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\UEFI
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\UEFI.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\UevAgentDriver
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\system32\drivers\UevAgentDriver.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\UevAgentService
+    ImagePath    REG_EXPAND_SZ    %systemroot%\system32\AgentService.exe
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Ufx01000
+    ImagePath    REG_EXPAND_SZ    system32\drivers\ufx01000.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\UfxChipidea
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\UfxChipidea.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\ufxsynopsys
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\ufxsynopsys.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\umbus
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\umbus.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\UmPass
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\umpass.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\UmRdpService
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k LocalSystemNetworkRestricted -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\UnistoreSvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k UnistackSvcGroup
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\UnistoreSvc_4248c
+    ImagePath    REG_EXPAND_SZ    C:\Windows\System32\svchost.exe -k UnistackSvcGroup
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\UnistoreSvc_4d5c5
+    ImagePath    REG_EXPAND_SZ    C:\Windows\System32\svchost.exe -k UnistackSvcGroup
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\UnistoreSvc_80d08
+    ImagePath    REG_EXPAND_SZ    C:\Windows\System32\svchost.exe -k UnistackSvcGroup
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\UnistoreSvc_ee306
+    ImagePath    REG_EXPAND_SZ    C:\Windows\System32\svchost.exe -k UnistackSvcGroup
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\upnphost
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k LocalServiceAndNoImpersonation -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\UrsChipidea
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\urschipidea.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\UrsCx01000
+    ImagePath    REG_EXPAND_SZ    system32\drivers\urscx01000.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\UrsSynopsys
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\urssynopsys.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\usbccgp
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\usbccgp.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\usbehci
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\usbehci.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\usbhub
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\usbhub.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\USBHUB3
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\UsbHub3.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\usbohci
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\usbohci.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\usbprint
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\usbprint.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\usbser
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\usbser.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\USBSTOR
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\USBSTOR.SYS
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\usbuhci
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\usbuhci.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\usbvideo
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\Drivers\usbvideo.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\USBXHCI
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\USBXHCI.SYS
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\UserDataSvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k UnistackSvcGroup
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\UserDataSvc_4248c
+    ImagePath    REG_EXPAND_SZ    C:\Windows\system32\svchost.exe -k UnistackSvcGroup
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\UserDataSvc_4d5c5
+    ImagePath    REG_EXPAND_SZ    C:\Windows\system32\svchost.exe -k UnistackSvcGroup
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\UserDataSvc_80d08
+    ImagePath    REG_EXPAND_SZ    C:\Windows\system32\svchost.exe -k UnistackSvcGroup
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\UserDataSvc_ee306
+    ImagePath    REG_EXPAND_SZ    C:\Windows\system32\svchost.exe -k UnistackSvcGroup
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\UserManager
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k netsvcs -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\UsoSvc
+    ImagePath    REG_EXPAND_SZ    %systemroot%\system32\svchost.exe -k netsvcs -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\VaultSvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\lsass.exe
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\vdrvroot
+    ImagePath    REG_EXPAND_SZ    System32\drivers\vdrvroot.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\vds
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\vds.exe
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\VerifierExt
+    ImagePath    REG_EXPAND_SZ    System32\drivers\VerifierExt.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\VGAuthService
+    ImagePath    REG_EXPAND_SZ    "C:\Program Files\VMware\VMware Tools\VMware VGAuth\VGAuthService.exe"
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\vhdmp
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\vhdmp.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\vhf
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\vhf.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\vm3dmp
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\system32\DRIVERS\vm3dmp.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\vm3dmp-debug
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\system32\DRIVERS\vm3dmp-debug.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\vm3dmp-stats
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\system32\DRIVERS\vm3dmp-stats.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\vm3dmp_loader
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\system32\DRIVERS\vm3dmp_loader.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\vmbus
+    ImagePath    REG_EXPAND_SZ    System32\drivers\vmbus.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\VMBusHID
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\VMBusHID.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\vmci
+    ImagePath    REG_EXPAND_SZ    System32\drivers\vmci.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\vmgid
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\vmgid.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\vmhgfs
+    ImagePath    REG_EXPAND_SZ    system32\DRIVERS\vmhgfs.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\vmicguestinterface
+    ImagePath    REG_EXPAND_SZ    %systemroot%\system32\svchost.exe -k LocalSystemNetworkRestricted -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\vmicheartbeat
+    ImagePath    REG_EXPAND_SZ    %systemroot%\system32\svchost.exe -k ICService -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\vmickvpexchange
+    ImagePath    REG_EXPAND_SZ    %systemroot%\system32\svchost.exe -k LocalSystemNetworkRestricted -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\vmicrdv
+    ImagePath    REG_EXPAND_SZ    %systemroot%\system32\svchost.exe -k ICService -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\vmicshutdown
+    ImagePath    REG_EXPAND_SZ    %systemroot%\system32\svchost.exe -k LocalSystemNetworkRestricted -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\vmictimesync
+    ImagePath    REG_EXPAND_SZ    %systemroot%\system32\svchost.exe -k LocalServiceNetworkRestricted -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\vmicvmsession
+    ImagePath    REG_EXPAND_SZ    %systemroot%\system32\svchost.exe -k LocalSystemNetworkRestricted -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\vmicvss
+    ImagePath    REG_EXPAND_SZ    %systemroot%\system32\svchost.exe -k LocalSystemNetworkRestricted -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\VMMemCtl
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\system32\DRIVERS\vmmemctl.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\vmmouse
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\vmmouse.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\vmrawdsk
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\system32\DRIVERS\vmrawdsk.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\VMTools
+    ImagePath    REG_EXPAND_SZ    "C:\Program Files\VMware\VMware Tools\vmtoolsd.exe"
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\vmusbmouse
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\vmusbmouse.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\vmvss
+    ImagePath    REG_EXPAND_SZ    C:\Windows\system32\dllhost.exe /Processid:{31E13218-C792-4EAE-BD63-885ACCBE7FE8}
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\vmxnet3ndis6
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\vmxnet3.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\volmgr
+    ImagePath    REG_EXPAND_SZ    System32\drivers\volmgr.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\volmgrx
+    ImagePath    REG_EXPAND_SZ    System32\drivers\volmgrx.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\volsnap
+    ImagePath    REG_EXPAND_SZ    System32\drivers\volsnap.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\volume
+    ImagePath    REG_EXPAND_SZ    System32\drivers\volume.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\vpci
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\vpci.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\vsmraid
+    ImagePath    REG_EXPAND_SZ    System32\drivers\vsmraid.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\vsock
+    ImagePath    REG_EXPAND_SZ    system32\DRIVERS\vsock.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\VSS
+    ImagePath    REG_EXPAND_SZ    %systemroot%\system32\vssvc.exe
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\VSTXRAID
+    ImagePath    REG_EXPAND_SZ    System32\drivers\vstxraid.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\vwifibus
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\vwifibus.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\W32Time
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k LocalService
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\w3logsvc
+    ImagePath    REG_EXPAND_SZ    %windir%\system32\svchost.exe -k apphost
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\W3SVC
+    ImagePath    REG_EXPAND_SZ    %windir%\system32\svchost.exe -k iissvcs
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WaaSMedicSvc
+    ImagePath    REG_EXPAND_SZ    %systemroot%\system32\svchost.exe -k wusvcs -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WacomPen
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\wacompen.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WalletService
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k appmodel -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\wanarp
+    ImagePath    REG_EXPAND_SZ    System32\DRIVERS\wanarp.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\wanarpv6
+    ImagePath    REG_EXPAND_SZ    System32\DRIVERS\wanarp.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WarpJITSvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k LocalServiceNetworkRestricted
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WAS
+    ImagePath    REG_EXPAND_SZ    %windir%\system32\svchost.exe -k iissvcs
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WbioSrvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k WbioSvcGroup
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\wcifs
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\system32\drivers\wcifs.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Wcmsvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k LocalServiceNetworkRestricted -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\wcnfs
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\system32\drivers\wcnfs.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WdBoot
+    ImagePath    REG_EXPAND_SZ    system32\drivers\wd\WdBoot.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Wdf01000
+    ImagePath    REG_EXPAND_SZ    system32\drivers\Wdf01000.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WdFilter
+    ImagePath    REG_EXPAND_SZ    system32\drivers\wd\WdFilter.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WdiServiceHost
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k LocalService -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WdiSystemHost
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k LocalSystemNetworkRestricted -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WdmCompanionFilter
+    ImagePath    REG_EXPAND_SZ    system32\drivers\WdmCompanionFilter.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WdNisDrv
+    ImagePath    REG_EXPAND_SZ    system32\drivers\wd\WdNisDrv.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WdNisSvc
+    ImagePath    REG_EXPAND_SZ    "%ProgramData%\Microsoft\Windows Defender\platform\4.18.1910.4-0\NisSrv.exe"
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Wecsvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k NetworkService -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WEPHOSTSVC
+    ImagePath    REG_EXPAND_SZ    %systemroot%\system32\svchost.exe -k WepHostSvcGroup
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\wercplsupport
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k netsvcs -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WerSvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k WerSvcGroup
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WFPLWFS
+    ImagePath    REG_EXPAND_SZ    System32\drivers\wfplwfs.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WiaRpc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k LocalSystemNetworkRestricted -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WIMMount
+    ImagePath    REG_EXPAND_SZ    system32\drivers\wimmount.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WinDefend
+    ImagePath    REG_EXPAND_SZ    "C:\ProgramData\Microsoft\Windows Defender\platform\4.18.1910.4-0\MsMpEng.exe"
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WindowsTrustedRT
+    ImagePath    REG_EXPAND_SZ    system32\drivers\WindowsTrustedRT.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WindowsTrustedRTProxy
+    ImagePath    REG_EXPAND_SZ    System32\drivers\WindowsTrustedRTProxy.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WinHttpAutoProxySvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k LocalServiceNetworkRestricted -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WinMad
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\winmad.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Winmgmt
+    ImagePath    REG_EXPAND_SZ    %systemroot%\system32\svchost.exe -k netsvcs -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WinNat
+    ImagePath    REG_EXPAND_SZ    system32\drivers\winnat.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WinQuic
+    ImagePath    REG_EXPAND_SZ    system32\drivers\winquic.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WinRM
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k NetworkService -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WINUSB
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\WinUSB.SYS
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WinVerbs
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\winverbs.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\wisvc
+    ImagePath    REG_EXPAND_SZ    %systemroot%\system32\svchost.exe -k netsvcs -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\wlidsvc
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k netsvcs -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WmiAcpi
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\System32\drivers\wmiacpi.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\wmiApSrv
+    ImagePath    REG_EXPAND_SZ    %systemroot%\system32\wbem\WmiApSrv.exe
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WMPNetworkSvc
+    ImagePath    REG_EXPAND_SZ    "%PROGRAMFILES%\Windows Media Player\wmpnetwk.exe"
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WPDBusEnum
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k LocalSystemNetworkRestricted
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WpdUpFltr
+    ImagePath    REG_EXPAND_SZ    System32\drivers\WpdUpFltr.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WpnService
+    ImagePath    REG_EXPAND_SZ    %systemroot%\system32\svchost.exe -k netsvcs -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WpnUserService
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\system32\svchost.exe -k UnistackSvcGroup
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WpnUserService_4248c
+    ImagePath    REG_EXPAND_SZ    C:\Windows\system32\svchost.exe -k UnistackSvcGroup
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WpnUserService_4d5c5
+    ImagePath    REG_EXPAND_SZ    C:\Windows\system32\svchost.exe -k UnistackSvcGroup
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WpnUserService_80d08
+    ImagePath    REG_EXPAND_SZ    C:\Windows\system32\svchost.exe -k UnistackSvcGroup
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WpnUserService_ee306
+    ImagePath    REG_EXPAND_SZ    C:\Windows\system32\svchost.exe -k UnistackSvcGroup
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\ws2ifsl
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\system32\drivers\ws2ifsl.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WSearch
+    ImagePath    REG_EXPAND_SZ    %systemroot%\system32\SearchIndexer.exe /Embedding
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\wuauserv
+    ImagePath    REG_EXPAND_SZ    %systemroot%\system32\svchost.exe -k netsvcs -p
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WudfPf
+    ImagePath    REG_EXPAND_SZ    system32\drivers\WudfPf.sys
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WUDFRd
+    ImagePath    REG_EXPAND_SZ    system32\drivers\WudfRd.sys
+
+End of search: 589 match(es) found.

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Fri Feb 28 12:17:20 2020 as: nmap -vv -p- -oA nmap/control-allports 10.10.10.167 -->
+<nmaprun scanner="nmap" args="nmap -vv -p- -oA nmap/control-allports 10.10.10.167" start="1582921040" startstr="Fri Feb 28 12:17:20 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="Ping Scan" time="1582921040"/>
+<taskend task="Ping Scan" time="1582921040" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1582921040"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1582921040"/>
+<taskbegin task="SYN Stealth Scan" time="1582921040"/>
+<taskprogress task="SYN Stealth Scan" time="1582921071" percent="2.96" remaining="1018" etc="1582922088"/>
+<taskprogress task="SYN Stealth Scan" time="1582921101" percent="11.58" remaining="466" etc="1582921567"/>
+<taskprogress task="SYN Stealth Scan" time="1582921131" percent="26.22" remaining="257" etc="1582921387"/>
+<taskprogress task="SYN Stealth Scan" time="1582921161" percent="42.39" remaining="165" etc="1582921325"/>
+<taskprogress task="SYN Stealth Scan" time="1582921191" percent="38.94" remaining="237" etc="1582921428"/>
+<taskprogress task="SYN Stealth Scan" time="1582921221" percent="45.42" remaining="218" etc="1582921439"/>
+<taskprogress task="SYN Stealth Scan" time="1582921251" percent="53.75" remaining="182" etc="1582921433"/>
+<taskprogress task="SYN Stealth Scan" time="1582921287" percent="60.52" remaining="162" etc="1582921448"/>
+<taskprogress task="SYN Stealth Scan" time="1582921317" percent="66.96" remaining="137" etc="1582921454"/>
+<taskprogress task="SYN Stealth Scan" time="1582921347" percent="73.18" remaining="113" etc="1582921460"/>
+<taskprogress task="SYN Stealth Scan" time="1582921456" percent="82.02" remaining="92" etc="1582921547"/>
+<taskprogress task="SYN Stealth Scan" time="1582921489" percent="87.60" remaining="64" etc="1582921553"/>
+<taskend task="SYN Stealth Scan" time="1582921533" extrainfo="65535 total ports"/>
+<host starttime="1582921040" endtime="1582921533"><status state="up" reason="echo-reply" reason_ttl="127"/>
+<address addr="10.10.10.167" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65530">
+<extrareasons reason="no-responses" count="65530"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="mysql" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49666"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+<port protocol="tcp" portid="49667"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+</ports>
+<times srtt="184392" rttvar="5050" to="204592"/>
+</host>
+<runstats><finished time="1582921533" timestr="Fri Feb 28 12:25:33 2020" elapsed="493.53" summary="Nmap done at Fri Feb 28 12:25:33 2020; 1 IP address (1 host up) scanned in 493.53 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

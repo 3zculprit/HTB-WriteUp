@@ -1,0 +1,12 @@
+tax,id,price,name,category,quantity
+0,26,20,Cloud Server,1,2
+0,31,60,TP-LINK TL-WN722N v3,2,15
+0,32,29, D-Link DWA-171,2,5
+0,33,111,TP-LINK Archer T2UH v2,2,25
+0,34,11,Asus USB-AC53 Nano,2,25
+0,35,19,TP-LINK TL-WN725N v3,2,24
+0,36,100,StarTech USB867WAC22,2,5
+0,37,100,Asus USB-AC68,2,5
+0,38,1,p,1,1
+0,39,999,HostAPD,5,13
+

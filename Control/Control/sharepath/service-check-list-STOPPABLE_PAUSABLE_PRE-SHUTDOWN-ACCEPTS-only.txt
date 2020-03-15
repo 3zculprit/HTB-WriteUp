@@ -1,0 +1,27 @@
+SERVICE_NAME: DsSvc 
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_PRESHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+[unable to stop manually]
+
+
+
+SERVICE_NAME: WpnUserService_4d5c5 
+        TYPE               : e0  USER_SHARE_PROCESS INSTANCE  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_PRESHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+[Can stop and start manually]
+
+[reg query "HKLM\System\CurrentControlSet\Services\WpnUserService_4d5c5" /v "ImagePath"] ->
+	HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WpnUserService_4d5c5
+    ImagePath    REG_EXPAND_SZ    C:\Windows\system32\svchost.exe -k UnistackSvcGroup
