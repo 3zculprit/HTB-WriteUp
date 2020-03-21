@@ -1,0 +1,12 @@
+# Nmap 7.80 scan initiated Sun Mar 15 03:59:06 2020 as: nmap -p- -vv -oA nmap/traceback-allports 10.10.10.181
+Nmap scan report for 10.10.10.181
+Host is up, received reset ttl 63 (0.17s latency).
+Scanned at 2020-03-15 03:59:06 PDT for 502s
+Not shown: 65533 closed ports
+Reason: 65533 resets
+PORT   STATE SERVICE REASON
+22/tcp open  ssh     syn-ack ttl 63
+80/tcp open  http    syn-ack ttl 63
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sun Mar 15 04:07:28 2020 -- 1 IP address (1 host up) scanned in 502.30 seconds
