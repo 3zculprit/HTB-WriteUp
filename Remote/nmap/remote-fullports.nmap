@@ -1,0 +1,27 @@
+# Nmap 7.80 scan initiated Mon Mar 30 14:27:38 2020 as: nmap -p- -vv -oA nmap/remote-fullports 10.10.10.180
+Increasing send delay for 10.10.10.180 from 0 to 5 due to 731 out of 2435 dropped probes since last increase.
+Nmap scan report for 10.10.10.180
+Host is up, received reset ttl 127 (0.21s latency).
+Scanned at 2020-03-30 14:27:38 PDT for 1609s
+Not shown: 65519 closed ports
+Reason: 65519 resets
+PORT      STATE SERVICE      REASON
+21/tcp    open  ftp          syn-ack ttl 127
+80/tcp    open  http         syn-ack ttl 127
+111/tcp   open  rpcbind      syn-ack ttl 127
+135/tcp   open  msrpc        syn-ack ttl 127
+139/tcp   open  netbios-ssn  syn-ack ttl 127
+445/tcp   open  microsoft-ds syn-ack ttl 127
+2049/tcp  open  nfs          syn-ack ttl 127
+5985/tcp  open  wsman        syn-ack ttl 127
+47001/tcp open  winrm        syn-ack ttl 127
+49664/tcp open  unknown      syn-ack ttl 127
+49665/tcp open  unknown      syn-ack ttl 127
+49666/tcp open  unknown      syn-ack ttl 127
+49667/tcp open  unknown      syn-ack ttl 127
+49678/tcp open  unknown      syn-ack ttl 127
+49679/tcp open  unknown      syn-ack ttl 127
+49680/tcp open  unknown      syn-ack ttl 127
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Mon Mar 30 14:54:28 2020 -- 1 IP address (1 host up) scanned in 1609.23 seconds
