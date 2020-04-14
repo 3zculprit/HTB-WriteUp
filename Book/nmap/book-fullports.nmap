@@ -1,0 +1,12 @@
+# Nmap 7.80 scan initiated Sat Mar 21 16:53:31 2020 as: nmap -p- -vv -oA nmap/book-fullports 10.10.10.176
+Nmap scan report for 10.10.10.176
+Host is up, received echo-reply ttl 63 (0.18s latency).
+Scanned at 2020-03-21 16:53:31 PDT for 423s
+Not shown: 65533 closed ports
+Reason: 65533 resets
+PORT   STATE SERVICE REASON
+22/tcp open  ssh     syn-ack ttl 63
+80/tcp open  http    syn-ack ttl 63
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sat Mar 21 17:00:34 2020 -- 1 IP address (1 host up) scanned in 423.82 seconds
