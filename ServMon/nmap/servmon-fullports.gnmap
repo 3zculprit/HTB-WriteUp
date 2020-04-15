@@ -1,0 +1,5 @@
+# Nmap 7.80 scan initiated Tue Apr 14 09:13:47 2020 as: nmap -p- -vv -oA nmap/servmon-fullports 10.10.10.184
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.184 ()	Status: Up
+Host: 10.10.10.184 ()	Ports: 21/open/tcp//ftp///, 22/open/tcp//ssh///, 80/open/tcp//http///, 135/open/tcp//msrpc///, 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///, 5040/open/tcp//unknown///, 5666/open/tcp//nrpe///, 6063/open/tcp//x11///, 6699/open/tcp//napster///, 7680/open/tcp//pando-pub///, 49664/open/tcp/////, 49665/open/tcp/////, 49666/open/tcp/////, 49667/open/tcp/////, 49668/open/tcp/////, 49669/open/tcp/////, 49670/open/tcp/////	Ignored State: closed (65517)
+# Nmap done at Tue Apr 14 09:41:41 2020 -- 1 IP address (1 host up) scanned in 1673.86 seconds

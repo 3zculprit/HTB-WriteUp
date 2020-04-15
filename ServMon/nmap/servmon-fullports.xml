@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Tue Apr 14 09:13:47 2020 as: nmap -p- -vv -oA nmap/servmon-fullports 10.10.10.184 -->
+<nmaprun scanner="nmap" args="nmap -p- -vv -oA nmap/servmon-fullports 10.10.10.184" start="1586855627" startstr="Tue Apr 14 09:13:47 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="Ping Scan" time="1586855627"/>
+<taskend task="Ping Scan" time="1586855628" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1586855628"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1586855628"/>
+<taskbegin task="SYN Stealth Scan" time="1586855628"/>
+<taskprogress task="SYN Stealth Scan" time="1586855659" percent="14.99" remaining="176" etc="1586855835"/>
+<taskprogress task="SYN Stealth Scan" time="1586855689" percent="16.58" remaining="307" etc="1586855996"/>
+<taskprogress task="SYN Stealth Scan" time="1586855719" percent="18.02" remaining="415" etc="1586856133"/>
+<taskprogress task="SYN Stealth Scan" time="1586855749" percent="19.67" remaining="495" etc="1586856243"/>
+<taskprogress task="SYN Stealth Scan" time="1586855779" percent="20.97" remaining="570" etc="1586856348"/>
+<taskprogress task="SYN Stealth Scan" time="1586855809" percent="22.25" remaining="633" etc="1586856442"/>
+<taskprogress task="SYN Stealth Scan" time="1586855839" percent="23.29" remaining="695" etc="1586856534"/>
+<taskprogress task="SYN Stealth Scan" time="1586855869" percent="24.35" remaining="749" etc="1586856618"/>
+<taskprogress task="SYN Stealth Scan" time="1586855905" percent="25.72" remaining="800" etc="1586856705"/>
+<taskprogress task="SYN Stealth Scan" time="1586855947" percent="27.18" remaining="855" etc="1586856802"/>
+<taskprogress task="SYN Stealth Scan" time="1586856007" percent="29.31" remaining="915" etc="1586856921"/>
+<taskprogress task="SYN Stealth Scan" time="1586856124" percent="33.62" remaining="980" etc="1586857103"/>
+<taskprogress task="SYN Stealth Scan" time="1586856187" percent="38.19" remaining="905" etc="1586857092"/>
+<taskprogress task="SYN Stealth Scan" time="1586856403" percent="48.30" remaining="830" etc="1586857233"/>
+<taskprogress task="SYN Stealth Scan" time="1586856487" percent="53.43" remaining="749" etc="1586857236"/>
+<taskprogress task="SYN Stealth Scan" time="1586856571" percent="58.52" remaining="669" etc="1586857240"/>
+<taskprogress task="SYN Stealth Scan" time="1586856649" percent="63.45" remaining="589" etc="1586857237"/>
+<taskprogress task="SYN Stealth Scan" time="1586856730" percent="68.56" remaining="506" etc="1586857235"/>
+<taskprogress task="SYN Stealth Scan" time="1586856808" percent="73.54" remaining="425" etc="1586857233"/>
+<taskprogress task="SYN Stealth Scan" time="1586856892" percent="78.65" remaining="344" etc="1586857235"/>
+<taskprogress task="SYN Stealth Scan" time="1586856976" percent="83.85" remaining="260" etc="1586857236"/>
+<taskprogress task="SYN Stealth Scan" time="1586857060" percent="88.91" remaining="179" etc="1586857239"/>
+<taskprogress task="SYN Stealth Scan" time="1586857141" percent="93.92" remaining="99" etc="1586857239"/>
+<taskend task="SYN Stealth Scan" time="1586857300" extrainfo="65535 total ports"/>
+<host starttime="1586855627" endtime="1586857300"><status state="up" reason="reset" reason_ttl="127"/>
+<address addr="10.10.10.184" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65517">
+<extrareasons reason="resets" count="65517"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5040"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5666"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="nrpe" method="table" conf="3"/></port>
+<port protocol="tcp" portid="6063"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="x11" method="table" conf="3"/></port>
+<port protocol="tcp" portid="6699"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="napster" method="table" conf="3"/></port>
+<port protocol="tcp" portid="7680"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="pando-pub" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49664"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+<port protocol="tcp" portid="49665"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+<port protocol="tcp" portid="49666"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+<port protocol="tcp" portid="49667"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+<port protocol="tcp" portid="49668"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+<port protocol="tcp" portid="49669"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+<port protocol="tcp" portid="49670"><state state="open" reason="syn-ack" reason_ttl="127"/></port>
+</ports>
+<times srtt="200085" rttvar="6945" to="227865"/>
+</host>
+<runstats><finished time="1586857301" timestr="Tue Apr 14 09:41:41 2020" elapsed="1673.86" summary="Nmap done at Tue Apr 14 09:41:41 2020; 1 IP address (1 host up) scanned in 1673.86 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

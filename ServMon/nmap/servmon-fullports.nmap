@@ -1,0 +1,29 @@
+# Nmap 7.80 scan initiated Tue Apr 14 09:13:47 2020 as: nmap -p- -vv -oA nmap/servmon-fullports 10.10.10.184
+Increasing send delay for 10.10.10.184 from 0 to 5 due to 2709 out of 9028 dropped probes since last increase.
+Nmap scan report for 10.10.10.184
+Host is up, received reset ttl 127 (0.20s latency).
+Scanned at 2020-04-14 09:13:47 GMT for 1673s
+Not shown: 65517 closed ports
+Reason: 65517 resets
+PORT      STATE SERVICE      REASON
+21/tcp    open  ftp          syn-ack ttl 127
+22/tcp    open  ssh          syn-ack ttl 127
+80/tcp    open  http         syn-ack ttl 127
+135/tcp   open  msrpc        syn-ack ttl 127
+139/tcp   open  netbios-ssn  syn-ack ttl 127
+445/tcp   open  microsoft-ds syn-ack ttl 127
+5040/tcp  open  unknown      syn-ack ttl 127
+5666/tcp  open  nrpe         syn-ack ttl 127
+6063/tcp  open  x11          syn-ack ttl 127
+6699/tcp  open  napster      syn-ack ttl 127
+7680/tcp  open  pando-pub    syn-ack ttl 127
+49664/tcp open  unknown      syn-ack ttl 127
+49665/tcp open  unknown      syn-ack ttl 127
+49666/tcp open  unknown      syn-ack ttl 127
+49667/tcp open  unknown      syn-ack ttl 127
+49668/tcp open  unknown      syn-ack ttl 127
+49669/tcp open  unknown      syn-ack ttl 127
+49670/tcp open  unknown      syn-ack ttl 127
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Tue Apr 14 09:41:41 2020 -- 1 IP address (1 host up) scanned in 1673.86 seconds
