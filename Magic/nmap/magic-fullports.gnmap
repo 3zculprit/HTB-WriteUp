@@ -1,0 +1,5 @@
+# Nmap 7.80 scan initiated Sun Apr 19 02:29:42 2020 as: nmap -p- -vv -oA nmap/magic-fullports 10.10.10.185
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.185 ()	Status: Up
+Host: 10.10.10.185 ()	Ports: 22/open/tcp//ssh///, 80/open/tcp//http///	Ignored State: closed (65533)
+# Nmap done at Sun Apr 19 02:45:29 2020 -- 1 IP address (1 host up) scanned in 946.79 seconds
