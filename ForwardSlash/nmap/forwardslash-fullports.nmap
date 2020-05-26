@@ -1,0 +1,13 @@
+# Nmap 7.80 scan initiated Wed Apr 15 16:37:27 2020 as: nmap -p- -vv -oA nmap/forwardslash-fullports 10.10.10.183
+Increasing send delay for 10.10.10.183 from 0 to 5 due to 499 out of 1662 dropped probes since last increase.
+Nmap scan report for 10.10.10.183
+Host is up, received echo-reply ttl 63 (0.27s latency).
+Scanned at 2020-04-15 16:37:27 GMT for 1821s
+Not shown: 65533 closed ports
+Reason: 65533 resets
+PORT   STATE SERVICE REASON
+22/tcp open  ssh     syn-ack ttl 63
+80/tcp open  http    syn-ack ttl 63
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Wed Apr 15 17:07:48 2020 -- 1 IP address (1 host up) scanned in 1821.26 seconds
