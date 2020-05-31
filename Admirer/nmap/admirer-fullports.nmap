@@ -1,0 +1,59 @@
+# Nmap 7.80 scan initiated Fri May 29 07:18:04 2020 as: nmap -p- -vv -oA nmap/admirer-fullports 10.10.10.187
+Increasing send delay for 10.10.10.187 from 10 to 20 due to 8089 out of 26962 dropped probes since last increase.
+Nmap scan report for 10.10.10.187
+Host is up, received echo-reply ttl 63 (0.42s latency).
+Scanned at 2020-05-29 07:18:04 GMT for 4531s
+Not shown: 65487 closed ports
+Reason: 65487 resets
+PORT      STATE    SERVICE REASON
+21/tcp    open     ftp     syn-ack ttl 63
+22/tcp    open     ssh     syn-ack ttl 63
+80/tcp    open     http    syn-ack ttl 63
+5259/tcp  filtered unknown no-response
+8510/tcp  filtered unknown no-response
+9145/tcp  filtered unknown no-response
+9793/tcp  filtered unknown no-response
+15044/tcp filtered unknown no-response
+16636/tcp filtered unknown no-response
+18374/tcp filtered unknown no-response
+20424/tcp filtered unknown no-response
+25276/tcp filtered unknown no-response
+30728/tcp filtered unknown no-response
+30872/tcp filtered unknown no-response
+30911/tcp filtered unknown no-response
+31898/tcp filtered unknown no-response
+36500/tcp filtered unknown no-response
+38424/tcp filtered unknown no-response
+38924/tcp filtered unknown no-response
+39071/tcp filtered unknown no-response
+39504/tcp filtered unknown no-response
+39533/tcp filtered unknown no-response
+40890/tcp filtered unknown no-response
+43910/tcp filtered unknown no-response
+44095/tcp filtered unknown no-response
+47605/tcp filtered unknown no-response
+48232/tcp filtered unknown no-response
+48760/tcp filtered unknown no-response
+49901/tcp filtered unknown no-response
+50193/tcp filtered unknown no-response
+50413/tcp filtered unknown no-response
+51274/tcp filtered unknown no-response
+52256/tcp filtered unknown no-response
+53197/tcp filtered unknown no-response
+54024/tcp filtered unknown no-response
+55072/tcp filtered unknown no-response
+56414/tcp filtered unknown no-response
+56514/tcp filtered unknown no-response
+58305/tcp filtered unknown no-response
+59438/tcp filtered unknown no-response
+59580/tcp filtered unknown no-response
+61629/tcp filtered unknown no-response
+62605/tcp filtered unknown no-response
+62807/tcp filtered unknown no-response
+63068/tcp filtered unknown no-response
+63386/tcp filtered unknown no-response
+63674/tcp filtered unknown no-response
+65288/tcp filtered unknown no-response
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Fri May 29 08:33:35 2020 -- 1 IP address (1 host up) scanned in 4531.40 seconds
