@@ -1,0 +1,43 @@
+# Nmap 7.80 scan initiated Wed Jun 10 14:12:43 2020 as: nmap -vv -sC -sV -oA nmap/blackfield 10.10.10.192
+Nmap scan report for 10.10.10.192
+Host is up, received echo-reply ttl 127 (0.28s latency).
+Scanned at 2020-06-10 14:12:43 GMT for 222s
+Not shown: 993 filtered ports
+Reason: 993 no-responses
+PORT     STATE SERVICE       REASON          VERSION
+53/tcp   open  domain?       syn-ack ttl 127
+| fingerprint-strings: 
+|   DNSVersionBindReqTCP: 
+|     version
+|_    bind
+88/tcp   open  kerberos-sec  syn-ack ttl 127 Microsoft Windows Kerberos (server time: 2020-06-10 21:16:02Z)
+135/tcp  open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+389/tcp  open  ldap          syn-ack ttl 127 Microsoft Windows Active Directory LDAP (Domain: BLACKFIELD.local0., Site: Default-First-Site-Name)
+445/tcp  open  microsoft-ds? syn-ack ttl 127
+593/tcp  open  ncacn_http    syn-ack ttl 127 Microsoft Windows RPC over HTTP 1.0
+3268/tcp open  ldap          syn-ack ttl 127 Microsoft Windows Active Directory LDAP (Domain: BLACKFIELD.local0., Site: Default-First-Site-Name)
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port53-TCP:V=7.80%I=7%D=6/10%Time=5EE0EA83%P=x86_64-pc-linux-gnu%r(DNSV
+SF:ersionBindReqTCP,20,"\0\x1e\0\x06\x81\x04\0\x01\0\0\0\0\0\0\x07version\
+SF:x04bind\0\0\x10\0\x03");
+Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: 7h02m42s
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 48702/tcp): CLEAN (Timeout)
+|   Check 2 (port 13154/tcp): CLEAN (Timeout)
+|   Check 3 (port 63580/udp): CLEAN (Timeout)
+|   Check 4 (port 53637/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled and required
+| smb2-time: 
+|   date: 2020-06-10T21:18:29
+|_  start_date: N/A
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Jun 10 14:16:25 2020 -- 1 IP address (1 host up) scanned in 222.85 seconds

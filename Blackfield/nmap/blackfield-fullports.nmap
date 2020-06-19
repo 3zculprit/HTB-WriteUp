@@ -1,0 +1,18 @@
+# Nmap 7.80 scan initiated Wed Jun 10 19:25:41 2020 as: nmap -p- -vv -oA nmap/blackfield-fullports 10.10.10.192
+Nmap scan report for 10.10.10.192
+Host is up, received echo-reply ttl 127 (0.21s latency).
+Scanned at 2020-06-10 19:25:41 GMT for 558s
+Not shown: 65527 filtered ports
+Reason: 65527 no-responses
+PORT     STATE SERVICE        REASON
+53/tcp   open  domain         syn-ack ttl 127
+88/tcp   open  kerberos-sec   syn-ack ttl 127
+135/tcp  open  msrpc          syn-ack ttl 127
+389/tcp  open  ldap           syn-ack ttl 127
+445/tcp  open  microsoft-ds   syn-ack ttl 127
+593/tcp  open  http-rpc-epmap syn-ack ttl 127
+3268/tcp open  globalcatLDAP  syn-ack ttl 127
+5985/tcp open  wsman          syn-ack ttl 127
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Wed Jun 10 19:34:59 2020 -- 1 IP address (1 host up) scanned in 557.85 seconds
