@@ -1,0 +1,12 @@
+# Nmap 7.80 scan initiated Sun Jun 21 14:08:34 2020 as: nmap -vv -p- -oA nmap/blunder-allports 10.10.10.191
+Nmap scan report for 10.10.10.191
+Host is up, received echo-reply ttl 63 (0.48s latency).
+Scanned at 2020-06-21 14:08:34 GMT for 1551s
+Not shown: 65533 filtered ports
+Reason: 65533 no-responses
+PORT   STATE  SERVICE REASON
+21/tcp closed ftp     reset ttl 63
+80/tcp open   http    syn-ack ttl 63
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sun Jun 21 14:34:25 2020 -- 1 IP address (1 host up) scanned in 1551.27 seconds
