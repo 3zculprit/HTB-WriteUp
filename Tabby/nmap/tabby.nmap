@@ -1,0 +1,14 @@
+# Nmap 7.80 scan initiated Mon Jun 22 18:00:05 2020 as: nmap -vv -p- -oA nmap/tabby 10.10.10.194
+Increasing send delay for 10.10.10.194 from 0 to 5 due to 1036 out of 3453 dropped probes since last increase.
+Nmap scan report for 10.10.10.194
+Host is up, received echo-reply ttl 63 (0.29s latency).
+Scanned at 2020-06-22 18:00:05 GMT for 1640s
+Not shown: 65532 closed ports
+Reason: 65532 resets
+PORT     STATE SERVICE    REASON
+22/tcp   open  ssh        syn-ack ttl 63
+80/tcp   open  http       syn-ack ttl 63
+8080/tcp open  http-proxy syn-ack ttl 63
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Mon Jun 22 18:27:25 2020 -- 1 IP address (1 host up) scanned in 1639.85 seconds
