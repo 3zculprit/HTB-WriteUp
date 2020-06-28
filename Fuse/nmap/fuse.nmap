@@ -1,0 +1,64 @@
+# Nmap 7.80 scan initiated Fri Jun 26 09:42:28 2020 as: nmap -vv -sC -sV -oA nmap/fuse 10.10.10.193
+Nmap scan report for fuse.htb (10.10.10.193)
+Host is up, received echo-reply ttl 127 (0.33s latency).
+Scanned at 2020-06-26 09:42:28 GMT for 217s
+Not shown: 988 filtered ports
+Reason: 988 no-responses
+PORT     STATE SERVICE      REASON          VERSION
+53/tcp   open  domain?      syn-ack ttl 127
+| fingerprint-strings: 
+|   DNSVersionBindReqTCP: 
+|     version
+|_    bind
+80/tcp   open  http         syn-ack ttl 127 Microsoft IIS httpd 10.0
+| http-methods: 
+|_  Supported Methods: OPTIONS
+|_http-server-header: Microsoft-IIS/10.0
+88/tcp   open  kerberos-sec syn-ack ttl 127 Microsoft Windows Kerberos (server time: 2020-06-26 10:00:32Z)
+135/tcp  open  msrpc        syn-ack ttl 127 Microsoft Windows RPC
+139/tcp  open  netbios-ssn  syn-ack ttl 127 Microsoft Windows netbios-ssn
+389/tcp  open  ldap         syn-ack ttl 127 Microsoft Windows Active Directory LDAP (Domain: fabricorp.local, Site: Default-First-Site-Name)
+445/tcp  open  microsoft-ds syn-ack ttl 127 Windows Server 2016 Standard 14393 microsoft-ds (workgroup: FABRICORP)
+464/tcp  open  kpasswd5?    syn-ack ttl 127
+593/tcp  open  ncacn_http   syn-ack ttl 127 Microsoft Windows RPC over HTTP 1.0
+636/tcp  open  tcpwrapped   syn-ack ttl 127
+3268/tcp open  ldap         syn-ack ttl 127 Microsoft Windows Active Directory LDAP (Domain: fabricorp.local, Site: Default-First-Site-Name)
+3269/tcp open  tcpwrapped   syn-ack ttl 127
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port53-TCP:V=7.80%I=7%D=6/26%Time=5EF5C327%P=x86_64-pc-linux-gnu%r(DNSV
+SF:ersionBindReqTCP,20,"\0\x1e\0\x06\x81\x04\0\x01\0\0\0\0\0\0\x07version\
+SF:x04bind\0\0\x10\0\x03");
+Service Info: Host: FUSE; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 2h37m38s, deviation: 4h02m38s, median: 17m33s
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 19041/tcp): CLEAN (Timeout)
+|   Check 2 (port 62199/tcp): CLEAN (Timeout)
+|   Check 3 (port 37581/udp): CLEAN (Timeout)
+|   Check 4 (port 55519/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb-os-discovery: 
+|   OS: Windows Server 2016 Standard 14393 (Windows Server 2016 Standard 6.3)
+|   Computer name: Fuse
+|   NetBIOS computer name: FUSE\x00
+|   Domain name: fabricorp.local
+|   Forest name: fabricorp.local
+|   FQDN: Fuse.fabricorp.local
+|_  System time: 2020-06-26T03:01:14-07:00
+| smb-security-mode: 
+|   account_used: <blank>
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: required
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled and required
+| smb2-time: 
+|   date: 2020-06-26T10:01:08
+|_  start_date: 2020-06-26T09:59:14
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Jun 26 09:46:05 2020 -- 1 IP address (1 host up) scanned in 217.86 seconds

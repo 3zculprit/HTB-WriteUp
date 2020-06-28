@@ -1,0 +1,146 @@
+[{
+    "attributes": {
+        "accountExpires": [
+            "9999-12-31 23:59:59.999999"
+        ],
+        "badPasswordTime": [
+            "1601-01-01 00:00:00+00:00"
+        ],
+        "badPwdCount": [
+            0
+        ],
+        "cn": [
+            "FUSE"
+        ],
+        "codePage": [
+            0
+        ],
+        "countryCode": [
+            0
+        ],
+        "dNSHostName": [
+            "Fuse.fabricorp.local"
+        ],
+        "dSCorePropagationData": [
+            "2020-05-29 23:30:07+00:00",
+            "1601-01-01 00:00:01+00:00"
+        ],
+        "distinguishedName": [
+            "CN=FUSE,OU=Domain Controllers,DC=fabricorp,DC=local"
+        ],
+        "instanceType": [
+            4
+        ],
+        "isCriticalSystemObject": [
+            true
+        ],
+        "lastLogoff": [
+            "1601-01-01 00:00:00+00:00"
+        ],
+        "lastLogon": [
+            "2020-06-26 19:33:05.903402+00:00"
+        ],
+        "lastLogonTimestamp": [
+            "2020-06-26 19:32:21.887665+00:00"
+        ],
+        "localPolicyFlags": [
+            0
+        ],
+        "logonCount": [
+            47
+        ],
+        "msDFSR-ComputerReferenceBL": [
+            "CN=FUSE,CN=Topology,CN=Domain System Volume,CN=DFSR-GlobalSettings,CN=System,DC=fabricorp,DC=local"
+        ],
+        "msDS-GenerationId": [
+            {
+                "encoded": "FZFr3fmUCq8=",
+                "encoding": "base64"
+            }
+        ],
+        "msDS-SupportedEncryptionTypes": [
+            28
+        ],
+        "name": [
+            "FUSE"
+        ],
+        "objectCategory": [
+            "CN=Computer,CN=Schema,CN=Configuration,DC=fabricorp,DC=local"
+        ],
+        "objectClass": [
+            "top",
+            "person",
+            "organizationalPerson",
+            "user",
+            "computer"
+        ],
+        "objectGUID": [
+            "{bdd294d7-eca6-4f59-9dd8-88039ef35c60}"
+        ],
+        "objectSid": [
+            "S-1-5-21-2633719317-1471316042-3957863514-1000"
+        ],
+        "operatingSystem": [
+            "Windows Server 2016 Standard"
+        ],
+        "operatingSystemVersion": [
+            "10.0 (14393)"
+        ],
+        "primaryGroupID": [
+            516
+        ],
+        "pwdLastSet": [
+            "2020-05-29 23:30:23.879335+00:00"
+        ],
+        "rIDSetReferences": [
+            "CN=RID Set,CN=FUSE,OU=Domain Controllers,DC=fabricorp,DC=local"
+        ],
+        "sAMAccountName": [
+            "FUSE$"
+        ],
+        "sAMAccountType": [
+            805306369
+        ],
+        "serverReferenceBL": [
+            "CN=FUSE,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=fabricorp,DC=local"
+        ],
+        "servicePrincipalName": [
+            "Dfsr-12F9A27C-BF97-4787-9364-D31B6C55EB04/Fuse.fabricorp.local",
+            "ldap/Fuse.fabricorp.local/ForestDnsZones.fabricorp.local",
+            "ldap/Fuse.fabricorp.local/DomainDnsZones.fabricorp.local",
+            "DNS/Fuse.fabricorp.local",
+            "GC/Fuse.fabricorp.local/fabricorp.local",
+            "RestrictedKrbHost/Fuse.fabricorp.local",
+            "RestrictedKrbHost/FUSE",
+            "RPC/84557026-3fe7-44b1-b67b-fb865b153458._msdcs.fabricorp.local",
+            "HOST/FUSE/FABRICORP",
+            "HOST/Fuse.fabricorp.local/FABRICORP",
+            "HOST/FUSE",
+            "HOST/Fuse.fabricorp.local",
+            "HOST/Fuse.fabricorp.local/fabricorp.local",
+            "E3514235-4B06-11D1-AB04-00C04FC2DCD2/84557026-3fe7-44b1-b67b-fb865b153458/fabricorp.local",
+            "ldap/FUSE/FABRICORP",
+            "ldap/84557026-3fe7-44b1-b67b-fb865b153458._msdcs.fabricorp.local",
+            "ldap/Fuse.fabricorp.local/FABRICORP",
+            "ldap/FUSE",
+            "ldap/Fuse.fabricorp.local",
+            "ldap/Fuse.fabricorp.local/fabricorp.local"
+        ],
+        "uSNChanged": [
+            102438
+        ],
+        "uSNCreated": [
+            12293
+        ],
+        "userAccountControl": [
+            532480
+        ],
+        "whenChanged": [
+            "2020-06-26 19:32:21+00:00"
+        ],
+        "whenCreated": [
+            "2020-05-29 23:30:07+00:00"
+        ]
+    },
+    "dn": "CN=FUSE,OU=Domain Controllers,DC=fabricorp,DC=local"
+}]
