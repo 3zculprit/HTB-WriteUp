@@ -1,0 +1,875 @@
+D [10/Oct/2018:00:34:43 +0530] cupsdSetBusyState: Printing jobs
+D [10/Oct/2018:00:34:43 +0530] cupsdReadClient: 13 POST / HTTP/1.1
+D [10/Oct/2018:00:34:43 +0530] cupsdSetBusyState: Active clients and printing jobs
+D [10/Oct/2018:00:34:43 +0530] cupsdAuthorize: Authorized as pkp using PeerCred
+D [10/Oct/2018:00:34:43 +0530] cupsdReadClient: 13 1.1 Get-Jobs 1
+D [10/Oct/2018:00:34:43 +0530] Get-Jobs ipp://localhost/printers/
+D [10/Oct/2018:00:34:43 +0530] Returning IPP successful-ok for Get-Jobs (ipp://localhost/printers/) from localhost
+D [10/Oct/2018:00:34:43 +0530] cupsdSetBusyState: Printing jobs
+D [10/Oct/2018:00:34:43 +0530] cupsdReadClient: 13 POST / HTTP/1.1
+D [10/Oct/2018:00:34:43 +0530] cupsdSetBusyState: Active clients and printing jobs
+D [10/Oct/2018:00:34:43 +0530] cupsdAuthorize: Authorized as pkp using PeerCred
+D [10/Oct/2018:00:34:43 +0530] cupsdReadClient: 13 1.1 Get-Jobs 1
+D [10/Oct/2018:00:34:43 +0530] Get-Jobs ipp://localhost/printers/
+D [10/Oct/2018:00:34:43 +0530] [Job 18] Loading attributes...
+E [10/Oct/2018:00:34:43 +0530] [Job 18] Unable to queue job for destination "LBP2900"!
+D [10/Oct/2018:00:34:43 +0530] Returning IPP successful-ok for Get-Jobs (ipp://localhost/printers/) from localhost
+D [10/Oct/2018:00:34:43 +0530] cupsdSetBusyState: Printing jobs
+D [10/Oct/2018:00:34:43 +0530] cupsdReadClient: 13 POST / HTTP/1.1
+D [10/Oct/2018:00:34:43 +0530] cupsdSetBusyState: Active clients and printing jobs
+D [10/Oct/2018:00:34:43 +0530] cupsdAuthorize: Authorized as pkp using PeerCred
+D [10/Oct/2018:00:34:43 +0530] cupsdReadClient: 13 1.1 Create-Printer-Subscription 1
+D [10/Oct/2018:00:34:43 +0530] Create-Printer-Subscription /
+D [10/Oct/2018:00:34:43 +0530] cupsdCreateSubscription(con=0x2210e518(13), uri="/")
+D [10/Oct/2018:00:34:43 +0530] pullmethod="ippget"
+D [10/Oct/2018:00:34:43 +0530] notify-lease-duration=86400
+D [10/Oct/2018:00:34:43 +0530] notify-time-interval=0
+D [10/Oct/2018:00:34:43 +0530] cupsdAddSubscription(mask=17800, dest=(nil)(), job=(nil)(0), uri="(null)")
+D [10/Oct/2018:00:34:43 +0530] Added subscription 27 for server
+D [10/Oct/2018:00:34:43 +0530] cupsdMarkDirty(-----S)
+D [10/Oct/2018:00:34:43 +0530] cupsdSetBusyState: Active clients, printing jobs, and dirty files
+D [10/Oct/2018:00:34:43 +0530] Returning IPP successful-ok for Create-Printer-Subscription (/) from localhost
+D [10/Oct/2018:00:34:43 +0530] cupsdSetBusyState: Printing jobs and dirty files
+D [10/Oct/2018:00:34:44 +0530] cupsdReadClient: 13 POST / HTTP/1.1
+D [10/Oct/2018:00:34:44 +0530] cupsdSetBusyState: Active clients, printing jobs, and dirty files
+D [10/Oct/2018:00:34:44 +0530] cupsdAuthorize: Authorized as pkp using PeerCred
+D [10/Oct/2018:00:34:44 +0530] cupsdReadClient: 13 1.1 Get-Notifications 1
+D [10/Oct/2018:00:34:44 +0530] Get-Notifications /
+D [10/Oct/2018:00:34:44 +0530] cupsdIsAuthorized: username="pkp"
+D [10/Oct/2018:00:34:44 +0530] Returning IPP successful-ok for Get-Notifications (/) from localhost
+D [10/Oct/2018:00:34:44 +0530] cupsdSetBusyState: Printing jobs and dirty files
+D [10/Oct/2018:00:34:49 +0530] cupsdAcceptClient: 21 from localhost (Domain)
+D [10/Oct/2018:00:34:49 +0530] cupsdReadClient: 21 POST /printers/Canon-LBP2900 HTTP/1.1
+D [10/Oct/2018:00:34:49 +0530] cupsdSetBusyState: Active clients, printing jobs, and dirty files
+D [10/Oct/2018:00:34:49 +0530] cupsdAuthorize: No authentication data provided.
+D [10/Oct/2018:00:34:49 +0530] cupsdReadClient: 21 1.1 Print-Job 1
+D [10/Oct/2018:00:34:49 +0530] Print-Job ipp://localhost/printers/Canon-LBP2900
+D [10/Oct/2018:00:34:49 +0530] [Job ???] Auto-typing file...
+I [10/Oct/2018:00:34:49 +0530] [Job ???] Request file type is application/vnd.cups-banner.
+D [10/Oct/2018:00:34:49 +0530] cupsdMarkDirty(----J-)
+D [10/Oct/2018:00:34:49 +0530] add_job: requesting-user-name="pkp"
+D [10/Oct/2018:00:34:49 +0530] Adding default job-sheets values "none,none"...
+I [10/Oct/2018:00:34:49 +0530] [Job 21] Adding start banner page "none".
+D [10/Oct/2018:00:34:49 +0530] cupsdMarkDirty(-----S)
+D [10/Oct/2018:00:34:49 +0530] cupsdMarkDirty(----J-)
+I [10/Oct/2018:00:34:49 +0530] [Job 21] Adding end banner page "none".
+I [10/Oct/2018:00:34:49 +0530] [Job 21] File of type application/vnd.cups-banner queued by "pkp".
+D [10/Oct/2018:00:34:49 +0530] [Job 21] hold_until=0
+I [10/Oct/2018:00:34:49 +0530] [Job 21] Queued on "Canon-LBP2900" by "pkp".
+D [10/Oct/2018:00:34:49 +0530] Returning IPP successful-ok for Print-Job (ipp://localhost/printers/Canon-LBP2900) from localhost
+D [10/Oct/2018:00:34:49 +0530] cupsdSetBusyState: Printing jobs and dirty files
+D [10/Oct/2018:00:34:49 +0530] cupsdAcceptClient: 22 from localhost (Domain)
+D [10/Oct/2018:00:34:49 +0530] cupsdReadClient: 22 POST / HTTP/1.1
+D [10/Oct/2018:00:34:49 +0530] cupsdSetBusyState: Active clients, printing jobs, and dirty files
+D [10/Oct/2018:00:34:49 +0530] cupsdAuthorize: No authentication data provided.
+D [10/Oct/2018:00:34:49 +0530] cupsdReadClient: 22 1.1 Get-Notifications 1
+D [10/Oct/2018:00:34:49 +0530] Get-Notifications /
+D [10/Oct/2018:00:34:49 +0530] cupsdIsAuthorized: requesting-user-name="pkp"
+D [10/Oct/2018:00:34:49 +0530] Returning IPP successful-ok for Get-Notifications (/) from localhost
+D [10/Oct/2018:00:34:49 +0530] cupsdSetBusyState: Printing jobs and dirty files
+D [10/Oct/2018:00:34:49 +0530] cupsdReadClient: 22 WAITING Closing on EOF
+D [10/Oct/2018:00:34:49 +0530] cupsdCloseClient: 22
+D [10/Oct/2018:00:34:49 +0530] cupsdReadClient: 13 POST / HTTP/1.1
+D [10/Oct/2018:00:34:49 +0530] cupsdSetBusyState: Active clients, printing jobs, and dirty files
+D [10/Oct/2018:00:34:49 +0530] cupsdAuthorize: Authorized as pkp using PeerCred
+D [10/Oct/2018:00:34:49 +0530] cupsdReadClient: 13 1.1 Get-Notifications 1
+D [10/Oct/2018:00:34:49 +0530] Get-Notifications /
+D [10/Oct/2018:00:34:49 +0530] cupsdIsAuthorized: username="pkp"
+D [10/Oct/2018:00:34:49 +0530] Returning IPP successful-ok for Get-Notifications (/) from localhost
+D [10/Oct/2018:00:34:49 +0530] cupsdSetBusyState: Printing jobs and dirty files
+D [10/Oct/2018:00:34:58 +0530] cupsdReadClient: 13 POST / HTTP/1.1
+D [10/Oct/2018:00:34:58 +0530] cupsdSetBusyState: Active clients, printing jobs, and dirty files
+D [10/Oct/2018:00:34:58 +0530] cupsdAuthorize: Authorized as pkp using PeerCred
+D [10/Oct/2018:00:34:58 +0530] cupsdReadClient: 13 1.1 Get-Job-Attributes 1
+D [10/Oct/2018:00:34:58 +0530] Get-Job-Attributes ipp://localhost/jobs/21
+D [10/Oct/2018:00:34:58 +0530] Returning IPP successful-ok for Get-Job-Attributes (ipp://localhost/jobs/21) from localhost
+D [10/Oct/2018:00:34:58 +0530] cupsdSetBusyState: Printing jobs and dirty files
+D [10/Oct/2018:00:34:58 +0530] cupsdReadClient: 13 POST / HTTP/1.1
+D [10/Oct/2018:00:34:58 +0530] cupsdSetBusyState: Active clients, printing jobs, and dirty files
+D [10/Oct/2018:00:34:58 +0530] cupsdAuthorize: Authorized as pkp using PeerCred
+D [10/Oct/2018:00:34:58 +0530] cupsdReadClient: 13 1.1 Cancel-Subscription 1
+D [10/Oct/2018:00:34:58 +0530] Cancel-Subscription /
+D [10/Oct/2018:00:34:58 +0530] cupsdIsAuthorized: username="pkp"
+D [10/Oct/2018:00:34:58 +0530] cupsdMarkDirty(-----S)
+D [10/Oct/2018:00:34:58 +0530] Returning IPP successful-ok for Cancel-Subscription (/) from localhost
+D [10/Oct/2018:00:34:58 +0530] cupsdSetBusyState: Printing jobs and dirty files
+D [10/Oct/2018:00:34:58 +0530] cupsdAcceptClient: 22 from localhost (Domain)
+D [10/Oct/2018:00:34:58 +0530] cupsdReadClient: 22 GET /admin/log/error_log HTTP/1.1
+D [10/Oct/2018:00:34:58 +0530] cupsdSetBusyState: Active clients, printing jobs, and dirty files
+D [10/Oct/2018:00:34:58 +0530] cupsdAuthorize: No authentication data provided.
+culprit
+I [11/Jun/2019:22:01:50 +0200] Remote access is disabled.
+D [11/Jun/2019:22:01:50 +0200] Added auto ServerAlias localhost
+I [11/Jun/2019:22:01:50 +0200] Loaded configuration file "/etc/cups/cupsd.conf"
+I [11/Jun/2019:22:01:50 +0200] Using default TempDir of /var/spool/cups/tmp...
+I [11/Jun/2019:22:01:50 +0200] Configured for up to 100 clients.
+I [11/Jun/2019:22:01:50 +0200] Allowing up to 100 client connections per host.
+I [11/Jun/2019:22:01:50 +0200] Full reload is required.
+I [11/Jun/2019:22:01:50 +0200] Loaded MIME database from "/usr/share/cups/mime" and "/etc/cups": 35 types, 46 filters...
+D [11/Jun/2019:22:01:50 +0200] Loading printer EPSON_XP-800_Series...
+D [11/Jun/2019:22:01:50 +0200] load_ppd: Loading /var/cache/cups/EPSON_XP-800_Series.data...
+D [11/Jun/2019:22:01:50 +0200] cupsdRegisterPrinter(p=0x7fdbaeee0310(EPSON_XP-800_Series))
+I [11/Jun/2019:22:01:50 +0200] Loading job cache file "/var/cache/cups/job.cache"...
+D [11/Jun/2019:22:01:50 +0200] [Job 41] Loading from cache...
+D [11/Jun/2019:22:01:50 +0200] [Job 41] Loading attributes...
+I [11/Jun/2019:22:01:50 +0200] Full reload complete.
+D [11/Jun/2019:22:01:50 +0200] cupsdCleanFiles(path="/var/spool/cups/tmp", pattern="(null)")
+I [11/Jun/2019:22:01:50 +0200] Cleaning out old files in "/var/spool/cups/tmp"...
+D [11/Jun/2019:22:01:50 +0200] cupsdCleanFiles(path="/var/cache/cups", pattern="*.ipp")
+I [11/Jun/2019:22:01:50 +0200] Cleaning out old files in "/var/cache/cups"...
+I [11/Jun/2019:22:01:50 +0200] Listening to [v1.::1]:631 on fd 7...
+I [11/Jun/2019:22:01:50 +0200] Listening to 127.0.0.1:631 on fd 8...
+I [11/Jun/2019:22:01:50 +0200] Listening to /var/run/cups/cups.sock:631 on fd 9...
+I [11/Jun/2019:22:01:50 +0200] Resuming new connection processing...
+D [11/Jun/2019:22:01:50 +0200] cupsdRegisterPrinter(p=0x7fdbaeee0310(EPSON_XP-800_Series))
+D [11/Jun/2019:22:01:50 +0200] cupsdSetBusyState: newbusy="Not busy", busy="Not busy"
+D [11/Jun/2019:22:01:50 +0200] Discarding unused server-started event...
+D [11/Jun/2019:22:01:51 +0200] Report: clients=0
+D [11/Jun/2019:22:01:51 +0200] Report: jobs=1
+D [11/Jun/2019:22:01:51 +0200] Report: jobs-active=1
+D [11/Jun/2019:22:01:51 +0200] Report: printers=1
+D [11/Jun/2019:22:01:51 +0200] Report: printers-implicit=0
+D [11/Jun/2019:22:01:51 +0200] Report: stringpool-string-count=9432
+D [11/Jun/2019:22:01:51 +0200] Report: stringpool-alloc-bytes=10192
+D [11/Jun/2019:22:01:51 +0200] Report: stringpool-total-bytes=176136
+D [11/Jun/2019:22:01:55 +0200] cupsdAcceptClient: 13 from localhost:631 (IPv6)
+D [11/Jun/2019:22:01:55 +0200] cupsdReadClient: 13 GET / HTTP/1.1
+D [11/Jun/2019:22:01:55 +0200] cupsdSetBusyState: newbusy="Active clients", busy="Not busy"
+D [11/Jun/2019:22:01:55 +0200] cupsdAuthorize: Authorized as jack using Basic
+D [11/Jun/2019:22:01:55 +0200] cupsdSetBusyState: newbusy="Not busy", busy="Active clients"
+D [11/Jun/2019:22:01:55 +0200] cupsdReadClient: 13 GET /images/cups-icon.png HTTP/1.1
+D [11/Jun/2019:22:01:55 +0200] cupsdSetBusyState: newbusy="Active clients", busy="Not busy"
+D [11/Jun/2019:22:01:55 +0200] cupsdAuthorize: Authorized as jack using Basic
+D [11/Jun/2019:22:01:55 +0200] cupsdSetBusyState: newbusy="Not busy", busy="Active clients"
+D [11/Jun/2019:22:01:57 +0200] cupsdReadClient: 13 GET /admin HTTP/1.1
+D [11/Jun/2019:22:01:57 +0200] cupsdSetBusyState: newbusy="Active clients", busy="Not busy"
+D [11/Jun/2019:22:01:57 +0200] cupsdAuthorize: Authorized as jack using Basic
+D [11/Jun/2019:22:01:57 +0200] [CGI] argv[0] = "/usr/lib/cups/cgi-bin/admin.cgi"
+D [11/Jun/2019:22:01:57 +0200] [CGI] envp[0] = "CUPS_CACHEDIR=/var/cache/cups"
+D [11/Jun/2019:22:01:57 +0200] [CGI] envp[1] = "CUPS_DATADIR=/usr/share/cups"
+D [11/Jun/2019:22:01:57 +0200] [CGI] envp[2] = "CUPS_DOCROOT=/usr/share/cups/webcontent"
+D [11/Jun/2019:22:01:57 +0200] [CGI] envp[3] = "CUPS_FONTPATH=/usr/share/cups/fonts"
+D [11/Jun/2019:22:01:57 +0200] [CGI] envp[4] = "CUPS_REQUESTROOT=/var/spool/cups"
+D [11/Jun/2019:22:01:57 +0200] [CGI] envp[5] = "CUPS_SERVERBIN=/usr/lib/cups"
+D [11/Jun/2019:22:01:57 +0200] [CGI] envp[6] = "CUPS_SERVERROOT=/etc/cups"
+D [11/Jun/2019:22:01:57 +0200] [CGI] envp[7] = "CUPS_STATEDIR=/var/run/cups"
+D [11/Jun/2019:22:01:57 +0200] [CGI] envp[8] = "HOME=/var/spool/cups/tmp"
+D [11/Jun/2019:22:01:57 +0200] [CGI] envp[9] = "PATH=/usr/lib/cups/filter:/usr/bin:/usr/sbin:/bin:/usr/bin"
+D [11/Jun/2019:22:01:57 +0200] [CGI] envp[10] = "SERVER_ADMIN=root@localhost"
+D [11/Jun/2019:22:01:57 +0200] [CGI] envp[11] = "SOFTWARE=CUPS/1.5.4"
+D [11/Jun/2019:22:01:57 +0200] [CGI] envp[12] = "TMPDIR=/var/spool/cups/tmp"
+D [11/Jun/2019:22:01:57 +0200] [CGI] envp[13] = "USER=root"
+D [11/Jun/2019:22:01:57 +0200] [CGI] envp[14] = "CUPS_MAX_MESSAGE=2047"
+D [11/Jun/2019:22:01:57 +0200] [CGI] envp[15] = "CUPS_SERVER=/var/run/cups/cups.sock"
+D [11/Jun/2019:22:01:57 +0200] [CGI] envp[16] = "CUPS_ENCRYPTION=IfRequested"
+D [11/Jun/2019:22:01:57 +0200] [CGI] envp[17] = "IPP_PORT=631"
+D [11/Jun/2019:22:01:57 +0200] [CGI] envp[18] = "AUTH_TYPE=Basic"
+D [11/Jun/2019:22:01:57 +0200] [CGI] envp[19] = "LANG=de_DE.UTF8"
+D [11/Jun/2019:22:01:57 +0200] [CGI] envp[20] = "REDIRECT_STATUS=1"
+D [11/Jun/2019:22:01:57 +0200] [CGI] envp[21] = "GATEWAY_INTERFACE=CGI/1.1"
+D [11/Jun/2019:22:01:57 +0200] [CGI] envp[22] = "SERVER_NAME=localhost"
+D [11/Jun/2019:22:01:57 +0200] [CGI] envp[23] = "SERVER_PORT=631"
+D [11/Jun/2019:22:01:57 +0200] [CGI] envp[24] = "REMOTE_ADDR=[v1.::1]"
+D [11/Jun/2019:22:01:57 +0200] [CGI] envp[25] = "REMOTE_HOST=localhost"
+D [11/Jun/2019:22:01:57 +0200] [CGI] envp[26] = "SCRIPT_NAME=/admin"
+D [11/Jun/2019:22:01:57 +0200] [CGI] envp[27] = "SCRIPT_FILENAME=/usr/share/cups/webcontent/admin"
+D [11/Jun/2019:22:01:57 +0200] [CGI] envp[28] = "REMOTE_USER=jack"
+D [11/Jun/2019:22:01:57 +0200] [CGI] envp[29] = "SERVER_PROTOCOL=HTTP/1.1"
+D [11/Jun/2019:22:01:57 +0200] [CGI] envp[30] = "HTTP_COOKIE=org.cups.sid=06d37564f758a75fa9ba18526f9d9971"
+D [11/Jun/2019:22:01:57 +0200] [CGI] envp[31] = "HTTP_USER_AGENT=Mozilla/5.0 (X11; Linux x86_64; rv:21.0) Gecko/20100101 Firefox/21.0"
+D [11/Jun/2019:22:01:57 +0200] [CGI] envp[32] = "HTTP_REFERER=http://localhost:631/"
+D [11/Jun/2019:22:01:57 +0200] [CGI] envp[33] = "REQUEST_METHOD=GET"
+D [11/Jun/2019:22:01:57 +0200] [CGI] envp[34] = "QUERY_STRING="
+D [11/Jun/2019:22:01:57 +0200] [CGI] Started /usr/lib/cups/cgi-bin/admin.cgi (PID 5547)
+I [11/Jun/2019:22:01:57 +0200] Started "/usr/lib/cups/cgi-bin/admin.cgi" (pid=5547)
+D [11/Jun/2019:22:01:57 +0200] cupsdSendCommand: 13 file=14
+D [11/Jun/2019:22:01:57 +0200] [CGI] admin.cgi started...
+D [11/Jun/2019:22:01:57 +0200] cupsdAcceptClient: 15 from localhost (Domain)
+D [11/Jun/2019:22:01:57 +0200] [CGI] http=0x7f07764a7510
+D [11/Jun/2019:22:01:57 +0200] [CGI] cgiSetVariable: SECTION="admin"
+D [11/Jun/2019:22:01:57 +0200] [CGI] cgiSetVariable: REFRESH_PAGE=""
+D [11/Jun/2019:22:01:57 +0200] [CGI] org.cups.sid cookie is "06d37564f758a75fa9ba18526f9d9971"
+D [11/Jun/2019:22:01:57 +0200] [CGI] No form data, showing main menu...
+D [11/Jun/2019:22:01:57 +0200] [CGI] cgiSetVariable: DEBUG_LOGGING="CHECKED"
+D [11/Jun/2019:22:01:57 +0200] [CGI] cgiSetVariable: REMOTE_PRINTERS="CHECKED"
+D [11/Jun/2019:22:01:57 +0200] [CGI] cgiSetVariable: HAVE_GSSAPI="1"
+D [11/Jun/2019:22:01:57 +0200] [CGI] cgiSetVariable: KERBEROS=""
+D [11/Jun/2019:22:01:57 +0200] [CGI] cgiSetVariable: HAVE_LDAP="1"
+D [11/Jun/2019:22:01:57 +0200] [CGI] cgiSetVariable: HAVE_LIBSLP="1"
+D [11/Jun/2019:22:01:57 +0200] [CGI] cgiSetVariable: BROWSE_REMOTE_CUPS="CHECKED"
+D [11/Jun/2019:22:01:57 +0200] [CGI] cgiSetVariable: BROWSE_LOCAL_CUPS="CHECKED"
+D [11/Jun/2019:22:01:57 +0200] [CGI] cgiSetVariable: PRESERVE_JOB_HISTORY="CHECKED"
+D [11/Jun/2019:22:01:57 +0200] [CGI] cgiSetVariable: MAX_CLIENTS="100"
+D [11/Jun/2019:22:01:57 +0200] [CGI] cgiSetVariable: MAX_JOBS="500"
+D [11/Jun/2019:22:01:57 +0200] [CGI] cgiSetVariable: MAX_LOG_SIZE="1m"
+D [11/Jun/2019:22:01:57 +0200] [CGI] /usr/share/cups/drivers/pscript5.dll: Datei oder Verzeichnis nicht gefunden
+D [11/Jun/2019:22:01:57 +0200] cupsdReadClient: 15 POST / HTTP/1.1
+D [11/Jun/2019:22:01:57 +0200] cupsdSetBusyState: newbusy="Active clients", busy="Active clients"
+D [11/Jun/2019:22:01:57 +0200] cupsdAuthorize: No authentication data provided.
+D [11/Jun/2019:22:01:57 +0200] cupsdReadClient: 15 1.1 Get-Subscriptions 1
+D [11/Jun/2019:22:01:57 +0200] Get-Subscriptions ipp://localhost/
+D [11/Jun/2019:22:01:57 +0200] Get-Subscriptions client-error-not-found: No subscriptions found.
+D [11/Jun/2019:22:01:57 +0200] Returning IPP client-error-not-found for Get-Subscriptions (ipp://localhost/) from localhost
+D [11/Jun/2019:22:01:57 +0200] cupsdSetBusyState: newbusy="Active clients", busy="Active clients"
+D [11/Jun/2019:22:01:57 +0200] [CGI] cgiSetVariable: SERVER_NAME="localhost"
+D [11/Jun/2019:22:01:57 +0200] [CGI] cgiSetVariable: REMOTE_USER="jack"
+D [11/Jun/2019:22:01:57 +0200] [CGI] cgiSetVariable: CUPS_VERSION="CUPS v1.5.4"
+D [11/Jun/2019:22:01:57 +0200] [CGI] cgiSetVariable: TITLE="Verwaltung"
+D [11/Jun/2019:22:01:57 +0200] [CGI] cgiSetVariable: SERVER_NAME="localhost"
+D [11/Jun/2019:22:01:57 +0200] [CGI] cgiSetVariable: REMOTE_USER="jack"
+D [11/Jun/2019:22:01:57 +0200] [CGI] cgiSetVariable: CUPS_VERSION="CUPS v1.5.4"
+D [11/Jun/2019:22:01:57 +0200] Script header: Content-Type: text/html;charset=utf-8
+D [11/Jun/2019:22:01:57 +0200] Script header: 
+D [11/Jun/2019:22:01:57 +0200] cupsdReadClient: 15 WAITING Closing on EOF
+D [11/Jun/2019:22:01:57 +0200] cupsdCloseClient: 15
+D [11/Jun/2019:22:01:57 +0200] cupsdSetBusyState: newbusy="Active clients", busy="Active clients"
+D [11/Jun/2019:22:01:57 +0200] cupsdSetBusyState: newbusy="Not busy", busy="Active clients"
+D [11/Jun/2019:22:01:57 +0200] PID 5547 (/usr/lib/cups/cgi-bin/admin.cgi) exited with no errors.
+D [11/Jun/2019:22:02:04 +0200] cupsdReadClient: 13 GET /printers/ HTTP/1.1
+D [11/Jun/2019:22:02:04 +0200] cupsdSetBusyState: newbusy="Active clients", busy="Not busy"
+D [11/Jun/2019:22:02:04 +0200] cupsdAuthorize: Authorized as jack using Basic
+D [11/Jun/2019:22:02:04 +0200] [CGI] argv[0] = "/usr/lib/cups/cgi-bin/printers.cgi"
+D [11/Jun/2019:22:02:04 +0200] [CGI] envp[0] = "CUPS_CACHEDIR=/var/cache/cups"
+D [11/Jun/2019:22:02:04 +0200] [CGI] envp[1] = "CUPS_DATADIR=/usr/share/cups"
+D [11/Jun/2019:22:02:04 +0200] [CGI] envp[2] = "CUPS_DOCROOT=/usr/share/cups/webcontent"
+D [11/Jun/2019:22:02:04 +0200] [CGI] envp[3] = "CUPS_FONTPATH=/usr/share/cups/fonts"
+D [11/Jun/2019:22:02:04 +0200] [CGI] envp[4] = "CUPS_REQUESTROOT=/var/spool/cups"
+D [11/Jun/2019:22:02:04 +0200] [CGI] envp[5] = "CUPS_SERVERBIN=/usr/lib/cups"
+D [11/Jun/2019:22:02:04 +0200] [CGI] envp[6] = "CUPS_SERVERROOT=/etc/cups"
+D [11/Jun/2019:22:02:04 +0200] [CGI] envp[7] = "CUPS_STATEDIR=/var/run/cups"
+D [11/Jun/2019:22:02:04 +0200] [CGI] envp[8] = "HOME=/var/spool/cups/tmp"
+D [11/Jun/2019:22:02:04 +0200] [CGI] envp[9] = "PATH=/usr/lib/cups/filter:/usr/bin:/usr/sbin:/bin:/usr/bin"
+D [11/Jun/2019:22:02:04 +0200] [CGI] envp[10] = "SERVER_ADMIN=root@localhost"
+D [11/Jun/2019:22:02:04 +0200] [CGI] envp[11] = "SOFTWARE=CUPS/1.5.4"
+D [11/Jun/2019:22:02:04 +0200] [CGI] envp[12] = "TMPDIR=/var/spool/cups/tmp"
+D [11/Jun/2019:22:02:04 +0200] [CGI] envp[13] = "USER=root"
+D [11/Jun/2019:22:02:04 +0200] [CGI] envp[14] = "CUPS_MAX_MESSAGE=2047"
+D [11/Jun/2019:22:02:04 +0200] [CGI] envp[15] = "CUPS_SERVER=/var/run/cups/cups.sock"
+D [11/Jun/2019:22:02:04 +0200] [CGI] envp[16] = "CUPS_ENCRYPTION=IfRequested"
+D [11/Jun/2019:22:02:04 +0200] [CGI] envp[17] = "IPP_PORT=631"
+D [11/Jun/2019:22:02:04 +0200] [CGI] envp[18] = "AUTH_TYPE=Basic"
+D [11/Jun/2019:22:02:04 +0200] [CGI] envp[19] = "LANG=de_DE.UTF8"
+D [11/Jun/2019:22:02:04 +0200] [CGI] envp[20] = "REDIRECT_STATUS=1"
+D [11/Jun/2019:22:02:04 +0200] [CGI] envp[21] = "GATEWAY_INTERFACE=CGI/1.1"
+D [11/Jun/2019:22:02:04 +0200] [CGI] envp[22] = "SERVER_NAME=localhost"
+D [11/Jun/2019:22:02:04 +0200] [CGI] envp[23] = "SERVER_PORT=631"
+D [11/Jun/2019:22:02:04 +0200] [CGI] envp[24] = "REMOTE_ADDR=[v1.::1]"
+D [11/Jun/2019:22:02:04 +0200] [CGI] envp[25] = "REMOTE_HOST=localhost"
+D [11/Jun/2019:22:02:04 +0200] [CGI] envp[26] = "SCRIPT_NAME=/printers/"
+D [11/Jun/2019:22:02:04 +0200] [CGI] envp[27] = "SCRIPT_FILENAME=/usr/share/cups/webcontent/printers/"
+D [11/Jun/2019:22:02:04 +0200] [CGI] envp[28] = "REMOTE_USER=jack"
+D [11/Jun/2019:22:02:04 +0200] [CGI] envp[29] = "SERVER_PROTOCOL=HTTP/1.1"
+D [11/Jun/2019:22:02:04 +0200] [CGI] envp[30] = "HTTP_COOKIE=org.cups.sid=06d37564f758a75fa9ba18526f9d9971"
+D [11/Jun/2019:22:02:04 +0200] [CGI] envp[31] = "HTTP_USER_AGENT=Mozilla/5.0 (X11; Linux x86_64; rv:21.0) Gecko/20100101 Firefox/21.0"
+D [11/Jun/2019:22:02:04 +0200] [CGI] envp[32] = "HTTP_REFERER=http://localhost:631/admin"
+D [11/Jun/2019:22:02:04 +0200] [CGI] envp[33] = "REQUEST_METHOD=GET"
+D [11/Jun/2019:22:02:04 +0200] [CGI] envp[34] = "QUERY_STRING="
+D [11/Jun/2019:22:02:04 +0200] [CGI] Started /usr/lib/cups/cgi-bin/printers.cgi (PID 5548)
+I [11/Jun/2019:22:02:04 +0200] Started "/usr/lib/cups/cgi-bin/printers.cgi" (pid=5548)
+D [11/Jun/2019:22:02:04 +0200] cupsdSendCommand: 13 file=14
+D [11/Jun/2019:22:02:04 +0200] [CGI] org.cups.sid cookie is "06d37564f758a75fa9ba18526f9d9971"
+D [11/Jun/2019:22:02:04 +0200] [CGI] cgiSetVariable: SECTION="printers"
+D [11/Jun/2019:22:02:04 +0200] [CGI] cgiSetVariable: REFRESH_PAGE=""
+D [11/Jun/2019:22:02:04 +0200] cupsdAcceptClient: 15 from localhost (Domain)
+D [11/Jun/2019:22:02:04 +0200] cupsdReadClient: 15 POST / HTTP/1.1
+D [11/Jun/2019:22:02:04 +0200] cupsdSetBusyState: newbusy="Active clients", busy="Active clients"
+D [11/Jun/2019:22:02:04 +0200] cupsdAuthorize: No authentication data provided.
+D [11/Jun/2019:22:02:04 +0200] cupsdReadClient: 15 1.1 CUPS-Get-Default 1
+D [11/Jun/2019:22:02:04 +0200] CUPS-Get-Default
+D [11/Jun/2019:22:02:04 +0200] CUPS-Get-Default client-error-not-found: No default printer.
+D [11/Jun/2019:22:02:04 +0200] Returning IPP client-error-not-found for CUPS-Get-Default (no URI) from localhost
+D [11/Jun/2019:22:02:04 +0200] cupsdSetBusyState: newbusy="Active clients", busy="Active clients"
+D [11/Jun/2019:22:02:04 +0200] [CGI] show_all_printers(http=0x7f6cfaec0060, user="jack")
+D [11/Jun/2019:22:02:04 +0200] [CGI] cgiSetVariable: TITLE="Drucker"
+D [11/Jun/2019:22:02:04 +0200] [CGI] cgiSetVariable: SERVER_NAME="localhost"
+D [11/Jun/2019:22:02:04 +0200] [CGI] cgiSetVariable: REMOTE_USER="jack"
+D [11/Jun/2019:22:02:04 +0200] [CGI] cgiSetVariable: CUPS_VERSION="CUPS v1.5.4"
+D [11/Jun/2019:22:02:04 +0200] Script header: Content-Type: text/html;charset=utf-8
+D [11/Jun/2019:22:02:04 +0200] Script header: 
+D [11/Jun/2019:22:02:04 +0200] cupsdReadClient: 15 POST / HTTP/1.1
+D [11/Jun/2019:22:02:04 +0200] cupsdSetBusyState: newbusy="Active clients", busy="Active clients"
+D [11/Jun/2019:22:02:04 +0200] cupsdAuthorize: No authentication data provided.
+D [11/Jun/2019:22:02:04 +0200] cupsdReadClient: 15 1.1 CUPS-Get-Printers 1
+D [11/Jun/2019:22:02:04 +0200] CUPS-Get-Printers
+D [11/Jun/2019:22:02:04 +0200] Returning IPP successful-ok for CUPS-Get-Printers (no URI) from localhost
+D [11/Jun/2019:22:02:04 +0200] cupsdSetBusyState: newbusy="Active clients", busy="Active clients"
+D [11/Jun/2019:22:02:04 +0200] [CGI] cgiSetVariable: TOTAL="1"
+D [11/Jun/2019:22:02:04 +0200] [CGI] cgiSetVariable: SERVER_NAME="localhost"
+D [11/Jun/2019:22:02:04 +0200] [CGI] cgiSetVariable: REMOTE_USER="jack"
+D [11/Jun/2019:22:02:04 +0200] [CGI] cgiSetVariable: CUPS_VERSION="CUPS v1.5.4"
+D [11/Jun/2019:22:02:04 +0200] [CGI] cgiSetArray: printer_state[0]="3"
+D [11/Jun/2019:22:02:04 +0200] [CGI] cgiSetArray: printer_state_message[0]=""
+D [11/Jun/2019:22:02:04 +0200] [CGI] cgiSetArray: admin_uri[0]="/admin/"
+D [11/Jun/2019:22:02:04 +0200] [CGI] cgiSetArray: printer_uri_supported[0]="/printers/EPSON_XP-800_Series"
+D [11/Jun/2019:22:02:04 +0200] [CGI] cgiSetArray: printer_name[0]="EPSON_XP-800_Series"
+D [11/Jun/2019:22:02:04 +0200] [CGI] cgiSetArray: printer_location[0]=""
+D [11/Jun/2019:22:02:04 +0200] [CGI] cgiSetArray: printer_info[0]="EPSON XP-800 Series"
+D [11/Jun/2019:22:02:04 +0200] [CGI] cgiSetArray: printer_make_and_model[0]="Epson XP-800 Series - epson-inkjet-printer 1.0.0-1lsb3.2 (Seiko Epson Corporation LSB 3.2)"
+D [11/Jun/2019:22:02:04 +0200] [CGI] cgiSetVariable: THISURL="/printers/"
+D [11/Jun/2019:22:02:04 +0200] cupsdReadClient: 15 WAITING Closing on EOF
+D [11/Jun/2019:22:02:04 +0200] cupsdCloseClient: 15
+D [11/Jun/2019:22:02:04 +0200] cupsdSetBusyState: newbusy="Active clients", busy="Active clients"
+D [11/Jun/2019:22:02:04 +0200] PID 5548 (/usr/lib/cups/cgi-bin/printers.cgi) exited with no errors.
+D [11/Jun/2019:22:02:04 +0200] cupsdSetBusyState: newbusy="Not busy", busy="Active clients"
+D [11/Jun/2019:22:02:05 +0200] cupsdReadClient: 13 GET /printers/EPSON_XP-800_Series HTTP/1.1
+D [11/Jun/2019:22:02:05 +0200] cupsdSetBusyState: newbusy="Active clients", busy="Not busy"
+D [11/Jun/2019:22:02:05 +0200] cupsdAuthorize: Authorized as jack using Basic
+D [11/Jun/2019:22:02:05 +0200] [CGI] argv[0] = "/usr/lib/cups/cgi-bin/printers.cgi"
+D [11/Jun/2019:22:02:05 +0200] [CGI] envp[0] = "CUPS_CACHEDIR=/var/cache/cups"
+D [11/Jun/2019:22:02:05 +0200] [CGI] envp[1] = "CUPS_DATADIR=/usr/share/cups"
+D [11/Jun/2019:22:02:05 +0200] [CGI] envp[2] = "CUPS_DOCROOT=/usr/share/cups/webcontent"
+D [11/Jun/2019:22:02:05 +0200] [CGI] envp[3] = "CUPS_FONTPATH=/usr/share/cups/fonts"
+D [11/Jun/2019:22:02:05 +0200] [CGI] envp[4] = "CUPS_REQUESTROOT=/var/spool/cups"
+D [11/Jun/2019:22:02:05 +0200] [CGI] envp[5] = "CUPS_SERVERBIN=/usr/lib/cups"
+D [11/Jun/2019:22:02:05 +0200] [CGI] envp[6] = "CUPS_SERVERROOT=/etc/cups"
+D [11/Jun/2019:22:02:05 +0200] [CGI] envp[7] = "CUPS_STATEDIR=/var/run/cups"
+D [11/Jun/2019:22:02:05 +0200] [CGI] envp[8] = "HOME=/var/spool/cups/tmp"
+D [11/Jun/2019:22:02:05 +0200] [CGI] envp[9] = "PATH=/usr/lib/cups/filter:/usr/bin:/usr/sbin:/bin:/usr/bin"
+D [11/Jun/2019:22:02:05 +0200] [CGI] envp[10] = "SERVER_ADMIN=root@localhost"
+D [11/Jun/2019:22:02:05 +0200] [CGI] envp[11] = "SOFTWARE=CUPS/1.5.4"
+D [11/Jun/2019:22:02:05 +0200] [CGI] envp[12] = "TMPDIR=/var/spool/cups/tmp"
+D [11/Jun/2019:22:02:05 +0200] [CGI] envp[13] = "USER=root"
+D [11/Jun/2019:22:02:05 +0200] [CGI] envp[14] = "CUPS_MAX_MESSAGE=2047"
+D [11/Jun/2019:22:02:05 +0200] [CGI] envp[15] = "CUPS_SERVER=/var/run/cups/cups.sock"
+D [11/Jun/2019:22:02:05 +0200] [CGI] envp[16] = "CUPS_ENCRYPTION=IfRequested"
+D [11/Jun/2019:22:02:05 +0200] [CGI] envp[17] = "IPP_PORT=631"
+D [11/Jun/2019:22:02:05 +0200] [CGI] envp[18] = "AUTH_TYPE=Basic"
+D [11/Jun/2019:22:02:05 +0200] [CGI] envp[19] = "LANG=de_DE.UTF8"
+D [11/Jun/2019:22:02:05 +0200] [CGI] envp[20] = "REDIRECT_STATUS=1"
+D [11/Jun/2019:22:02:05 +0200] [CGI] envp[21] = "GATEWAY_INTERFACE=CGI/1.1"
+D [11/Jun/2019:22:02:05 +0200] [CGI] envp[22] = "SERVER_NAME=localhost"
+D [11/Jun/2019:22:02:05 +0200] [CGI] envp[23] = "SERVER_PORT=631"
+D [11/Jun/2019:22:02:05 +0200] [CGI] envp[24] = "REMOTE_ADDR=[v1.::1]"
+D [11/Jun/2019:22:02:05 +0200] [CGI] envp[25] = "REMOTE_HOST=localhost"
+D [11/Jun/2019:22:02:05 +0200] [CGI] envp[26] = "SCRIPT_NAME=/printers/EPSON_XP-800_Series"
+D [11/Jun/2019:22:02:05 +0200] [CGI] envp[27] = "SCRIPT_FILENAME=/usr/share/cups/webcontent/printers/EPSON_XP-800_Series"
+D [11/Jun/2019:22:02:05 +0200] [CGI] envp[28] = "PATH_INFO=/EPSON_XP-800_Series"
+D [11/Jun/2019:22:02:05 +0200] [CGI] envp[29] = "REMOTE_USER=jack"
+D [11/Jun/2019:22:02:05 +0200] [CGI] envp[30] = "SERVER_PROTOCOL=HTTP/1.1"
+D [11/Jun/2019:22:02:05 +0200] [CGI] envp[31] = "HTTP_COOKIE=org.cups.sid=06d37564f758a75fa9ba18526f9d9971"
+D [11/Jun/2019:22:02:05 +0200] [CGI] envp[32] = "HTTP_USER_AGENT=Mozilla/5.0 (X11; Linux x86_64; rv:21.0) Gecko/20100101 Firefox/21.0"
+D [11/Jun/2019:22:02:05 +0200] [CGI] envp[33] = "HTTP_REFERER=http://localhost:631/printers/"
+D [11/Jun/2019:22:02:05 +0200] [CGI] envp[34] = "REQUEST_METHOD=GET"
+D [11/Jun/2019:22:02:05 +0200] [CGI] envp[35] = "QUERY_STRING="
+D [11/Jun/2019:22:02:05 +0200] [CGI] Started /usr/lib/cups/cgi-bin/printers.cgi (PID 5549)
+I [11/Jun/2019:22:02:05 +0200] Started "/usr/lib/cups/cgi-bin/printers.cgi" (pid=5549)
+D [11/Jun/2019:22:02:05 +0200] cupsdSendCommand: 13 file=14
+D [11/Jun/2019:22:02:05 +0200] [CGI] org.cups.sid cookie is "06d37564f758a75fa9ba18526f9d9971"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetVariable: SECTION="printers"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetVariable: REFRESH_PAGE=""
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetVariable: PRINTER_NAME="EPSON_XP-800_Series"
+D [11/Jun/2019:22:02:05 +0200] cupsdAcceptClient: 15 from localhost (Domain)
+D [11/Jun/2019:22:02:05 +0200] cupsdReadClient: 15 POST / HTTP/1.1
+D [11/Jun/2019:22:02:05 +0200] cupsdSetBusyState: newbusy="Active clients", busy="Active clients"
+D [11/Jun/2019:22:02:05 +0200] cupsdAuthorize: No authentication data provided.
+D [11/Jun/2019:22:02:05 +0200] cupsdReadClient: 15 1.1 CUPS-Get-Default 1
+D [11/Jun/2019:22:02:05 +0200] CUPS-Get-Default
+D [11/Jun/2019:22:02:05 +0200] CUPS-Get-Default client-error-not-found: No default printer.
+D [11/Jun/2019:22:02:05 +0200] Returning IPP client-error-not-found for CUPS-Get-Default (no URI) from localhost
+D [11/Jun/2019:22:02:05 +0200] cupsdSetBusyState: newbusy="Active clients", busy="Active clients"
+D [11/Jun/2019:22:02:05 +0200] [CGI] show_printer(http=0x7f32d181d0d0, printer="EPSON_XP-800_Series")
+D [11/Jun/2019:22:02:05 +0200] cupsdReadClient: 15 POST / HTTP/1.1
+D [11/Jun/2019:22:02:05 +0200] cupsdSetBusyState: newbusy="Active clients", busy="Active clients"
+D [11/Jun/2019:22:02:05 +0200] cupsdAuthorize: No authentication data provided.
+D [11/Jun/2019:22:02:05 +0200] cupsdReadClient: 15 1.1 Get-Printer-Attributes 1
+D [11/Jun/2019:22:02:05 +0200] Get-Printer-Attributes ipp://localhost/printers/EPSON_XP-800_Series
+D [11/Jun/2019:22:02:05 +0200] Returning IPP successful-ok for Get-Printer-Attributes (ipp://localhost/printers/EPSON_XP-800_Series) from localhost
+D [11/Jun/2019:22:02:05 +0200] cupsdSetBusyState: newbusy="Active clients", busy="Active clients"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetVariable: SERVER_NAME="localhost"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetVariable: REMOTE_USER="jack"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetVariable: CUPS_VERSION="CUPS v1.5.4"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetVariable: SERVER_NAME="localhost"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetVariable: REMOTE_USER="jack"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetVariable: CUPS_VERSION="CUPS v1.5.4"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetArray: printer_is_accepting_jobs[0]="1"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetArray: printer_is_shared[0]="1"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetArray: printer_state[0]="3"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetArray: admin_uri[0]="/admin/"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetArray: printer_uri_supported[0]="/printers/EPSON_XP-800_Series"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetArray: printer_name[0]="EPSON_XP-800_Series"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetArray: printer_location[0]=""
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetArray: printer_info[0]="EPSON XP-800 Series"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetArray: job_sheets_default[0]="none, none"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetArray: device_uri[0]="lpd://192.168.2.110:515/PASSTHRU"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetArray: color_supported[0]="1"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetArray: printer_make_and_model[0]="Epson XP-800 Series - epson-inkjet-printer 1.0.0-1lsb3.2 (Seiko Epson Corporation LSB 3.2)"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetArray: media_default[0]="iso_a4_210x297mm"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetArray: sides_supported[0]="one-sided, two-sided-long-edge, two-sided-short-edge"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetArray: sides_default[0]="one-sided"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetArray: printer_commands[0]="none"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetArray: server_is_sharing_printers[0]="0"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetVariable: TITLE="EPSON_XP-800_Series"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetVariable: SERVER_NAME="localhost"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetVariable: REMOTE_USER="jack"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetVariable: CUPS_VERSION="CUPS v1.5.4"
+D [11/Jun/2019:22:02:05 +0200] Script header: Content-Type: text/html;charset=utf-8
+D [11/Jun/2019:22:02:05 +0200] Script header: 
+D [11/Jun/2019:22:02:05 +0200] [CGI] Regular expression ".*Clean.*"
+D [11/Jun/2019:22:02:05 +0200] [CGI] Regular expression ".*PrintSelfTestPage.*"
+D [11/Jun/2019:22:02:05 +0200] cupsdReadClient: 15 POST / HTTP/1.1
+D [11/Jun/2019:22:02:05 +0200] cupsdSetBusyState: newbusy="Active clients", busy="Active clients"
+D [11/Jun/2019:22:02:05 +0200] cupsdAuthorize: No authentication data provided.
+D [11/Jun/2019:22:02:05 +0200] cupsdReadClient: 15 1.1 Get-Jobs 1
+D [11/Jun/2019:22:02:05 +0200] Get-Jobs ipp://localhost:631/printers/EPSON_XP-800_Series
+D [11/Jun/2019:22:02:05 +0200] Returning IPP successful-ok for Get-Jobs (ipp://localhost:631/printers/EPSON_XP-800_Series) from localhost
+D [11/Jun/2019:22:02:05 +0200] cupsdSetBusyState: newbusy="Active clients", busy="Active clients"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiClearVariables called.
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetVariable: ORDER="asc"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetVariable: SECTION="printers"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetVariable: TOTAL="1"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetVariable: SERVER_NAME="localhost"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetVariable: REMOTE_USER="jack"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetVariable: CUPS_VERSION="CUPS v1.5.4"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetArray: job_preserved[0]="1"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetArray: job_printer_name[0]="EPSON_XP-800_Series"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetArray: job_printer_uri[0]="/printers/EPSON_XP-800_Series"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetArray: time_at_creation[0]="Di 11 Jun 2019 21:47:43 CEST"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetArray: time_at_processing[0]="Di 11 Jun 2019 21:47:43 CEST"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetArray: time_at_completed[0]="novalue"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetArray: job_id[0]="41"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetArray: job_state[0]="6"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetArray: job_media_sheets_completed[0]="0"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetArray: job_k_octets[0]="1"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetArray: job_printer_state_message[0]="/opt/epson-inkjet-printer-201208w/cups/lib/filter/epson_inkjet_printer_filter failed"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetVariable: PRINTER_NAME="EPSON_XP-800_Series"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetVariable: PRINTER_URI_SUPPORTED="/printers/EPSON_XP-800_Series"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetVariable: THISURL="/printers/EPSON_XP-800_Series"
+D [11/Jun/2019:22:02:05 +0200] [CGI] cgiSetVariable: SEARCH_DEST="EPSON_XP-800_Series"
+D [11/Jun/2019:22:02:05 +0200] cupsdReadClient: 15 WAITING Closing on EOF
+D [11/Jun/2019:22:02:05 +0200] cupsdCloseClient: 15
+D [11/Jun/2019:22:02:05 +0200] cupsdSetBusyState: newbusy="Active clients", busy="Active clients"
+D [11/Jun/2019:22:02:05 +0200] PID 5549 (/usr/lib/cups/cgi-bin/printers.cgi) exited with no errors.
+D [11/Jun/2019:22:02:05 +0200] cupsdSetBusyState: newbusy="Not busy", busy="Active clients"
+D [11/Jun/2019:22:02:09 +0200] cupsdReadClient: 13 POST /printers/EPSON_XP-800_Series HTTP/1.1
+D [11/Jun/2019:22:02:09 +0200] cupsdSetBusyState: newbusy="Active clients", busy="Not busy"
+D [11/Jun/2019:22:02:09 +0200] cupsdAuthorize: Authorized as jack using Basic
+D [11/Jun/2019:22:02:09 +0200] [CGI] argv[0] = "/usr/lib/cups/cgi-bin/printers.cgi"
+D [11/Jun/2019:22:02:09 +0200] [CGI] envp[0] = "CUPS_CACHEDIR=/var/cache/cups"
+D [11/Jun/2019:22:02:09 +0200] [CGI] envp[1] = "CUPS_DATADIR=/usr/share/cups"
+D [11/Jun/2019:22:02:09 +0200] [CGI] envp[2] = "CUPS_DOCROOT=/usr/share/cups/webcontent"
+D [11/Jun/2019:22:02:09 +0200] [CGI] envp[3] = "CUPS_FONTPATH=/usr/share/cups/fonts"
+D [11/Jun/2019:22:02:09 +0200] [CGI] envp[4] = "CUPS_REQUESTROOT=/var/spool/cups"
+D [11/Jun/2019:22:02:09 +0200] [CGI] envp[5] = "CUPS_SERVERBIN=/usr/lib/cups"
+D [11/Jun/2019:22:02:09 +0200] [CGI] envp[6] = "CUPS_SERVERROOT=/etc/cups"
+D [11/Jun/2019:22:02:09 +0200] [CGI] envp[7] = "CUPS_STATEDIR=/var/run/cups"
+D [11/Jun/2019:22:02:09 +0200] [CGI] envp[8] = "HOME=/var/spool/cups/tmp"
+D [11/Jun/2019:22:02:09 +0200] [CGI] envp[9] = "PATH=/usr/lib/cups/filter:/usr/bin:/usr/sbin:/bin:/usr/bin"
+D [11/Jun/2019:22:02:09 +0200] [CGI] envp[10] = "SERVER_ADMIN=root@localhost"
+D [11/Jun/2019:22:02:09 +0200] [CGI] envp[11] = "SOFTWARE=CUPS/1.5.4"
+D [11/Jun/2019:22:02:09 +0200] [CGI] envp[12] = "TMPDIR=/var/spool/cups/tmp"
+D [11/Jun/2019:22:02:09 +0200] [CGI] envp[13] = "USER=root"
+D [11/Jun/2019:22:02:09 +0200] [CGI] envp[14] = "CUPS_MAX_MESSAGE=2047"
+D [11/Jun/2019:22:02:09 +0200] [CGI] envp[15] = "CUPS_SERVER=/var/run/cups/cups.sock"
+D [11/Jun/2019:22:02:09 +0200] [CGI] envp[16] = "CUPS_ENCRYPTION=IfRequested"
+D [11/Jun/2019:22:02:09 +0200] [CGI] envp[17] = "IPP_PORT=631"
+D [11/Jun/2019:22:02:09 +0200] [CGI] envp[18] = "AUTH_TYPE=Basic"
+D [11/Jun/2019:22:02:09 +0200] [CGI] envp[19] = "LANG=de_DE.UTF8"
+D [11/Jun/2019:22:02:09 +0200] [CGI] envp[20] = "REDIRECT_STATUS=1"
+D [11/Jun/2019:22:02:09 +0200] [CGI] envp[21] = "GATEWAY_INTERFACE=CGI/1.1"
+D [11/Jun/2019:22:02:09 +0200] [CGI] envp[22] = "SERVER_NAME=localhost"
+D [11/Jun/2019:22:02:09 +0200] [CGI] envp[23] = "SERVER_PORT=631"
+D [11/Jun/2019:22:02:09 +0200] [CGI] envp[24] = "REMOTE_ADDR=[v1.::1]"
+D [11/Jun/2019:22:02:09 +0200] [CGI] envp[25] = "REMOTE_HOST=localhost"
+D [11/Jun/2019:22:02:09 +0200] [CGI] envp[26] = "SCRIPT_NAME=/printers/EPSON_XP-800_Series"
+D [11/Jun/2019:22:02:09 +0200] [CGI] envp[27] = "SCRIPT_FILENAME=/usr/share/cups/webcontent/printers/EPSON_XP-800_Series"
+D [11/Jun/2019:22:02:09 +0200] [CGI] envp[28] = "PATH_INFO=/EPSON_XP-800_Series"
+D [11/Jun/2019:22:02:09 +0200] [CGI] envp[29] = "REMOTE_USER=jack"
+D [11/Jun/2019:22:02:09 +0200] [CGI] envp[30] = "SERVER_PROTOCOL=HTTP/1.1"
+D [11/Jun/2019:22:02:09 +0200] [CGI] envp[31] = "HTTP_COOKIE=org.cups.sid=06d37564f758a75fa9ba18526f9d9971"
+D [11/Jun/2019:22:02:09 +0200] [CGI] envp[32] = "HTTP_USER_AGENT=Mozilla/5.0 (X11; Linux x86_64; rv:21.0) Gecko/20100101 Firefox/21.0"
+D [11/Jun/2019:22:02:09 +0200] [CGI] envp[33] = "HTTP_REFERER=http://localhost:631/printers/EPSON_XP-800_Series"
+D [11/Jun/2019:22:02:09 +0200] [CGI] envp[34] = "REQUEST_METHOD=POST"
+D [11/Jun/2019:22:02:09 +0200] [CGI] envp[35] = "CONTENT_LENGTH=64"
+D [11/Jun/2019:22:02:09 +0200] [CGI] envp[36] = "CONTENT_TYPE=application/x-www-form-urlencoded"
+D [11/Jun/2019:22:02:09 +0200] [CGI] Started /usr/lib/cups/cgi-bin/printers.cgi (PID 5550)
+I [11/Jun/2019:22:02:09 +0200] Started "/usr/lib/cups/cgi-bin/printers.cgi" (pid=5550)
+D [11/Jun/2019:22:02:09 +0200] cupsdSendCommand: 13 file=15
+D [11/Jun/2019:22:02:09 +0200] [CGI] org.cups.sid cookie is "06d37564f758a75fa9ba18526f9d9971"
+D [11/Jun/2019:22:02:09 +0200] [CGI] cgiSetVariable: org.cups.sid="06d37564f758a75fa9ba18526f9d9971"
+D [11/Jun/2019:22:02:09 +0200] [CGI] cgiSetVariable: OP="print-test-page"
+D [11/Jun/2019:22:02:09 +0200] [CGI] cgiSetVariable: SECTION="printers"
+D [11/Jun/2019:22:02:09 +0200] [CGI] cgiSetVariable: REFRESH_PAGE=""
+D [11/Jun/2019:22:02:09 +0200] [CGI] cgiSetVariable: PRINTER_NAME="EPSON_XP-800_Series"
+D [11/Jun/2019:22:02:09 +0200] cupsdAcceptClient: 14 from localhost (Domain)
+D [11/Jun/2019:22:02:09 +0200] cupsdReadClient: 14 POST /printers/EPSON_XP-800_Series HTTP/1.1
+D [11/Jun/2019:22:02:09 +0200] cupsdSetBusyState: newbusy="Active clients", busy="Active clients"
+D [11/Jun/2019:22:02:09 +0200] cupsdAuthorize: No authentication data provided.
+D [11/Jun/2019:22:02:09 +0200] cupsdReadClient: 14 1.1 Print-Job 1
+D [11/Jun/2019:22:02:09 +0200] Print-Job ipp://localhost:631/printers/EPSON_XP-800_Series
+D [11/Jun/2019:22:02:09 +0200] [Job ???] Auto-typing file...
+I [11/Jun/2019:22:02:09 +0200] [Job ???] Request file type is application/vnd.cups-banner.
+D [11/Jun/2019:22:02:09 +0200] cupsdMarkDirty(----J-)
+D [11/Jun/2019:22:02:09 +0200] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Active clients"
+D [11/Jun/2019:22:02:09 +0200] add_job: requesting-user-name="jack"
+D [11/Jun/2019:22:02:09 +0200] Adding default job-sheets values "none,none"...
+I [11/Jun/2019:22:02:09 +0200] [Job 42] Adding start banner page "none".
+D [11/Jun/2019:22:02:09 +0200] Discarding unused job-created event...
+D [11/Jun/2019:22:02:09 +0200] cupsdMarkDirty(----J-)
+D [11/Jun/2019:22:02:09 +0200] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Active clients and dirty files"
+I [11/Jun/2019:22:02:09 +0200] [Job 42] Adding end banner page "none".
+I [11/Jun/2019:22:02:09 +0200] [Job 42] File of type application/vnd.cups-banner queued by "jack".
+D [11/Jun/2019:22:02:09 +0200] [Job 42] hold_until=0
+I [11/Jun/2019:22:02:09 +0200] [Job 42] Queued on "EPSON_XP-800_Series" by "jack".
+D [11/Jun/2019:22:02:09 +0200] cupsdMarkDirty(----J-)
+D [11/Jun/2019:22:02:09 +0200] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Active clients and dirty files"
+D [11/Jun/2019:22:02:09 +0200] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Active clients and dirty files"
+D [11/Jun/2019:22:02:09 +0200] Discarding unused printer-state-changed event...
+D [11/Jun/2019:22:02:09 +0200] [Job 42] job-sheets=none,none
+D [11/Jun/2019:22:02:09 +0200] [Job 42] argv[0]="EPSON_XP-800_Series"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] argv[1]="42"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] argv[2]="jack"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] argv[3]="Test Page"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] argv[4]="1"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] argv[5]="job-uuid=urn:uuid:03cf5b33-f9f1-3ad2-4724-528d4991e82a job-originating-host-name=localhost time-at-creation=1370980929 time-at-processing=1370980929"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] argv[6]="/var/spool/cups/d00042-001"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[0]="CUPS_CACHEDIR=/var/cache/cups"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[1]="CUPS_DATADIR=/usr/share/cups"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[2]="CUPS_DOCROOT=/usr/share/cups/webcontent"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[3]="CUPS_FONTPATH=/usr/share/cups/fonts"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[4]="CUPS_REQUESTROOT=/var/spool/cups"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[5]="CUPS_SERVERBIN=/usr/lib/cups"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[6]="CUPS_SERVERROOT=/etc/cups"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[7]="CUPS_STATEDIR=/var/run/cups"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[8]="HOME=/var/spool/cups/tmp"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[9]="PATH=/usr/lib/cups/filter:/usr/bin:/usr/sbin:/bin:/usr/bin"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[10]="SERVER_ADMIN=root@localhost"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[11]="SOFTWARE=CUPS/1.5.4"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[12]="TMPDIR=/var/spool/cups/tmp"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[13]="USER=root"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[14]="CUPS_MAX_MESSAGE=2047"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[15]="CUPS_SERVER=/var/run/cups/cups.sock"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[16]="CUPS_ENCRYPTION=IfRequested"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[17]="IPP_PORT=631"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[18]="CHARSET=utf-8"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[19]="LANG=de_DE.UTF-8"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[20]="PPD=/etc/cups/ppd/EPSON_XP-800_Series.ppd"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[21]="RIP_MAX_CACHE=128m"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[22]="CONTENT_TYPE=application/vnd.cups-banner"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[23]="DEVICE_URI=lpd://192.168.2.110:515/PASSTHRU"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[24]="PRINTER_INFO=EPSON XP-800 Series"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[25]="PRINTER_LOCATION="
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[26]="PRINTER=EPSON_XP-800_Series"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[27]="PRINTER_STATE_REASONS=none"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[28]="CUPS_FILETYPE=document"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[29]="FINAL_CONTENT_TYPE=printer/EPSON_XP-800_Series"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[30]="AUTH_I****"
+I [11/Jun/2019:22:02:09 +0200] [Job 42] Started filter /usr/lib/cups/filter/bannertops (PID 5551)
+I [11/Jun/2019:22:02:09 +0200] [Job 42] Started filter /usr/lib/cups/filter/pstops (PID 5552)
+I [11/Jun/2019:22:02:09 +0200] [Job 42] Started filter /usr/lib/cups/filter/gstoraster (PID 5553)
+I [11/Jun/2019:22:02:09 +0200] [Job 42] Started filter /opt/epson-inkjet-printer-201208w/cups/lib/filter/epson_inkjet_printer_filter (PID 5554)
+I [11/Jun/2019:22:02:09 +0200] [Job 42] Started backend /usr/lib/cups/backend/lpd (PID 5555)
+D [11/Jun/2019:22:02:09 +0200] Discarding unused job-state-changed event...
+D [11/Jun/2019:22:02:09 +0200] Returning IPP successful-ok for Print-Job (ipp://localhost:631/printers/EPSON_XP-800_Series) from localhost
+D [11/Jun/2019:22:02:09 +0200] PID 5554 (/opt/epson-inkjet-printer-201208w/cups/lib/filter/epson_inkjet_printer_filter) stopped with status 127 (File too large)
+D [11/Jun/2019:22:02:09 +0200] [Job 42] load_banner(filename="/var/spool/cups/d00042-001")
+D [11/Jun/2019:22:02:09 +0200] [Job 42] 1 #CUPS-BANNER
+D [11/Jun/2019:22:02:09 +0200] [Job 42] 2 Show printer-name printer-info printer-location printer-make-and-model printer-driver-name printer-driver-version paper-size imageable-area
+D [11/Jun/2019:22:02:09 +0200] [Job 42] 3 Header Printer Test Page
+D [11/Jun/2019:22:02:09 +0200] [Job 42] 4 Footer Printer Test Page
+D [11/Jun/2019:22:02:09 +0200] [Job 42] 5 Notice CUPS 1.5.4.
+D [11/Jun/2019:22:02:09 +0200] [Job 42] 6 Image images/cups.png
+D [11/Jun/2019:22:02:09 +0200] [Job 42] 7 Image images/color-wheel.png
+D [11/Jun/2019:22:02:09 +0200] [Job 42] EPSON_XP-800_Series: error while loading shared libraries: libjpeg.so.62: cannot open shared object file: No such file or directory
+D [11/Jun/2019:22:02:09 +0200] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Active clients and dirty files"
+D [11/Jun/2019:22:02:09 +0200] [CGI] cgiSetVariable: SERVER_NAME="localhost"
+D [11/Jun/2019:22:02:09 +0200] [CGI] cgiSetVariable: REMOTE_USER="jack"
+D [11/Jun/2019:22:02:09 +0200] [CGI] cgiSetVariable: CUPS_VERSION="CUPS v1.5.4"
+D [11/Jun/2019:22:02:09 +0200] [CGI] cgiSetVariable: SERVER_NAME="localhost"
+D [11/Jun/2019:22:02:09 +0200] [CGI] cgiSetVariable: REMOTE_USER="jack"
+D [11/Jun/2019:22:02:09 +0200] [CGI] cgiSetVariable: CUPS_VERSION="CUPS v1.5.4"
+D [11/Jun/2019:22:02:09 +0200] [CGI] cgiSetArray: job_uri[0]="/jobs/42"
+D [11/Jun/2019:22:02:09 +0200] [CGI] cgiSetArray: job_id[0]="42"
+D [11/Jun/2019:22:02:09 +0200] [CGI] cgiSetArray: job_state[0]="3"
+D [11/Jun/2019:22:02:09 +0200] [CGI] cgiSetArray: job_state_reasons[0]="none"
+D [11/Jun/2019:22:02:09 +0200] [CGI] cgiSetVariable: refresh_page="2;URL=/printers/EPSON_XP-800_Series"
+D [11/Jun/2019:22:02:09 +0200] [CGI] cgiSetVariable: TITLE="Testseite drucken"
+D [11/Jun/2019:22:02:09 +0200] [CGI] cgiSetVariable: SERVER_NAME="localhost"
+D [11/Jun/2019:22:02:09 +0200] [CGI] cgiSetVariable: REMOTE_USER="jack"
+D [11/Jun/2019:22:02:09 +0200] [CGI] cgiSetVariable: CUPS_VERSION="CUPS v1.5.4"
+D [11/Jun/2019:22:02:09 +0200] Script header: Content-Type: text/html;charset=utf-8
+D [11/Jun/2019:22:02:09 +0200] Script header: 
+D [11/Jun/2019:22:02:09 +0200] [CGI] cgiSetVariable: PRINTER_NAME="EPSON_XP-800_Series"
+D [11/Jun/2019:22:02:09 +0200] cupsdReadClient: 14 WAITING Closing on EOF
+D [11/Jun/2019:22:02:09 +0200] cupsdCloseClient: 14
+D [11/Jun/2019:22:02:09 +0200] cupsdSetBusyState: newbusy="Active clients, printing jobs, and dirty files", busy="Active clients, printing jobs, and dirty files"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] STATE: +connecting-to-device
+D [11/Jun/2019:22:02:09 +0200] [Job 42] Looking up "192.168.2.110"...
+D [11/Jun/2019:22:02:09 +0200] [Job 42] backendWaitLoop(snmp_fd=5, addr=0x7f3185616a38, side_cb=0x7f3183f4ad20)
+D [11/Jun/2019:22:02:09 +0200] Discarding unused printer-state-changed event...
+D [11/Jun/2019:22:02:09 +0200] PID 5550 (/usr/lib/cups/cgi-bin/printers.cgi) exited with no errors.
+D [11/Jun/2019:22:02:09 +0200] PID 5555 (/usr/lib/cups/backend/lpd) exited with no errors.
+D [11/Jun/2019:22:02:09 +0200] cupsdSetBusyState: newbusy="Dirty files", busy="Active clients, printing jobs, and dirty files"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] Page = 595x842; 8,8 to 587,834
+E [11/Jun/2019:22:02:09 +0200] [Job 42] Unable to open print file: No such file or directory
+D [11/Jun/2019:22:02:09 +0200] [Job 42] Unable to open "/usr/share/cups/fonts/Monospace".
+E [11/Jun/2019:22:02:09 +0200] [Job 42] Unable to open print file: No such file or directory
+D [11/Jun/2019:22:02:09 +0200] [Job 42] Unable to open "/usr/share/cups/fonts/Monospace-Bold".
+E [11/Jun/2019:22:02:09 +0200] [Job 42] Unable to open print file: No such file or directory
+D [11/Jun/2019:22:02:09 +0200] [Job 42] Unable to open "/usr/share/cups/fonts/Monospace-BoldOblique".
+D [11/Jun/2019:22:02:09 +0200] Discarding unused job-progress event...
+D [11/Jun/2019:22:02:09 +0200] Discarding unused printer-state-changed event...
+E [11/Jun/2019:22:02:09 +0200] [Job 42] Unable to open print file: No such file or directory
+D [11/Jun/2019:22:02:09 +0200] [Job 42] Unable to open "/usr/share/cups/fonts/Monospace-Oblique".
+D [11/Jun/2019:22:02:09 +0200] [Job 42] PNG image: 128x128x8, color_type=6 (RGB+ALPHA)
+D [11/Jun/2019:22:02:09 +0200] [Job 42] PNG image: 192x128x8, color_type=2 (RGB)
+D [11/Jun/2019:22:02:09 +0200] [Job 42] Page = 595x842; 8,8 to 587,834
+D [11/Jun/2019:22:02:09 +0200] [Job 42] slow_collate=0, slow_duplex=0, slow_order=0
+D [11/Jun/2019:22:02:09 +0200] [Job 42] Before copy_comments - %!PS-Adobe-3.0
+D [11/Jun/2019:22:02:09 +0200] [Job 42] %!PS-Adobe-3.0
+D [11/Jun/2019:22:02:09 +0200] [Job 42] %%BoundingBox: 8 8 587 834
+D [11/Jun/2019:22:02:09 +0200] [Job 42] %cupsRotation: 0
+D [11/Jun/2019:22:02:09 +0200] [Job 42] %%Creator: bannertops/CUPS v1.5.4
+D [11/Jun/2019:22:02:09 +0200] [Job 42] %%CreationDate: Di 11 Jun 2019 22:02:09 CEST
+D [11/Jun/2019:22:02:09 +0200] [Job 42] %%LanguageLevel: 2
+D [11/Jun/2019:22:02:09 +0200] [Job 42] %%DocumentData: Clean7Bit
+D [11/Jun/2019:22:02:09 +0200] [Job 42] %%Title: (Test Page)
+D [11/Jun/2019:22:02:09 +0200] [Job 42] %%For: (jack)
+D [11/Jun/2019:22:02:09 +0200] [Job 42] %%Pages: 1
+D [11/Jun/2019:22:02:09 +0200] [Job 42] %%DocumentSuppliedResources: font Monospace
+D [11/Jun/2019:22:02:09 +0200] [Job 42] %%+ font Monospace-Bold
+D [11/Jun/2019:22:02:09 +0200] [Job 42] %%+ font Monospace-BoldOblique
+D [11/Jun/2019:22:02:09 +0200] [Job 42] %%+ font Monospace-Oblique
+D [11/Jun/2019:22:02:09 +0200] [Job 42] %%EndComments
+D [11/Jun/2019:22:02:09 +0200] [Job 42] Before copy_prolog - %%BeginProlog
+D [11/Jun/2019:22:02:09 +0200] [Job 42] Before copy_setup - %%Page: coverpage 1
+D [11/Jun/2019:22:02:09 +0200] [Job 42] Before page loop - %%Page: coverpage 1
+D [11/Jun/2019:22:02:09 +0200] [Job 42] Copying page 1...
+D [11/Jun/2019:22:02:09 +0200] [Job 42] pagew = 578.5, pagel = 825.1
+D [11/Jun/2019:22:02:09 +0200] [Job 42] bboxx = 0, bboxy = 0, bboxw = 595, bboxl = 841
+D [11/Jun/2019:22:02:09 +0200] [Job 42] PageLeft = 8.4, PageRight = 586.9
+D [11/Jun/2019:22:02:09 +0200] [Job 42] PageTop = 833.5, PageBottom = 8.4
+D [11/Jun/2019:22:02:09 +0200] [Job 42] PageWidth = 595.3, PageLength = 841.9
+D [11/Jun/2019:22:02:09 +0200] [Job 42] Wrote 1 pages...
+D [11/Jun/2019:22:02:09 +0200] PID 5551 (/usr/lib/cups/filter/bannertops) exited with no errors.
+D [11/Jun/2019:22:02:09 +0200] PID 5552 (/usr/lib/cups/filter/pstops) exited with no errors.
+D [11/Jun/2019:22:02:09 +0200] [Job 42] PPD uses qualifier 'RGB.PLAIN.'
+D [11/Jun/2019:22:02:09 +0200] [Job 42] Calling FindDeviceById(EPSON_XP-800_Series)
+D [11/Jun/2019:22:02:09 +0200] [Job 42] Failed to send: org.freedesktop.DBus.Error.ServiceUnknown:The name org.freedesktop.ColorManager was not provided by any .service files
+D [11/Jun/2019:22:02:09 +0200] [Job 42] Failed to get profile filename!
+I [11/Jun/2019:22:02:09 +0200] [Job 42] no profiles specified in PPD
+D [11/Jun/2019:22:02:09 +0200] Discarding unused job-progress event...
+D [11/Jun/2019:22:02:09 +0200] Discarding unused printer-state-changed event...
+D [11/Jun/2019:22:02:09 +0200] [Job 42] Ghostscript command line: /usr/bin/gs -dQUIET -dPARANOIDSAFER -dNOPAUSE -dBATCH -dNOINTERPOLATE -dNOMEDIAATTRS -sDEVICE=cups -sstdout=%stderr -sOutputFile=%stdout -I/usr/share/cups/fonts -c -f -_
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[0]="CUPS_CACHEDIR=/var/cache/cups"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[1]="CUPS_DATADIR=/usr/share/cups"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[2]="CUPS_DOCROOT=/usr/share/cups/webcontent"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[3]="CUPS_FONTPATH=/usr/share/cups/fonts"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[4]="CUPS_REQUESTROOT=/var/spool/cups"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[5]="CUPS_SERVERBIN=/usr/lib/cups"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[6]="CUPS_SERVERROOT=/etc/cups"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[7]="CUPS_STATEDIR=/var/run/cups"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[8]="HOME=/var/spool/cups/tmp"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[9]="PATH=/usr/lib/cups/filter:/usr/bin:/usr/sbin:/bin:/usr/bin"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[10]="SERVER_ADMIN=root@localhost"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[11]="SOFTWARE=CUPS/1.5.4"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[12]="TMPDIR=/var/spool/cups/tmp"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[13]="USER=root"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[14]="CUPS_MAX_MESSAGE=2047"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[15]="CUPS_SERVER=/var/run/cups/cups.sock"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[16]="CUPS_ENCRYPTION=IfRequested"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[17]="IPP_PORT=631"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[18]="CHARSET=utf-8"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[19]="LANG=de_DE.UTF-8"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[20]="PPD=/etc/cups/ppd/EPSON_XP-800_Series.ppd"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[21]="RIP_MAX_CACHE=128m"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[22]="CONTENT_TYPE=application/vnd.cups-banner"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[23]="DEVICE_URI=lpd://192.168.2.110:515/PASSTHRU"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[24]="PRINTER_INFO=EPSON XP-800 Series"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[25]="PRINTER_LOCATION="
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[26]="PRINTER=EPSON_XP-800_Series"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[27]="PRINTER_STATE_REASONS=none"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[28]="CUPS_FILETYPE=document"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[29]="FINAL_CONTENT_TYPE=printer/EPSON_XP-800_Series"
+D [11/Jun/2019:22:02:09 +0200] [Job 42] envp[30]="AUTH_INFO_REQUIRED=none"
+I [11/Jun/2019:22:02:09 +0200] [Job 42] Start rendering...
+I [11/Jun/2019:22:02:09 +0200] [Job 42] Processing page 1...
+D [11/Jun/2019:22:02:09 +0200] Discarding unused job-progress event...
+D [11/Jun/2019:22:02:09 +0200] Discarding unused printer-state-changed event...
+D [11/Jun/2019:22:02:09 +0200] PID 5553 (/usr/lib/cups/filter/gstoraster) stopped with status 13.
+D [11/Jun/2019:22:02:09 +0200] Discarding unused job-state-changed event...
+E [11/Jun/2019:22:02:09 +0200] [Job 42] Job stopped due to filter errors; please consult the error_log file for details.
+D [11/Jun/2019:22:02:09 +0200] cupsdMarkDirty(----J-)
+D [11/Jun/2019:22:02:09 +0200] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Dirty files"
+D [11/Jun/2019:22:02:09 +0200] cupsdSetBusyState: newbusy="Printing jobs and dirty files", busy="Printing jobs and dirty files"
+D [11/Jun/2019:22:02:09 +0200] Discarding unused printer-state-changed event...
+D [11/Jun/2019:22:02:10 +0200] [Job 42] Unloading...
+D [11/Jun/2019:22:02:11 +0200] cupsdReadClient: 13 GET /printers/EPSON_XP-800_Series HTTP/1.1
+D [11/Jun/2019:22:02:11 +0200] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Printing jobs and dirty files"
+D [11/Jun/2019:22:02:11 +0200] cupsdAuthorize: Authorized as jack using Basic
+D [11/Jun/2019:22:02:11 +0200] [CGI] argv[0] = "/usr/lib/cups/cgi-bin/printers.cgi"
+D [11/Jun/2019:22:02:11 +0200] [CGI] envp[0] = "CUPS_CACHEDIR=/var/cache/cups"
+D [11/Jun/2019:22:02:11 +0200] [CGI] envp[1] = "CUPS_DATADIR=/usr/share/cups"
+D [11/Jun/2019:22:02:11 +0200] [CGI] envp[2] = "CUPS_DOCROOT=/usr/share/cups/webcontent"
+D [11/Jun/2019:22:02:11 +0200] [CGI] envp[3] = "CUPS_FONTPATH=/usr/share/cups/fonts"
+D [11/Jun/2019:22:02:11 +0200] [CGI] envp[4] = "CUPS_REQUESTROOT=/var/spool/cups"
+D [11/Jun/2019:22:02:11 +0200] [CGI] envp[5] = "CUPS_SERVERBIN=/usr/lib/cups"
+D [11/Jun/2019:22:02:11 +0200] [CGI] envp[6] = "CUPS_SERVERROOT=/etc/cups"
+D [11/Jun/2019:22:02:11 +0200] [CGI] envp[7] = "CUPS_STATEDIR=/var/run/cups"
+D [11/Jun/2019:22:02:11 +0200] [CGI] envp[8] = "HOME=/var/spool/cups/tmp"
+D [11/Jun/2019:22:02:11 +0200] [CGI] envp[9] = "PATH=/usr/lib/cups/filter:/usr/bin:/usr/sbin:/bin:/usr/bin"
+D [11/Jun/2019:22:02:11 +0200] [CGI] envp[10] = "SERVER_ADMIN=root@localhost"
+D [11/Jun/2019:22:02:11 +0200] [CGI] envp[11] = "SOFTWARE=CUPS/1.5.4"
+D [11/Jun/2019:22:02:11 +0200] [CGI] envp[12] = "TMPDIR=/var/spool/cups/tmp"
+D [11/Jun/2019:22:02:11 +0200] [CGI] envp[13] = "USER=root"
+D [11/Jun/2019:22:02:11 +0200] [CGI] envp[14] = "CUPS_MAX_MESSAGE=2047"
+D [11/Jun/2019:22:02:11 +0200] [CGI] envp[15] = "CUPS_SERVER=/var/run/cups/cups.sock"
+D [11/Jun/2019:22:02:11 +0200] [CGI] envp[16] = "CUPS_ENCRYPTION=IfRequested"
+D [11/Jun/2019:22:02:11 +0200] [CGI] envp[17] = "IPP_PORT=631"
+D [11/Jun/2019:22:02:11 +0200] [CGI] envp[18] = "AUTH_TYPE=Basic"
+D [11/Jun/2019:22:02:11 +0200] [CGI] envp[19] = "LANG=de_DE.UTF8"
+D [11/Jun/2019:22:02:11 +0200] [CGI] envp[20] = "REDIRECT_STATUS=1"
+D [11/Jun/2019:22:02:11 +0200] [CGI] envp[21] = "GATEWAY_INTERFACE=CGI/1.1"
+D [11/Jun/2019:22:02:11 +0200] [CGI] envp[22] = "SERVER_NAME=localhost"
+D [11/Jun/2019:22:02:11 +0200] [CGI] envp[23] = "SERVER_PORT=631"
+D [11/Jun/2019:22:02:11 +0200] [CGI] envp[24] = "REMOTE_ADDR=[v1.::1]"
+D [11/Jun/2019:22:02:11 +0200] [CGI] envp[25] = "REMOTE_HOST=localhost"
+D [11/Jun/2019:22:02:11 +0200] [CGI] envp[26] = "SCRIPT_NAME=/printers/EPSON_XP-800_Series"
+D [11/Jun/2019:22:02:11 +0200] [CGI] envp[27] = "SCRIPT_FILENAME=/usr/share/cups/webcontent/printers/EPSON_XP-800_Series"
+D [11/Jun/2019:22:02:11 +0200] [CGI] envp[28] = "PATH_INFO=/EPSON_XP-800_Series"
+D [11/Jun/2019:22:02:11 +0200] [CGI] envp[29] = "REMOTE_USER=jack"
+D [11/Jun/2019:22:02:11 +0200] [CGI] envp[30] = "SERVER_PROTOCOL=HTTP/1.1"
+D [11/Jun/2019:22:02:11 +0200] [CGI] envp[31] = "HTTP_COOKIE=org.cups.sid=06d37564f758a75fa9ba18526f9d9971"
+D [11/Jun/2019:22:02:11 +0200] [CGI] envp[32] = "HTTP_USER_AGENT=Mozilla/5.0 (X11; Linux x86_64; rv:21.0) Gecko/20100101 Firefox/21.0"
+D [11/Jun/2019:22:02:11 +0200] [CGI] envp[33] = "REQUEST_METHOD=GET"
+D [11/Jun/2019:22:02:11 +0200] [CGI] envp[34] = "QUERY_STRING="
+D [11/Jun/2019:22:02:11 +0200] [CGI] Started /usr/lib/cups/cgi-bin/printers.cgi (PID 5557)
+I [11/Jun/2019:22:02:11 +0200] Started "/usr/lib/cups/cgi-bin/printers.cgi" (pid=5557)
+D [11/Jun/2019:22:02:11 +0200] cupsdSendCommand: 13 file=14
+D [11/Jun/2019:22:02:11 +0200] [CGI] org.cups.sid cookie is "06d37564f758a75fa9ba18526f9d9971"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetVariable: SECTION="printers"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetVariable: REFRESH_PAGE=""
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetVariable: PRINTER_NAME="EPSON_XP-800_Series"
+D [11/Jun/2019:22:02:11 +0200] cupsdAcceptClient: 15 from localhost (Domain)
+D [11/Jun/2019:22:02:11 +0200] cupsdReadClient: 15 POST / HTTP/1.1
+D [11/Jun/2019:22:02:11 +0200] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Active clients and dirty files"
+D [11/Jun/2019:22:02:11 +0200] cupsdAuthorize: No authentication data provided.
+D [11/Jun/2019:22:02:11 +0200] cupsdReadClient: 15 1.1 CUPS-Get-Default 1
+D [11/Jun/2019:22:02:11 +0200] CUPS-Get-Default
+D [11/Jun/2019:22:02:11 +0200] CUPS-Get-Default client-error-not-found: No default printer.
+D [11/Jun/2019:22:02:11 +0200] Returning IPP client-error-not-found for CUPS-Get-Default (no URI) from localhost
+D [11/Jun/2019:22:02:11 +0200] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Active clients and dirty files"
+D [11/Jun/2019:22:02:11 +0200] [CGI] show_printer(http=0x7f34d67de0d0, printer="EPSON_XP-800_Series")
+D [11/Jun/2019:22:02:11 +0200] cupsdReadClient: 15 POST / HTTP/1.1
+D [11/Jun/2019:22:02:11 +0200] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Active clients and dirty files"
+D [11/Jun/2019:22:02:11 +0200] cupsdAuthorize: No authentication data provided.
+D [11/Jun/2019:22:02:11 +0200] cupsdReadClient: 15 1.1 Get-Printer-Attributes 1
+D [11/Jun/2019:22:02:11 +0200] Get-Printer-Attributes ipp://localhost/printers/EPSON_XP-800_Series
+D [11/Jun/2019:22:02:11 +0200] Returning IPP successful-ok for Get-Printer-Attributes (ipp://localhost/printers/EPSON_XP-800_Series) from localhost
+D [11/Jun/2019:22:02:11 +0200] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Active clients and dirty files"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetVariable: SERVER_NAME="localhost"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetVariable: REMOTE_USER="jack"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetVariable: CUPS_VERSION="CUPS v1.5.4"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetVariable: SERVER_NAME="localhost"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetVariable: REMOTE_USER="jack"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetVariable: CUPS_VERSION="CUPS v1.5.4"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetArray: printer_is_accepting_jobs[0]="1"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetArray: printer_is_shared[0]="1"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetArray: printer_state[0]="3"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetArray: admin_uri[0]="/admin/"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetArray: printer_uri_supported[0]="/printers/EPSON_XP-800_Series"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetArray: printer_name[0]="EPSON_XP-800_Series"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetArray: printer_location[0]=""
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetArray: printer_info[0]="EPSON XP-800 Series"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetArray: job_sheets_default[0]="none, none"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetArray: device_uri[0]="lpd://192.168.2.110:515/PASSTHRU"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetArray: color_supported[0]="1"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetArray: printer_make_and_model[0]="Epson XP-800 Series - epson-inkjet-printer 1.0.0-1lsb3.2 (Seiko Epson Corporation LSB 3.2)"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetArray: media_default[0]="iso_a4_210x297mm"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetArray: sides_supported[0]="one-sided, two-sided-long-edge, two-sided-short-edge"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetArray: sides_default[0]="one-sided"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetArray: printer_commands[0]="none"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetArray: server_is_sharing_printers[0]="0"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetVariable: TITLE="EPSON_XP-800_Series"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetVariable: SERVER_NAME="localhost"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetVariable: REMOTE_USER="jack"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetVariable: CUPS_VERSION="CUPS v1.5.4"
+D [11/Jun/2019:22:02:11 +0200] Script header: Content-Type: text/html;charset=utf-8
+D [11/Jun/2019:22:02:11 +0200] Script header: 
+D [11/Jun/2019:22:02:11 +0200] [CGI] Regular expression ".*Clean.*"
+D [11/Jun/2019:22:02:11 +0200] [CGI] Regular expression ".*PrintSelfTestPage.*"
+D [11/Jun/2019:22:02:11 +0200] cupsdReadClient: 15 POST / HTTP/1.1
+D [11/Jun/2019:22:02:11 +0200] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Active clients and dirty files"
+D [11/Jun/2019:22:02:11 +0200] cupsdAuthorize: No authentication data provided.
+D [11/Jun/2019:22:02:11 +0200] cupsdReadClient: 15 1.1 Get-Jobs 1
+D [11/Jun/2019:22:02:11 +0200] Get-Jobs ipp://localhost:631/printers/EPSON_XP-800_Series
+D [11/Jun/2019:22:02:11 +0200] [Job 42] Loading attributes...
+D [11/Jun/2019:22:02:11 +0200] Returning IPP successful-ok for Get-Jobs (ipp://localhost:631/printers/EPSON_XP-800_Series) from localhost
+D [11/Jun/2019:22:02:11 +0200] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Active clients and dirty files"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiClearVariables called.
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetVariable: ORDER="asc"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetVariable: SECTION="printers"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetVariable: TOTAL="2"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetVariable: SERVER_NAME="localhost"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetVariable: REMOTE_USER="jack"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetVariable: CUPS_VERSION="CUPS v1.5.4"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetArray: job_preserved[0]="1"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetArray: job_printer_name[0]="EPSON_XP-800_Series"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetArray: job_printer_uri[0]="/printers/EPSON_XP-800_Series"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetArray: time_at_creation[0]="Di 11 Jun 2019 21:47:43 CEST"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetArray: time_at_processing[0]="Di 11 Jun 2019 21:47:43 CEST"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetArray: time_at_completed[0]="novalue"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetArray: job_id[0]="41"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetArray: job_state[0]="6"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetArray: job_media_sheets_completed[0]="0"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetArray: job_k_octets[0]="1"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetArray: job_printer_state_message[0]="/opt/epson-inkjet-printer-201208w/cups/lib/filter/epson_inkjet_printer_filter failed"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetVariable: SERVER_NAME="localhost"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetVariable: REMOTE_USER="jack"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetVariable: CUPS_VERSION="CUPS v1.5.4"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetArray: job_preserved[1]="1"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetArray: job_printer_name[1]="EPSON_XP-800_Series"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetArray: job_printer_uri[1]="/printers/EPSON_XP-800_Series"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetArray: time_at_creation[1]="Di 11 Jun 2019 22:02:09 CEST"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetArray: time_at_processing[1]="Di 11 Jun 2019 22:02:09 CEST"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetArray: time_at_completed[1]="novalue"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetArray: job_id[1]="42"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetArray: job_state[1]="6"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetArray: job_media_sheets_completed[1]="0"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetArray: job_k_octets[1]="1"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetArray: job_printer_state_message[1]="/opt/epson-inkjet-printer-201208w/cups/lib/filter/epson_inkjet_printer_filter failed"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetVariable: PRINTER_NAME="EPSON_XP-800_Series"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetVariable: PRINTER_URI_SUPPORTED="/printers/EPSON_XP-800_Series"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetVariable: THISURL="/printers/EPSON_XP-800_Series"
+D [11/Jun/2019:22:02:11 +0200] [CGI] cgiSetVariable: SEARCH_DEST="EPSON_XP-800_Series"
+D [11/Jun/2019:22:02:11 +0200] cupsdReadClient: 15 WAITING Closing on EOF
+D [11/Jun/2019:22:02:11 +0200] cupsdCloseClient: 15
+D [11/Jun/2019:22:02:11 +0200] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Active clients and dirty files"
+D [11/Jun/2019:22:02:11 +0200] PID 5557 (/usr/lib/cups/cgi-bin/printers.cgi) exited with no errors.
+D [11/Jun/2019:22:02:11 +0200] cupsdSetBusyState: newbusy="Dirty files", busy="Active clients and dirty files"
+D [11/Jun/2019:22:02:11 +0200] cupsdReadClient: 13 GET /cups.css HTTP/1.1
+D [11/Jun/2019:22:02:11 +0200] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Dirty files"
+D [11/Jun/2019:22:02:11 +0200] cupsdAuthorize: Authorized as jack using Basic
+D [11/Jun/2019:22:02:11 +0200] cupsdSetBusyState: newbusy="Dirty files", busy="Active clients and dirty files"
+D [11/Jun/2019:22:02:11 +0200] cupsdAcceptClient: 14 from localhost:631 (IPv6)
+D [11/Jun/2019:22:02:11 +0200] cupsdAcceptClient: 15 from localhost:631 (IPv6)
+D [11/Jun/2019:22:02:11 +0200] cupsdReadClient: 14 GET /images/left.gif HTTP/1.1
+D [11/Jun/2019:22:02:11 +0200] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Dirty files"
+D [11/Jun/2019:22:02:11 +0200] cupsdAuthorize: Authorized as jack using Basic
+D [11/Jun/2019:22:02:11 +0200] cupsdSetBusyState: newbusy="Dirty files", busy="Active clients and dirty files"
+D [11/Jun/2019:22:02:11 +0200] cupsdReadClient: 15 GET /images/right.gif HTTP/1.1
+D [11/Jun/2019:22:02:11 +0200] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Dirty files"
+D [11/Jun/2019:22:02:11 +0200] cupsdAuthorize: Authorized as jack using Basic
+D [11/Jun/2019:22:02:11 +0200] cupsdSetBusyState: newbusy="Dirty files", busy="Active clients and dirty files"
+D [11/Jun/2019:22:02:11 +0200] cupsdReadClient: 13 GET /images/unsel.gif HTTP/1.1
+D [11/Jun/2019:22:02:11 +0200] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Dirty files"
+D [11/Jun/2019:22:02:11 +0200] cupsdAuthorize: Authorized as jack using Basic
+D [11/Jun/2019:22:02:11 +0200] cupsdSetBusyState: newbusy="Dirty files", busy="Active clients and dirty files"
+D [11/Jun/2019:22:02:11 +0200] cupsdReadClient: 14 GET /images/sel.gif HTTP/1.1
+D [11/Jun/2019:22:02:11 +0200] cupsdSetBusyState: newbusy="Active clients and dirty files", busy="Dirty files"
+D [11/Jun/2019:22:02:11 +0200] cupsdAuthorize: Authorized as jack using Basic
+D [11/Jun/2019:22:02:11 +0200] cupsdSetBusyState: newbusy="Dirty files", busy="Active clients and dirty files"
+D [11/Jun/2019:22:02:11 +0200] cupsdAcceptClient: 17 from localhost:631 (IPv6)
+D [11/Jun/2019:22:02:16 +0200] cupsdReadClient: 17 WAITING Closing on EOF
+D [11/Jun/2019:22:02:16 +0200] cupsdCloseClient: 17
+D [11/Jun/2019:22:02:16 +0200] cupsdSetBusyState: newbusy="Dirty files", busy="Dirty files"
+I [11/Jun/2019:22:02:40 +0200] Saving job.cache...
+D [11/Jun/2019:22:02:40 +0200] cupsdSetBusyState: newbusy="Not busy", busy="Dirty files"
+D [11/Jun/2019:22:02:42 +0200] cupsdReadClient: 14 WAITING Closing on EOF
+D [11/Jun/2019:22:02:42 +0200] cupsdCloseClient: 14
+D [11/Jun/2019:22:02:42 +0200] cupsdSetBusyState: newbusy="Not busy", busy="Not busy"
+D [11/Jun/2019:22:02:42 +0200] cupsdReadClient: 13 WAITING Closing on EOF
+D [11/Jun/2019:22:02:42 +0200] cupsdCloseClient: 13
+D [11/Jun/2019:22:02:42 +0200] cupsdSetBusyState: newbusy="Not busy", busy="Not busy"
+D [11/Jun/2019:22:02:42 +0200] cupsdReadClient: 15 WAITING Closing on EOF
+D [11/Jun/2019:22:02:42 +0200] cupsdCloseClient: 15
+D [11/Jun/2019:22:02:42 +0200] cupsdSetBusyState: newbusy="Not busy", busy="Not busy"

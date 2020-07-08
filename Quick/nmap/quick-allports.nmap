@@ -1,0 +1,12 @@
+# Nmap 7.80 scan initiated Wed Jul  1 21:53:25 2020 as: nmap -vv -sU -oA nmap/quick-allports 10.10.10.186
+Increasing send delay for 10.10.10.186 from 100 to 200 due to 11 out of 15 dropped probes since last increase.
+Nmap scan report for quick.htb (10.10.10.186)
+Host is up, received echo-reply ttl 63 (0.36s latency).
+Scanned at 2020-07-01 21:53:25 GMT for 1012s
+Not shown: 999 closed ports
+Reason: 999 port-unreaches
+PORT    STATE         SERVICE REASON
+443/udp open|filtered https   no-response
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Wed Jul  1 22:10:17 2020 -- 1 IP address (1 host up) scanned in 1012.02 seconds

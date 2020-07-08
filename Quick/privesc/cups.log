@@ -1,0 +1,136 @@
+09:33:45 : [Client 1] Started "/nix/store/5pwy8d9k4z6jp8n944nr8kf9lxihkg9w-cups-progs/lib/cups/cgi-bin/printers.cgi" (pid=7628, file=13)
+09:33:45 : [Job ???] Request file type is application/vnd.cups-pdf-banner.
+09:33:45 : Adding start banner page "none".
+09:33:45 : Adding end banner page "none".
+09:33:45 : File of type application/vnd.cups-pdf-banner queued by "anonymous".
+09:33:45 : hold_until=0
+09:33:45 : Queued on "canon" by "anonymous".
+09:33:45 : time-at-processing=1484922825
+09:33:45 : 4 filters for job:
+09:33:45 : bannertopdf (application/vnd.cups-pdf-banner to application/pdf, cost 32)
+09:33:45 : pdftopdf (application/pdf to application/vnd.cups-pdf, cost 66)
+09:33:45 : pdftops (application/vnd.cups-pdf to application/vnd.cups-postscript, cost 100)
+09:33:45 : pstoufr2cpca (application/vnd.cups-postscript to printer/canon, cost 0)
+09:33:45 : job-sheets=none,none
+09:33:45 : argv[0]="canon"
+09:33:45 : argv[1]="9"
+09:33:45 : argv[2]="anonymous"
+09:33:45 : argv[3]="Test Page"
+09:33:45 : argv[4]="1"
+09:33:45 : argv[5]="job-uuid=urn:uuid:2f4c0d78-cb9e-333c-567f-d0c93bd3477e job-originating-host-name=localhost date-time-at-creation= date-time-at-processing= time-at-creation=1484922825 time-at-processing=1484922825"
+09:33:45 : argv[6]="/var/spool/cups/d00009-001"
+09:33:45 : envp[0]="PATH=/nix/store/5pwy8d9k4z6jp8n944nr8kf9lxihkg9w-cups-progs/lib/cups/filter:/nix/store/5pwy8d9k4z6jp8n944nr8kf9lxihkg9w-cups-progs/bin"
+09:33:45 : envp[1]="CUPS_CACHEDIR=/var/cache/cups"
+09:33:45 : envp[2]="CUPS_DATADIR=/nix/store/5pwy8d9k4z6jp8n944nr8kf9lxihkg9w-cups-progs/share/cups"
+09:33:45 : envp[3]="CUPS_DOCROOT=/nix/store/xjbig53iqwiwj05q0z4im2hxg571kzxz-cups-2.1.4/share/doc/cups"
+09:33:45 : envp[4]="CUPS_FONTPATH=/nix/store/xjbig53iqwiwj05q0z4im2hxg571kzxz-cups-2.1.4/share/cups/fonts"
+09:33:45 : envp[5]="CUPS_REQUESTROOT=/var/spool/cups"
+09:33:45 : envp[6]="CUPS_SERVERBIN=/nix/store/5pwy8d9k4z6jp8n944nr8kf9lxihkg9w-cups-progs/lib/cups"
+09:33:45 : envp[7]="CUPS_SERVERROOT=/etc/cups"
+09:33:45 : envp[8]="CUPS_STATEDIR=/var/run/cups"
+09:33:45 : envp[9]="HOME=/tmp"
+09:33:45 : envp[10]="SERVER_ADMIN=root@quick"
+09:33:45 : envp[11]="SOFTWARE=CUPS/2.1.4"
+09:33:45 : envp[12]="TMPDIR=/tmp"
+09:33:45 : envp[13]="USER=root"
+09:33:45 : envp[14]="CUPS_MAX_MESSAGE=2047"
+09:33:45 : envp[15]="CUPS_SERVER=/var/run/cups/cups.sock"
+09:33:45 : envp[16]="CUPS_ENCRYPTION=IfRequested"
+09:33:45 : envp[17]="IPP_PORT=631"
+09:33:45 : envp[18]="CHARSET=utf-8"
+09:33:45 : envp[19]="LANG=en_US.UTF-8"
+09:33:45 : envp[20]="PPD=/etc/cups/ppd/canon.ppd"
+09:33:45 : envp[21]="RIP_MAX_CACHE=128m"
+09:33:45 : envp[22]="CONTENT_TYPE=application/vnd.cups-pdf-banner"
+09:33:45 : envp[23]="DEVICE_URI=https://172.18.111.160/"
+09:33:45 : envp[24]="PRINTER_INFO=canon"
+09:33:45 : envp[25]="PRINTER_LOCATION="
+09:33:45 : envp[26]="PRINTER=canon"
+09:33:45 : envp[27]="PRINTER_STATE_REASONS=none"
+09:33:45 : envp[28]="CUPS_FILETYPE=document"
+09:33:45 : envp[29]="FINAL_CONTENT_TYPE=application/vnd.cups-postscript"
+09:33:45 : envp[30]="AUTH_I****"
+09:33:45 : Started filter /nix/store/5pwy8d9k4z6jp8n944nr8kf9lxihkg9w-cups-progs/lib/cups/filter/bannertopdf (PID 7629)
+09:33:45 : Started filter /nix/store/5pwy8d9k4z6jp8n944nr8kf9lxihkg9w-cups-progs/lib/cups/filter/pdftopdf (PID 7630)
+09:33:45 : Started filter /nix/store/5pwy8d9k4z6jp8n944nr8kf9lxihkg9w-cups-progs/lib/cups/filter/pdftops (PID 7631)
+09:33:45 : Started filter /nix/store/5pwy8d9k4z6jp8n944nr8kf9lxihkg9w-cups-progs/lib/cups/filter/pstoufr2cpca (PID 7632)
+09:33:45 : Started backend /nix/store/5pwy8d9k4z6jp8n944nr8kf9lxihkg9w-cups-progs/lib/cups/backend/https (PID 7633)
+09:33:45 : REQUEST localhost - - "POST /printers/canon HTTP/1.1" 200 381 Print-Job successful-ok
+09:33:45 : PID 7628 (/nix/store/5pwy8d9k4z6jp8n944nr8kf9lxihkg9w-cups-progs/lib/cups/cgi-bin/printers.cgi) exited with no errors.
+09:33:45 : Sending stdin for job...
+09:33:45 : update_reasons(attr=0(), s=\"+connecting-to-device\")
+09:33:45 : op=\'+\', new_reasons=1, state_reasons=1
+09:33:45 : STATE: +connecting-to-device
+09:33:45 : Looking up \"172.0.1.160\"...
+09:33:45 : pdftops - copying to temp print file \"/tmp/01dcf588f139a\"
+09:33:45 : pstoufr2cpca start.
+09:33:45 : PDF template file doesn\'t have form. It\'s okay.
+09:33:45 : PID 7629 (/nix/store/5pwy8d9k4z6jp8n944nr8kf9lxihkg9w-cups-progs/lib/cups/filter/bannertopdf) exited with no errors.
+09:33:45 : pdftopdf: Last filter determined by the PPD: pstoufr2cpca; FINAL_CONTENT_TYPE: application/vnd.cups-postscript => pdftopdf will not log pages in page_log.
+09:33:45 : PID 7630 (/nix/store/5pwy8d9k4z6jp8n944nr8kf9lxihkg9w-cups-progs/lib/cups/filter/pdftopdf) exited with no errors.
+09:33:45 : Printer make and model: Canon ir-adv 4225/4235
+09:33:45 : Running command line for pstops: pstops 9 anonymous \'Test Page\' 1 \'job-uuid=urn:uuid:2f4c0d78-cb9e-333c-567f-d0c93bd3477e job-originating-host-name=localhost date-time-at-creation= date-time-at-processing= time-at-creation=1484922825 time-at-processing=1484922825\'
+09:33:45 : Using image rendering resolution 600 dpi
+09:33:45 : Running command line for pdftops: pdftops -level3 -origpagesizes -nocenter -r 600 /tmp/01dcf588f139a -
+09:33:45 : Started filter pdftops (PID 7634)
+09:33:45 : Started filter pstops (PID 7635)
+09:33:45 : Page = 612x792; 14,14 to 598,778
+09:33:45 : slow_collate=0, slow_duplex=0, slow_order=0
+09:33:45 : Before copy_comments - %!PS-Adobe-3.0
+09:33:45 : %!PS-Adobe-3.0
+09:33:45 : %Produced by poppler pdftops version: 0.47.0 (http://poppler.freedesktop.org)
+09:33:45 : %%Creator: cairo 1.10.2 (http://cairographics.org)
+09:33:45 : %%LanguageLevel: 3
+09:33:45 : %%DocumentSuppliedResources: (atend)
+09:33:45 : %%DocumentMedia: Letter 612 792 0 () ()
+09:33:45 : %%BoundingBox: 0 0 612 792
+09:33:45 : %%Pages: 2
+09:33:45 : %%EndComments
+09:33:45 : Before copy_prolog - %%BeginProlog
+09:33:45 : Before copy_setup - %%BeginSetup
+09:33:46 : Before page loop - %%Page: 1 1
+09:33:46 : Copying page 1...
+09:33:46 : pagew = 583.7, pagel = 763.7
+09:33:46 : bboxx = 0, bboxy = 0, bboxw = 612, bboxl = 792
+09:33:46 : PageLeft = 14.2, PageRight = 597.8
+09:33:46 : PageTop = 777.8, PageBottom = 14.2
+09:33:46 : PageWidth = 612.0, PageLength = 792.0
+09:33:46 : opvpOpenPrinter(410)
+09:33:46 : CStubOpenPrinter(349)
+09:33:46 : opvpOpenPrinter(410)
+09:33:46 : CStubOpenPrinter(349)
+09:33:46 : src = bidiCommon.c, line = 1085, err = 0¥nI/O warning : failed to load external entity \"/usr/share/cnpkbidi/cnpkbidi_info_003.xml\"
+09:33:46 : Set job-printer-state-message to "src = bidiCommon.c, line = 1085, err = 0¥nI/O warning : failed to load external entity \"/usr/share/cnpkbidi/cnpkbidi_info_003.xml\"", current level=ERROR
+09:33:47 : src = bidiCommon.c, line = 460, err = 0¥nERROR: src = bidiCommon.c, line = 487, err = 1¥nERROR: src = bidiCommon.c, line = 1698, err = 0¥nERROR: src = libcanon_pdlwrapper.c, line = 633, err = -1¥nERROR: src = libcanon_pdlwrapper.c, line = 1143, err = -1¥nDEBUG: Copying page 2...
+09:33:47 : pagew = 583.7, pagel = 763.7
+09:33:47 : bboxx = 0, bboxy = 0, bboxw = 612, bboxl = 792
+09:33:47 : PageLeft = 14.2, PageRight = 597.8
+09:33:47 : PageTop = 777.8, PageBottom = 14.2
+09:33:47 : PageWidth = 612.0, PageLength = 792.0
+09:33:47 : Error Response:ReqNo=2, SeqNo=3,opvpErrorNo=-2
+09:33:47 : Error Response:ReqNo=5, SeqNo=4,opvpErrorNo=-2
+09:33:47 : Error Response:ReqNo=7, SeqNo=139,opvpErrorNo=-2
+09:33:47 : Error Response:ReqNo=8, SeqNo=6768,opvpErrorNo=-2
+09:33:47 : GPL Ghostscript 9.20: Unrecoverable error, exit code 1
+09:33:47 : Error Response:ReqNo=6, SeqNo=6769,opvpErrorNo=-2
+09:33:47 : Error Response:ReqNo=3, SeqNo=6770,opvpErrorNo=-2
+09:33:47 : PID 7632 (/nix/store/5pwy8d9k4z6jp8n944nr8kf9lxihkg9w-cups-progs/lib/cups/filter/pstoufr2cpca) did not catch or ignore signal 13.
+09:33:47 : [Client 1] Started "/nix/store/5pwy8d9k4z6jp8n944nr8kf9lxihkg9w-cups-progs/lib/cups/cgi-bin/printers.cgi" (pid=7642, file=12)
+09:33:47 : PID 7642 (/nix/store/5pwy8d9k4z6jp8n944nr8kf9lxihkg9w-cups-progs/lib/cups/cgi-bin/printers.cgi) exited with no errors.
+09:33:47 : hrDeviceDesc=\"Unknown\"
+09:33:47 : Wrote 2 pages...
+09:33:47 : PID 7634 (pdftops) exited with no errors.
+09:33:47 : PID 7635 (pstops) exited with no errors.
+09:33:47 : PID 7631 (/nix/store/5pwy8d9k4z6jp8n944nr8kf9lxihkg9w-cups-progs/lib/cups/filter/pdftops) exited with no errors.
+09:33:49 : prtGeneralCurrentLocalization type is 0, expected 2!
+09:33:49 : backendWaitLoop(snmp_fd=6, addr=0x555e2ed5ddf8, side_cb=0x555e2cc64260)
+09:33:49 : PID 7633 (/nix/store/5pwy8d9k4z6jp8n944nr8kf9lxihkg9w-cups-progs/lib/cups/backend/https) exited with no errors.
+09:33:49 : time-at-completed=1484922829
+09:33:49 : Job completed.
+09:33:49 : Expiring subscriptions...
+09:33:49 : Removing document files.
+09:33:50 : Unloading...
+09:33:57 : [Client 1] Started "/nix/store/5pwy8d9k4z6jp8n944nr8kf9lxihkg9w-cups-progs/lib/cups/cgi-bin/printers.cgi" (pid=7655, file=12)
+09:33:57 : PID 7655 (/nix/store/5pwy8d9k4z6jp8n944nr8kf9lxihkg9w-cups-progs/lib/cups/cgi-bin/printers.cgi) exited with no errors.
+09:34:16 : Saving job.cache...
+dsasdadasdasdasdasdsadasdasd
