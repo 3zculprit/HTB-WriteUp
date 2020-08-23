@@ -1,0 +1,12 @@
+# Nmap 7.80 scan initiated Sun Aug 23 13:04:22 2020 as: nmap -vv -p- -T4 -oA nmap/buff-allports 10.10.10.198
+Nmap scan report for 10.10.10.198
+Host is up, received echo-reply ttl 127 (0.43s latency).
+Scanned at 2020-08-23 13:04:22 IST for 856s
+Not shown: 65533 filtered ports
+Reason: 65533 no-responses
+PORT     STATE SERVICE    REASON
+7680/tcp open  pando-pub  syn-ack ttl 127
+8080/tcp open  http-proxy syn-ack ttl 127
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sun Aug 23 13:18:38 2020 -- 1 IP address (1 host up) scanned in 856.64 seconds
