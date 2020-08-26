@@ -1,0 +1,13 @@
+# Nmap 7.80 scan initiated Tue Aug 25 02:24:26 2020 as: nmap -p- -vv -oA nmap/worker-full-ports 10.10.10.203
+Nmap scan report for 10.10.10.203
+Host is up, received echo-reply ttl 127 (0.30s latency).
+Scanned at 2020-08-25 02:24:26 IST for 313s
+Not shown: 65532 filtered ports
+Reason: 65532 no-responses
+PORT     STATE SERVICE REASON
+80/tcp   open  http    syn-ack ttl 127
+3690/tcp open  svn     syn-ack ttl 127
+5985/tcp open  wsman   syn-ack ttl 127
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Tue Aug 25 02:29:39 2020 -- 1 IP address (1 host up) scanned in 312.48 seconds

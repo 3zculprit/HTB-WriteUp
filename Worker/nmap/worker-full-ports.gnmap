@@ -1,0 +1,5 @@
+# Nmap 7.80 scan initiated Tue Aug 25 02:24:26 2020 as: nmap -p- -vv -oA nmap/worker-full-ports 10.10.10.203
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.203 ()	Status: Up
+Host: 10.10.10.203 ()	Ports: 80/open/tcp//http///, 3690/open/tcp//svn///, 5985/open/tcp//wsman///	Ignored State: filtered (65532)
+# Nmap done at Tue Aug 25 02:29:39 2020 -- 1 IP address (1 host up) scanned in 312.48 seconds

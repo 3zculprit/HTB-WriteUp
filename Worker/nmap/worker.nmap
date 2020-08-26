@@ -1,0 +1,19 @@
+# Nmap 7.80 scan initiated Tue Aug 25 02:23:04 2020 as: nmap -vv -sC -sV -oA nmap/worker 10.10.10.203
+Nmap scan report for 10.10.10.203
+Host is up, received echo-reply ttl 127 (0.34s latency).
+Scanned at 2020-08-25 02:23:04 IST for 47s
+Not shown: 998 filtered ports
+Reason: 998 no-responses
+PORT     STATE SERVICE  REASON          VERSION
+80/tcp   open  http     syn-ack ttl 127 Microsoft IIS httpd 10.0
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: IIS Windows Server
+3690/tcp open  svnserve syn-ack ttl 127 Subversion
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Aug 25 02:23:51 2020 -- 1 IP address (1 host up) scanned in 47.05 seconds
