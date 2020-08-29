@@ -1,0 +1,23 @@
+# Nmap 7.80 scan initiated Thu Aug 27 23:52:23 2020 as: nmap -vv -sC -sV -oA nmap/openkeys 10.10.10.199
+Nmap scan report for 10.10.10.199
+Host is up, received reset ttl 63 (0.29s latency).
+Scanned at 2020-08-27 23:52:24 IST for 48s
+Not shown: 998 closed ports
+Reason: 998 resets
+PORT   STATE SERVICE REASON         VERSION
+22/tcp open  ssh     syn-ack ttl 63 OpenSSH 8.1 (protocol 2.0)
+| ssh-hostkey: 
+|   3072 5e:ff:81:e9:1f:9b:f8:9a:25:df:5d:82:1a:dd:7a:81 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDe8l1l+kUpCKDTLXtOj9CY1xcde98zhpP0ANXSj7eI2KRVQuOpowxjzNf/NrDoIffaCtsNY36nnVw5JDbX2zU0+wKeMEoVHBlelNSneBHrYv4CuhlO7ll6tHZcs0kWSvFk8nipNTYXSm48EhFbspsC89Yv7REeRFq+uE1unEo8d+Dt2MmDzNnu+QtATp4wlSE1LIROq7cDRsR10S5j6fnaRbEYGquXSJkW6sV6PTZhGm8y6sXXQ3RynYJ129m5YTevg4fKpF/FkfEuPn5sRIj+aZCT6GjP9WEae+R/6lVEcMOmuq9K9CCqoGuwGakoK+m/upQDlI7pXcN8359a7XcMXSgriJIjV8yv350JsdLqIN704w5NLowAaInYPqXKNrXdxa5olprzF1dMlN0ClvV96tX9bg2ERrRhrLbSOZudrqefMNjSKqdNWLh7AQh8TnwdDMdXf/IOat1CjQMNwPTi3XkklU+Lm92J8Nd6gO8uLd6HuRLPVxUqJp6hKwLIbHM=
+|   256 64:7a:5a:52:85:c5:6d:d5:4a:6b:a7:1a:9a:8a:b9:bb (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBOM044THRHSb9MKRgg+pCGqLErFIOMaaGjCwwSpxVFsdQWW9kg3fROwqwtNVM1McgJ4Y4NwVzl+w5DZGK2OdhNE=
+|   256 12:35:4b:6e:23:09:dc:ea:00:8c:72:20:c7:50:32:f3 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIKuJoZTZonWY0/JkBfYeM2POVzE/TZfUJGA10PMXB1s
+80/tcp open  http    syn-ack ttl 63 OpenBSD httpd
+| http-methods: 
+|_  Supported Methods: GET HEAD
+|_http-title: Site doesn't have a title (text/html).
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Aug 27 23:53:12 2020 -- 1 IP address (1 host up) scanned in 48.53 seconds

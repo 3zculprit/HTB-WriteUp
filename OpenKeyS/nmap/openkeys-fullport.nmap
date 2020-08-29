@@ -1,0 +1,15 @@
+# Nmap 7.80 scan initiated Sat Aug 29 00:53:41 2020 as: nmap -vv -p- -T4 -oA nmap/openkeys-fullport 10.10.10.199
+Increasing send delay for 10.10.10.199 from 0 to 5 due to 115 out of 287 dropped probes since last increase.
+Increasing send delay for 10.10.10.199 from 5 to 10 due to 44 out of 109 dropped probes since last increase.
+Warning: 10.10.10.199 giving up on port because retransmission cap hit (6).
+Nmap scan report for openkeys.htb (10.10.10.199)
+Host is up, received reset ttl 63 (0.31s latency).
+Scanned at 2020-08-29 00:53:41 IST for 1431s
+Not shown: 65533 closed ports
+Reason: 65533 resets
+PORT   STATE SERVICE REASON
+22/tcp open  ssh     syn-ack ttl 63
+80/tcp open  http    syn-ack ttl 63
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sat Aug 29 01:17:32 2020 -- 1 IP address (1 host up) scanned in 1431.38 seconds
