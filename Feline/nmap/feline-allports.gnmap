@@ -1,0 +1,5 @@
+# Nmap 7.80 scan initiated Tue Sep  1 10:44:42 2020 as: nmap -p- -vv -T4 -oA nmap/feline-allports 10.10.10.205
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.205 ()	Status: Up
+Host: 10.10.10.205 ()	Ports: 22/open/tcp//ssh///, 8080/open/tcp//http-proxy///	Ignored State: closed (65533)
+# Nmap done at Tue Sep  1 11:10:27 2020 -- 1 IP address (1 host up) scanned in 1544.97 seconds

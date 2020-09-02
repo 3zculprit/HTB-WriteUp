@@ -1,0 +1,14 @@
+# Nmap 7.80 scan initiated Tue Sep  1 10:44:42 2020 as: nmap -p- -vv -T4 -oA nmap/feline-allports 10.10.10.205
+Increasing send delay for 10.10.10.205 from 0 to 5 due to 695 out of 1737 dropped probes since last increase.
+Warning: 10.10.10.205 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.10.10.205
+Host is up, received echo-reply ttl 63 (0.29s latency).
+Scanned at 2020-09-01 10:44:42 EDT for 1545s
+Not shown: 65533 closed ports
+Reason: 65533 resets
+PORT     STATE SERVICE    REASON
+22/tcp   open  ssh        syn-ack ttl 63
+8080/tcp open  http-proxy syn-ack ttl 63
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Tue Sep  1 11:10:27 2020 -- 1 IP address (1 host up) scanned in 1544.97 seconds
